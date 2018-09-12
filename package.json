@@ -5,19 +5,21 @@
   "license": "MIT",
   "scripts": {
     "start": "node server/",
-    "dev": "nodemon server & webpack --watch"
+    "dev": "node server & webpack --mode development --watch"
   },
   "babel": {
     "presets": [
       "env",
-      "react"
+      "react"     
     ]
   },
   "dependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.2",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",    
+    "babel-preset-react": "^6.24.1",    
+    "babel-runtime": "^6.26.0",
     "bcrypt": "^3.0.0",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
@@ -32,7 +34,9 @@
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0",
     "superagent": "^3.8.3",
-    "webpack": "^4.18.0"
+    "webpack": "^4.18.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
   },
   "devDependencies": {
     "nodemon": "^1.18.4"

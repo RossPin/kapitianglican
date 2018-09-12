@@ -4,7 +4,7 @@ var verifyJwt = require('express-jwt')
 var {compare} = require('./hash')
 
 function issue (req, res) {
-  getUserByName(req.body.username)
+  getUserByName(req.body.username.toLowerCase())
     .then(user => {
       compare(req.body.password, user.hash, (err, match) => {
         if (err) res.status(500).json({message: err.message})

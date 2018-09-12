@@ -11,7 +11,7 @@ function createUser(user) {
       if (err) reject(err)
       var userData = new User({username: user.username.toLowerCase(), hash})  
       userData.save()
-        .then(newUser => {
+        .then(newUser => {         
           resolve(newUser)
         })     
     })
