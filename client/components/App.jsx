@@ -1,8 +1,8 @@
 import React from 'react'
 import {HashRouter, Route} from 'react-router-dom'
-import Nav from './Nav.jsx'
-import Login from './Auth/Login.jsx';
-import Register from './Auth/Register.jsx';
+import Nav from './Nav'
+import Login from './Auth/Login';
+import Register from './Auth/Register';
 
 class App extends React.Component{
   render(){

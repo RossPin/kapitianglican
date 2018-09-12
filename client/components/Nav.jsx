@@ -21,7 +21,7 @@ function Nav(props) {
       <div className="navbar-start">
         <h1>Anamata</h1>
         <div className="navbar-end">
-          <Link to="/login">Login</Link>;
+          <Link to="/login">Login</Link>
           <Link to="/">Home</Link>
           <Link to="/register">Register</Link>
         </div>
