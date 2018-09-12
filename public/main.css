@@ -7,6 +7,24 @@ body {
   width: 90%;
   margin: 1em auto;
   padding: 1em;
-  background-color: rgb(125, 60, 5);
+  background-color: rgb(20, 135, 35);
 }
 
+.container {
+  text-align: center;
+  width: 90%;
+  margin: 1em auto;
+}
+
+.button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+}

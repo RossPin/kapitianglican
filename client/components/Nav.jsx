@@ -10,20 +10,20 @@ function Nav(props) {
     {props.auth.isAuthenticated
       ? //display if logged in
       <div className="navbar-start">
-        <h1>Anamata</h1>
+        <h1>React App</h1>
         <div className="navbar-end">
           <span>{props.auth.user.username} </span>
-          <Link to="/">Home</Link>
-          <button onClick={() => props.dispatch(logoutUser())}>Logout</button>
+          <Link className='button' to="/">Home</Link>
+          <button className='button' onClick={() => props.dispatch(logoutUser())}>Logout</button>
         </div>
       </div>
       : //display if not logged in
       <div className="navbar-start">
-        <h1>Anamata</h1>
+        <h1>React App</h1>
         <div className="navbar-end">
-          <Link to="/login">Login</Link>
-          <Link to="/">Home</Link>
-          <Link to="/register">Register</Link>
+          <Link className='button' to="/login">Login</Link>
+          <Link className='button' to="/">Home</Link>
+          <Link className='button' to="/register">Register</Link>
         </div>
       </div>     
     }
