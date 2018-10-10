@@ -25,12 +25,12 @@ ul, ol, li {
 
 a {
 	text-decoration: underline;
-	color: #7EBA25;
+	color: #231F20;
 }
 
 a:hover {
 	text-decoration: none;
-	color: #7EBA25;
+	color: #231F20;
 }
 
 /* Header */
@@ -216,8 +216,7 @@ a:hover {
 	margin: 0px;
 	padding: 0px 0px 20px 0px;
 	font-size: 160%;
-	font-weight: normal;
-	color: #7EBA25;
+	font-weight: normal;	
 }
 
 #sidebar h3 {
