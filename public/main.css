@@ -4,7 +4,7 @@
 }
 
 body {
-	margin: 0px;
+	margin: 0;
 	background-color: #FFFFFF;
 	text-align: justify;
 	font-family: Arial, Helvetica, sans-serif;
@@ -23,13 +23,13 @@ body {
 }
 
 p, blockquote, ul, ol {
-	margin-bottom: 20px;
+	margin-bottom: 1em;
 	line-height: 2em;
 }
 
 ul, ol, li {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -46,38 +46,19 @@ a:hover {
 /* Header */
 
 #header {  
-	height: 105px;
+  min-height: 1em;
+  overflow: hidden;
   margin: 0 auto;
   padding-left: 5%;
 }
 
 /* Logo */
 
-#logo {
-	float: left;
-	width: 270px;
-	height: 105px;
-	margin: 0px;
-}
-
 #logo h1 {
 	margin: 0;
 	padding: 0;
-	font: normal 36px Georgia, "Times New Roman", Times, serif;
+	font: normal 8.4vw Georgia, "Times New Roman", Times, serif;
 	color: #FFFFFF;
-}
-
-#logo h1 a {
-	color: #FFFFFF;
-}
-
-#logo h2 {
-	margin: -2px 0 0 0;
-	padding: 0;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 10px;
-	font-weight: bold;
 }
 
 #logo a {
@@ -88,7 +69,7 @@ a:hover {
 /* Menu */
 
 #menu {  
-  min-height: 47px;
+  min-height: 3em;
   overflow: hidden;
 	margin: 0 auto;
 	background-color: #4d4c4a;
@@ -99,7 +80,7 @@ a:hover {
 	padding: 0;
 	list-style: none;
 	line-height: normal;
-	margin-left: 30px;
+	padding-left: 3%;
 }
 
 
@@ -112,20 +93,21 @@ a:hover {
 #menu a {
 	display: block;
 	float: left;
-	height: 32px;
-	margin-right: 2px;
-	padding: 15px 20px 0px 20px;
+	height: 3em;
+	margin-right: 1px;
+  padding: 1.5em;
+  padding-bottom: 0;
 	text-decoration: none;
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 11px;
+	font-size: 0.7em;
 	font-weight: bold;
 	color: #F4914E;
 }
 
 #menu a:hover, #menu .active a {
 	background: #000000;	
-	font-size: 11px;
+	font-size: 0.7em;
 	font-weight: bold;
 }
 
@@ -145,7 +127,7 @@ a:hover {
 
 #page {	
 	margin: 0 auto;
-	padding-top: 30px;
+	padding-top: 2em;
 }
 
 /* Content */
@@ -155,23 +137,14 @@ a:hover {
 	width: 68%;
 }
 .post {
-	margin: 0px 0px 30px 0px;
+	margin-bottom: 2em;
 	border-bottom: 1px solid #CCCCCC;
 }
 
 .post .title {
-	margin: 0px;
-  padding: 4px 35px 4px 15px;
+  padding: 0.25em 1em;
 	background: #AAAAAA;
 	color: #515151;
-}
-
-.post .title a {
-	padding: 4px 35px 4px 15px;
-	background: #000000;
-	text-decoration: none;
-	font-weight: normal;
-	color: #F28F4C;
 }
 
 .post .entry {
@@ -180,50 +153,31 @@ a:hover {
 
 .post img {
 	float: left;
-	padding: 15px 0px;
-}
-
-.post .meta {
-	text-align: right;
-	padding: 0px 0 20px 0;
-	font-weight: bold;
-	color: #202020;
-}
-
-.post .byline {
-	float: right;
-	margin-top: -30px;
-	font-size: 12px;
-	font-weight: bold;
-	color: #5E5E5E;
+	margin: 0.25em;
 }
 
 /* Sidebar */
 
 #sidebar {
 	float: left;
-	width: 26%;
-	margin: 0px;
-	padding: 0px 30px 30px 0px;
+	width: 26%;	
 }
 
 #sidebar ul {
-	margin: 0;
-	padding: 0px 0px 40px 0px;
+	margin: 1em 0;	
 	list-style: none;
 	line-height: normal;
 }
 
 #sidebar li {
 	margin: 0;
-	padding: 9px 0px;
+	padding: 0.5em 0;
 	border: none;
 	border-bottom: 1px solid #CCCCCC;
 }
 
 #sidebar h2 {
-	margin: 0px;
-	padding: 0px 0px 20px 0px;
+	margin: 0;	
 	font-size: 160%;
 	font-weight: normal;	
 }
@@ -249,42 +203,23 @@ a:hover {
 	text-decoration: underline;
 }
 
-/* News */
-
-#news {
-}
-
-#news a {
-	font-size: 85%;
-}
-
-/* Footer */
-
-#footer {
-	margin: 0 auto;
-	padding: 20px 0px;
-	background: #000000;
-	color: #686767;
-}
-
-#footer p {
-	margin: 0;
-	text-align: center;
-	font-size: 77%;
-}
-
-#footer a {
-	text-decoration: underline;
-	color: #A1A1A1;
-}
-
-#footer a:hover {
-	text-decoration: none;
-}
-
 #header, #menu, #splash, #page {
   width: 95%;
   max-width: 1160px;
+}
+
+@media all and (min-width: 424px) {
+  #logo h1 {
+    font-size: 36px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  #logo {
+    float: left;
+    width: 270px;	
+    margin: 0.3em;
+  }
 }
 
 @media all and (min-width: 839px) {
