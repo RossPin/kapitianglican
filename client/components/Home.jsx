@@ -26,7 +26,7 @@ function Home(props) {
       </div>
       <div className="post">
         <h2 className="title"><a href="http://www.kapitianglican.org.nz/#">Special Notices</a></h2>
-        <div className="entry"><iframe width="640" height="360" src="https://youtu.be/vyUdclr6Kzo" frameborder="0" allowfullscreen=""></iframe></div>
+        <div className="entry"><iframe width="640" height="360" src="https://youtu.be/vyUdclr6Kzo" frameBorder="0" allowFullScreen=""></iframe></div>
         <div className="meta"> 
     </div>
         

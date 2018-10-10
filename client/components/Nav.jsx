@@ -4,25 +4,20 @@ import { Link } from 'react-router-dom'
 import { logoutUser } from '../actions/logout'
 
 function Nav(props) {
-  
+  const path = props.location.pathname
   return (
     <div id="menu">
       <ul>
-        <li className="active"><Link to="/">Home</Link></li>
-        <li><Link to="/Services"><span style={{color: '#F4914E', fontWeight: 'bold'}}>Sunday Services</span></Link>
-        </li><li><Link to="/Values"><span style={{color: '#F4914E', fontWeight: 'bold'}}>Parish Values</span></Link>
-          <ul>
-            <ul>
-              <li><Link to="/Parish"><span style={{color: '#F4914E', fontWeight: 'bold'}}>Parish Groups</span></Link></li>
-            </ul>
-          </ul>
-        </li>
-        <li><Link to="/Contact"><span style={{color: '#F4914E', fontWeight: 'bold'}}>Contacting us</span></Link></li>
+        <li className={path === '/' ? 'active' : ''}><Link to="/"><span>Home</span></Link></li>
+        <li className={path === '/Services' ? 'active' : ''}><Link to="/Services"><span>Sunday Services</span></Link></li>
+        <li className={path === '/Values' ? 'active' : ''}><Link to="/Values"><span>Parish Values</span></Link></li>         
+        <li className={path === '/Parish' ? 'active' : ''}><Link to="/Parish"><span>Parish Groups</span></Link></li>         
+        <li className={path === '/Contact' ? 'active' : ''}><Link to="/Contact"><span>Contacting us</span></Link></li>
         {props.auth.isAuthenticated
         ?
-        <li><Link to="/"><span onClick={() => props.dispatch(logoutUser())} style={{color: '#F4914E', fontWeight: 'bold'}}>Logout</span></Link></li>
+        <li><Link to="/"><span onClick={() => props.dispatch(logoutUser())}>Logout</span></Link></li>
         :
-        <li><Link to="/login"><span style={{color: '#F4914E', fontWeight: 'bold'}}>Login</span></Link></li>
+        <li className={path === '/login' ? 'active' : ''}><Link to="/login"><span>Login</span></Link></li>
         }
       </ul>    
     </div>

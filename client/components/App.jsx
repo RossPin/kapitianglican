@@ -14,7 +14,7 @@ class App extends React.Component{
       <HashRouter>
         <div id='wrapper'>
           <Header/>
-          <Nav/>
+          <Route path='/' component={Nav} />
           <Splash/>
           <div id="page"></div>
           <div id="page-bgtop">
