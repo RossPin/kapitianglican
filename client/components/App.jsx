@@ -17,9 +17,13 @@ class App extends React.Component{
     return (      
       <HashRouter>
         <div id='wrapper'>
-          <Header/>
-          <Route path='/' component={Nav} />
-          <Splash/>          
+          <div className='topBar'>
+            <Header/>
+            <Route path='/' component={Nav} />
+          </div>
+          <div className='lowerBar'>
+            <Splash/>
+          </div>         
           <div id="page">            
             <Route exact path='/' component={Home} />
             <Route path='/Services' component={Services} />
