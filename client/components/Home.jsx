@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Home(props) {
   
@@ -9,7 +10,7 @@ function Home(props) {
         
         <div className="entry">
           <p>We are a growing, mission shaped, multigenerational, multicultural  parish that is open to a mixture of expressions of being Church. We aim to  bring Christ into the community and the community to Christ. The love of  Christ comes before all else. We strive to reflect a life style that is  distinctive, counter cultural, authentic and attractive.</p>
-          <p> <Link href="/Values">These are the values we aspire to live by</Link>. </p>
+          <p> <Link to="/Values">These are the values we aspire to live by</Link>. </p>
         </div>
         <div className="meta">
           <p className="links">&nbsp;</p>
