@@ -8,19 +8,19 @@ function Nav(props) {
   return (
     <div id="menu">
       <ul>
-        <li className="active"><a href="http://www.kapitianglican.org.nz/#">Home</a></li>
-        <li><a href="http://www.kapitianglican.org.nz/Sunday%20Services.html"><span style={{color: '#F4914E', fontWeight: 'bold'}}>Sunday Services</span></a>
-        </li><li><a href="http://www.kapitianglican.org.nz/Values.html"><span style={{color: '#F4914E', fontWeight: 'bold'}}>Parish Values</span></a>
+        <li className="active"><Link to="/">Home</Link></li>
+        <li><Link to="/Services"><span style={{color: '#F4914E', fontWeight: 'bold'}}>Sunday Services</span></Link>
+        </li><li><Link to="/Values"><span style={{color: '#F4914E', fontWeight: 'bold'}}>Parish Values</span></Link>
           <ul>
             <ul>
-              <li><a href="http://www.kapitianglican.org.nz/Parish%20Groups.html"><span style={{color: '#F4914E', fontWeight: 'bold'}}>Parish Groups</span></a></li>
+              <li><Link to="/Parish"><span style={{color: '#F4914E', fontWeight: 'bold'}}>Parish Groups</span></Link></li>
             </ul>
           </ul>
         </li>
-        <li><a href="http://www.kapitianglican.org.nz/Contact.html"><span style={{color: '#F4914E', fontWeight: 'bold'}}>Contacting us</span></a></li>
+        <li><Link to="/Contact"><span style={{color: '#F4914E', fontWeight: 'bold'}}>Contacting us</span></Link></li>
         {props.auth.isAuthenticated
         ?
-        <li><Link to="/login"><span onClick={() => props.dispatch(logoutUser())} style={{color: '#F4914E', fontWeight: 'bold'}}>Logout</span></Link></li>
+        <li><Link to="/"><span onClick={() => props.dispatch(logoutUser())} style={{color: '#F4914E', fontWeight: 'bold'}}>Logout</span></Link></li>
         :
         <li><Link to="/login"><span style={{color: '#F4914E', fontWeight: 'bold'}}>Login</span></Link></li>
         }
