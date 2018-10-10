@@ -7,6 +7,10 @@ import Header from './Header';
 import Splash from './Splash';
 import Home from './Home';
 import Sidebar from './Sidebar';
+import Services from './Services';
+import Contact from './Contact';
+import Groups from './Groups';
+import Values from './Values';
 
 class App extends React.Component{
   render(){
@@ -18,6 +22,10 @@ class App extends React.Component{
           <Splash/>          
           <div id="page">            
             <Route exact path='/' component={Home} />
+            <Route path='/Services' component={Services} />
+            <Route path='/Values' component={Values} />
+            <Route path='/Groups' component={Groups} />
+            <Route path='/Contact' component={Contact} />
             <Route path="/login" component={Login} />
             <Route path="/Register" component={Register} />
             <Sidebar/>

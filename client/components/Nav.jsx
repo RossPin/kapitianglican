@@ -11,7 +11,7 @@ function Nav(props) {
         <li className={path === '/' ? 'active' : ''}><Link to="/"><span>Home</span></Link></li>
         <li className={path === '/Services' ? 'active' : ''}><Link to="/Services"><span>Sunday Services</span></Link></li>
         <li className={path === '/Values' ? 'active' : ''}><Link to="/Values"><span>Parish Values</span></Link></li>         
-        <li className={path === '/Parish' ? 'active' : ''}><Link to="/Parish"><span>Parish Groups</span></Link></li>         
+        <li className={path === '/Groups' ? 'active' : ''}><Link to="/Groups"><span>Parish Groups</span></Link></li>         
         <li className={path === '/Contact' ? 'active' : ''}><Link to="/Contact"><span>Contacting us</span></Link></li>
         {props.auth.isAuthenticated
         ?

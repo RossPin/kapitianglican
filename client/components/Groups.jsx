@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Parish(props) {
+function Groups(props) {
   
   return (
     <div className='content'>
@@ -25,4 +25,4 @@ function Parish(props) {
   )
 }
 
-export default Parish
+export default Groups
