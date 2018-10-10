@@ -8,7 +8,7 @@ function Contact(props) {
         <h2 className="title">Click on the link below for a full list of parish staff and contacts.</h2>
         
         <div className="entry">
-          <p><a href="http://www.kapitianglican.org.nz/parishdirectory.pdf"> Parish Staff and Contacts PDF</a>
+          <p><a href="http://www.kapitianglican.org.nz/parishdirectory.pdf" target='_blank'> Parish Staff and Contacts PDF</a>
 
         </p></div>
       </div>
