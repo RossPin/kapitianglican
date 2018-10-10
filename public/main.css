@@ -8,7 +8,7 @@ body {
 	background-color: #FFFFFF;
 	text-align: justify;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 13px;
+	font-size: 1em;
 	color: #231F20;
 }
 
@@ -45,10 +45,10 @@ a:hover {
 
 /* Header */
 
-#header {
-	width: 880px;
+#header {  
 	height: 105px;
-	margin: 0 auto;
+  margin: 0 auto;
+  padding-left: 5%;
 }
 
 /* Logo */
@@ -87,9 +87,9 @@ a:hover {
 
 /* Menu */
 
-#menu {
-	width: 940px;
-	height: 47px;
+#menu {  
+  min-height: 47px;
+  overflow: hidden;
 	margin: 0 auto;
 	background-color: #4d4c4a;
 }
@@ -101,6 +101,8 @@ a:hover {
 	line-height: normal;
 	margin-left: 30px;
 }
+
+
 
 #menu li {
 	display: inline;
@@ -131,30 +133,26 @@ a:hover {
   color: #F0E110;
 }
 
-#splash {
-	width: 940px;
-	height: 255px;
+#splash {		
 	margin: 0 auto;
+}
+
+#splash img {
+  width: 100%;
 }
 
 /* Page */
 
-#page {
-	width: 940px;
+#page {	
 	margin: 0 auto;
 	padding-top: 30px;
-}
-
-#page-bgtop {
-  width: 940px;	
-	margin: 0 auto;
 }
 
 /* Content */
 
 .content {
 	float: right;
-	width: 640px;
+	width: 68%;
 }
 .post {
 	margin: 0px 0px 30px 0px;
@@ -163,7 +161,8 @@ a:hover {
 
 .post .title {
 	margin: 0px;
-	padding: 0px 0px 5px 0px;
+  padding: 4px 35px 4px 15px;
+	background: #AAAAAA;
 	color: #515151;
 }
 
@@ -203,7 +202,7 @@ a:hover {
 
 #sidebar {
 	float: left;
-	width: 240px;
+	width: 26%;
 	margin: 0px;
 	padding: 0px 30px 30px 0px;
 }
@@ -250,12 +249,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-/* Submenu */
-
-#submenu {
-
-}
-
 /* News */
 
 #news {
@@ -287,4 +280,21 @@ a:hover {
 
 #footer a:hover {
 	text-decoration: none;
+}
+
+#header, #menu, #splash, #page {
+  width: 95%;
+  max-width: 1160px;
+}
+
+@media all and (min-width: 839px) {
+  #header, #menu, #splash, #page {
+    width: 90%;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  #header, #menu, #splash, #page {
+    width: 80%;
+  }
 }
