@@ -200,21 +200,12 @@ a:hover {
 
 #sidebar ul {
 	margin: 0;
-	padding: 0;
+	padding: 0px 0px 40px 0px;
 	list-style: none;
 	line-height: normal;
 }
 
 #sidebar li {
-	margin-bottom: 1px;
-}
-
-#sidebar li ul {
-	margin: 0px;
-	padding: 0px 0px 40px 0px;
-}
-
-#sidebar li li {
 	margin: 0;
 	padding: 9px 0px;
 	border: none;
