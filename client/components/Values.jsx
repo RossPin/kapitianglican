@@ -21,10 +21,7 @@ function Values(props) {
           <p>11.  We pray and care for God's creation.</p>
           <p>12.  We are clear about our identity and affirm the best of our Anglican <br />
             tradition  while working alongside sister churches.</p>
-        </div>
-        <div className="meta">
-          <p className="links">&nbsp;</p>
-        </div>
+        </div>        
       </div>
     </div>
   )

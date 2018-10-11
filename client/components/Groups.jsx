@@ -16,10 +16,7 @@ function Groups(props) {
           <p><a href="http://www.kapitianglican.org.nz/messychurch.pdf" target='_blank'>Messy Church: What is it? PDF</a></p>
           <p><a href="https://www.facebook.com/messy.churchkapiti?fref=ts" target='_blank'>Messy Church (Facebook)</a></p>
           <p><a href="https://www.facebook.com/groups/111079862270162/" target='_blank'>Kapiti Anglican Youth (facebook)</a></p>
-        </div>
-        <div className="meta">
-          <p className="links">&nbsp;</p>
-        </div>
+        </div>        
       </div>
     </div>
   )
