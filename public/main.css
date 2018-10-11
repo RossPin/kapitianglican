@@ -54,10 +54,17 @@ a:hover {
 
 /* Logo */
 
+#logo {
+  float: left;
+  width: 38%;
+  max-width: 270px;
+  margin: 2%;
+}
+
 #logo h1 {
 	margin: 0;
 	padding: 0;
-	font: normal 8.4vw Georgia, "Times New Roman", Times, serif;
+	font: normal 4.7vw Georgia, "Times New Roman", Times, serif;
 	color: #FFFFFF;
 }
 
@@ -210,17 +217,9 @@ a:hover {
   max-width: 1160px;
 }
 
-@media all and (min-width: 424px) {
+@media all and (min-width: 768px) {  
   #logo h1 {
     font-size: 36px;
-  }
-}
-
-@media all and (min-width: 768px) {
-  #logo {
-    float: left;
-    width: 270px;	
-    margin: 0.3em;
   }
 
   #content {
