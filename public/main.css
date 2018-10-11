@@ -69,7 +69,7 @@ a:hover {
 /* Menu */
 
 #menu {  
-  min-height: 3em;
+  min-height: 1em;
   overflow: hidden;
 	margin: 0 auto;
 	background-color: #4d4c4a;
@@ -80,29 +80,32 @@ a:hover {
 	padding: 0;
 	list-style: none;
 	line-height: normal;
-	padding-left: 3%;
+  padding-left: 3%;
+  display: none;
 }
 
-
-
-#menu li {
-	display: inline;
-	text-align: center;
-}
-
-#menu a {
-	display: block;
-	float: left;
-	height: 3em;
-	margin-right: 1px;
-  padding: 1.5em;
-  padding-bottom: 0;
+#menu a, #menu #collapse {
+  margin-right: 1px;
+  padding: 0.2em;   
 	text-decoration: none;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 0.7em;
 	font-weight: bold;
 	color: #F4914E;
+}
+
+#menu #collapse { 
+  display: block;
+	float: left;   
+  font-size: 2em;
+  padding: 0 .2em;
+}
+
+#menu .show {
+  z-index: 2;
+  display: block;
+  margin-left: 2em;  
 }
 
 #menu a:hover, #menu .active a {
@@ -220,6 +223,27 @@ a:hover {
     width: 270px;	
     margin: 0.3em;
   }
+
+  #menu ul {
+    display: block;    
+  }
+
+  #menu li {
+    display: inline;
+    text-align: center;
+  }
+
+  #menu #collapse {
+    display: none;
+  }
+  
+  #menu a {
+    display: block;
+    float: left;
+    height: 3em;
+    margin-right: 1px;
+    padding: 1.5em;
+    padding-bottom: 0;
 }
 
 @media all and (min-width: 839px) {
