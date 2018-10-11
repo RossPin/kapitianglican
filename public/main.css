@@ -165,43 +165,43 @@ a:hover {
 	width: 26%;	
 }
 
-#sidebar ul {
+#links ul {
 	margin: 1em 0;	
 	list-style: none;
 	line-height: normal;
 }
 
-#sidebar li {
+#links li {
 	margin: 0;
 	padding: 0.5em 0;
 	border: none;
 	border-bottom: 1px solid #CCCCCC;
 }
 
-#sidebar h2 {
+#links h2 {
 	margin: 0;	
 	font-size: 160%;
 	font-weight: normal;	
 }
 
-#sidebar h3 {
+#links h3 {
 	font-size: 77%;
 	color: #110404;
 }
 
-#sidebar p {
+#links p {
 	margin: 0;
 	line-height: normal;
 	color: #D4C792;
 }
 
-#sidebar a {
+#links a {
 	border: none;
 	text-decoration: none;
 	color: #4A4949;
 }
 
-#sidebar a:hover {
+#links a:hover {
 	text-decoration: underline;
 }
 
