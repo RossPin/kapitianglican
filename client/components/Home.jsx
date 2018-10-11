@@ -16,8 +16,8 @@ function Home(props) {
       <div className="post">
         <h2 className="title">Weekly News PDF</h2>
         <div className="entry">
-          <p>Weekly News sheet with  Sunday lectionary readings, parish diary and notices.</p>      
-          <iframe width='100%' height='30%' src="http://www.kapitianglican.org.nz/weeklynewssheet.pdf" frameBorder="0" allowFullScreen=""></iframe>
+          <p>Weekly News sheet with  Sunday lectionary readings, parish diary and notices.</p>
+          <p><a href="http://www.kapitianglican.org.nz/weeklynewssheet.pdf" target='_blank'> Weekly News PDF</a></p> 
         </div>
       </div>
     </div>
