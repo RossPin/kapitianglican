@@ -11,6 +11,7 @@ import Services from './Services';
 import Contact from './Contact';
 import Groups from './Groups';
 import Values from './Values';
+import Links from './Links';
 
 class App extends React.Component{
   render(){
@@ -24,15 +25,20 @@ class App extends React.Component{
           <div className='lowerBar'>
             <Splash/>
           </div>         
-          <div id="page">            
-            <Route exact path='/' component={Home} />
-            <Route path='/Services' component={Services} />
-            <Route path='/Values' component={Values} />
-            <Route path='/Groups' component={Groups} />
-            <Route path='/Contact' component={Contact} />
-            <Route path="/login" component={Login} />
-            <Route path="/Register" component={Register} />
-            <Sidebar/>
+          <div id="page">
+            <div id='content'>         
+              <Route exact path='/' component={Home} />
+              <Route path='/Services' component={Services} />
+              <Route path='/Values' component={Values} />
+              <Route path='/Groups' component={Groups} />
+              <Route path='/Contact' component={Contact} />
+              <Route path="/login" component={Login} />
+              <Route path="/Register" component={Register} />
+              <Route path="/Links" component={Links} />
+            </div>
+            <div id="sidebar">
+              <Links />
+            </div>
           </div>
           
         </div>

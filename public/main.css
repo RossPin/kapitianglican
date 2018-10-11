@@ -68,12 +68,7 @@ a:hover {
 
 /* Menu */
 
-#menu {  
-  min-height: 1em;
-  overflow: hidden;
-	margin: 0 auto;
-	background-color: #4d4c4a;
-}
+
 
 #menu ul {
 	margin: 0;
@@ -95,7 +90,8 @@ a:hover {
 	color: #F4914E;
 }
 
-#menu #collapse { 
+#menu #collapse {
+  margin-top: -1em;
   display: block;
 	float: left;   
   font-size: 2em;
@@ -105,7 +101,8 @@ a:hover {
 #menu .show {
   z-index: 2;
   display: block;
-  margin-left: 2em;  
+  margin-left: 2em;
+  background-color: #4d4c4a;  
 }
 
 #menu a:hover, #menu .active a {
@@ -118,7 +115,8 @@ a:hover {
   color: #F0E110;
 }
 
-#splash {		
+#splash {
+  display: none;	
 	margin: 0 auto;
 }
 
@@ -135,9 +133,9 @@ a:hover {
 
 /* Content */
 
-.content {
+#content {
 	float: right;
-	width: 68%;
+	width: 100%;
 }
 .post {
 	margin-bottom: 2em;
@@ -162,6 +160,7 @@ a:hover {
 /* Sidebar */
 
 #sidebar {
+  display: none;
 	float: left;
 	width: 26%;	
 }
@@ -224,7 +223,18 @@ a:hover {
     margin: 0.3em;
   }
 
-  #menu ul {
+  #content {
+    width: 68%;
+  }
+
+  #menu {  
+    min-height: 1em;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #4d4c4a;
+  }
+
+  #menu ul, #splash, #sidebar {
     display: block;    
   }
 
@@ -244,6 +254,7 @@ a:hover {
     margin-right: 1px;
     padding: 1.5em;
     padding-bottom: 0;
+  }
 }
 
 @media all and (min-width: 839px) {
