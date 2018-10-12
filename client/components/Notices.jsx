@@ -37,8 +37,8 @@ class Notices extends React.Component {
             <div key={post._id} className="post">
               <h2 className="title">{post.title}{this.props.auth.isAuthenticated && <span> - <button onClick={()=>this.edit(post._id) }>Edit</button> - <button onClick={()=>this.delete(post._id) }>Delete</button></span>}</h2>              
               <div className="entry">
-                {post.text.split(/[\r\n]+/).map((paragraph, i) =>
-                  <p key={i}>{paragraph}</p>
+                {post.text.split(/[\r\n]{2}/).map((paragraph, i) =>
+                  <p key={i}>{paragraph.split(/[\r\n]/).map((line, i) => <span key={i}>{line}<br /></span>  )}</p>
                   )}
               </div>        
             </div>

@@ -182,6 +182,10 @@ a:hover {
   resize: vertical;  
 }
 
+.notices p {
+  line-height: 1.2em;
+}
+
 /* Sidebar */
 
 #sidebar {
