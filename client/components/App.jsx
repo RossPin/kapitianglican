@@ -12,6 +12,7 @@ import Contact from './Contact';
 import Groups from './Groups';
 import Values from './Values';
 import Links from './Links';
+import NoticeEditor from './NoticeEditor';
 
 class App extends React.Component{
   render(){
@@ -35,6 +36,8 @@ class App extends React.Component{
               <Route path="/login" component={Login} />
               <Route path="/Register" component={Register} />
               <Route path="/Links" component={Links} />
+              <Route exact path="/NoticeEditor" component={NoticeEditor} />
+              <Route path="/NoticeEditor/:id" component={NoticeEditor} />
             </div>
             <div id="sidebar">
               <Links />

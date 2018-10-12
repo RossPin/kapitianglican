@@ -9,8 +9,24 @@ export function addPost(post) {
     })
 }
 
+export function updatePost(post) {
+  return request
+    .put('/api/posts/updatepost')
+    .send(post)
+    .then(res => {              
+      return res.body
+    })
+}
+
 export function getPosts() {
   return request.get('/api/posts/getposts')            
+            .then(res => {
+              return res.body
+            })
+}
+
+export function getPost(id) {
+  return request.get('/api/posts/getpost/'+id)            
             .then(res => {
               return res.body
             })
