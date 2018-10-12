@@ -15,6 +15,7 @@ class NoticeEditor extends React.Component {
   }
 
   componentDidMount(){
+    !this.props.auth.isAuthenticated && this.props.history.push('/')
     const id = this.props.match.params.id
     id && getPost(id).then(({title, text}) => {
       this.setState({title, text, id})
@@ -38,14 +39,16 @@ class NoticeEditor extends React.Component {
 
   render(){
     return(
-      <div>
-      <h2 className="title">Notice Editor</h2>        
-        <form action="" method="post" onSubmit={this.submit}>
-          <input type="text" onChange={this.updateDetails} name="title" value={this.state.title}/><br/>
-          <textarea className="postInput" onChange={this.updateDetails} name="text" value={this.state.text}></textarea><br/>
-          <input type="submit" value="Post Notice"/>          
+      <div className='post'>
+      <h2 className="title" style={{marginBottom: '1em'}}>Notice Editor</h2>        
+        <form onSubmit={e => {e.preventDefault()}}>
+          <label>Notice Title</label><br />
+          <input className="postInput" type="text" onChange={this.updateDetails} name="title" value={this.state.title}/><br/>
+          <label>Notice Content</label><br />
+          <textarea className="postInputArea" onChange={this.updateDetails} name="text" value={this.state.text}></textarea><br/>               
         </form>
-        <button onClick={e => {e.preventDefault;this.props.history.push('/')}}>Back</button>
+        <button onClick={this.submit}>Post Notice</button>
+        <button onClick={() => {this.props.history.push('/')}}>Back</button>
       </div>
     )
   }
