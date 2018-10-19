@@ -1,7 +1,8 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
-import { getPosts, delPost,} from '../api';
+import { getPosts, delPost,} from '../api'
+import TextParser from './TextParser'
 
 class Notices extends React.Component {
   constructor(props){
@@ -37,7 +38,7 @@ class Notices extends React.Component {
             <div key={post._id} className="post">
               <h2 className="title">{post.title}{this.props.auth.isAuthenticated && <span> - <button onClick={()=>this.edit(post._id) }>Edit</button> - <button onClick={()=>this.delete(post._id) }>Delete</button></span>}</h2>              
               <div className="entry">                
-                <p>{post.text.split(/[\r\n]/).map((line, i) => <span key={i}>{line}<br /></span>)}</p>
+                <TextParser text={post.text} />
               </div>        
             </div>
           ))}        
