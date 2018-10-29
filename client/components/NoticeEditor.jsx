@@ -18,8 +18,8 @@ class NoticeEditor extends React.Component {
   componentDidMount(){
     !this.props.auth.isAuthenticated && this.props.history.push('/')
     const id = this.props.match.params.id
-    id && getPost(id).then(({title, text}) => {
-      this.setState({title, text, id})
+    id && getPost(id).then(({title, text, image}) => {
+      this.setState({title, text, id, image})
     })
   }
 
