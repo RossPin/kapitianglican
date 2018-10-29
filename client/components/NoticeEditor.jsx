@@ -8,11 +8,11 @@ class NoticeEditor extends React.Component {
     super(props)
     this.state = {
       title: '',
-      text: ''
-      
+      text: ''      
     }
     this.updateDetails = this.updateDetails.bind(this)
     this.submit = this.submit.bind(this)
+    this.setImage = this.setImage.bind(this)
   }
 
   componentDidMount(){
@@ -26,6 +26,10 @@ class NoticeEditor extends React.Component {
   updateDetails(e){
     e.preventDefault()
     this.setState({[e.target.name]: e.target.value})
+  }
+
+  setImage(fileName){
+    this.setState({image: fileName})
   }
 
   submit(e){
@@ -46,7 +50,8 @@ class NoticeEditor extends React.Component {
           <label>Notice Title</label><br />          
           <input className="postInput" type="text" onChange={this.updateDetails} name="title" value={this.state.title}/><br/>
           <label>Image</label><br />
-          <ImageUpload /><br />
+          <ImageUpload setImage={this.setImage}/><br />
+          {this.state.image && <img src={`uploads/${this.state.image}`} />}
           <label>Notice Content</label><br />
           <textarea className="postInputArea" onChange={this.updateDetails} name="text" value={this.state.text}></textarea><br/>               
         </form>
