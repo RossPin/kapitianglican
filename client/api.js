@@ -49,3 +49,12 @@ export function postComment(comment) {
       return res.body
     })
 }
+
+export function uploadImage(data) {  
+  return request
+    .post('/api/upload/image')    
+    .attach('image', data)
+    .then(res => {              
+      return res.body.fileName
+    })
+}
