@@ -18,6 +18,7 @@ class ImageUpload extends React.Component {
     console.log('uploading')
     uploadImage(this.state.file).then(fileName => {
       this.setState({uploading: false, uploaded: true, fileName})
+      props.setImage(fileName)
       console.log('uploaded', fileName)
     })
   }
