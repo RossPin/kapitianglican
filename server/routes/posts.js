@@ -8,8 +8,8 @@ router.post('/addpost', (req, res) => {
 })
 
 router.put('/updatepost', (req, res) => {
-  const { id, title, text } = req.body
-  db.updatePost(id, title, text).then(post => {      
+  const { id, title, text, image } = req.body
+  db.updatePost(id, title, text, image).then(post => {      
     res.json(post)    
   })
 })

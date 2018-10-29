@@ -1,6 +1,6 @@
 const mongoose = require('./mongooseConnection')
 
-const postSchema = new mongoose.Schema({ title: String, text: String, user: Object})
+const postSchema = new mongoose.Schema({ title: String, image: String, text: String, user: Object})
 const Post = mongoose.model('Post', postSchema)
 
 function addPost(post) {  
@@ -8,8 +8,8 @@ function addPost(post) {
   return postData.save()
 }
 
-function updatePost(id, title, text) {
-  return Post.updateOne({_id: id}, {title, text})
+function updatePost(id, title, text, image) {
+  return Post.updateOne({_id: id}, {title, text, image})
 }
 
 function getPost(id) {
