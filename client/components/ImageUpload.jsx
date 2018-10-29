@@ -1,46 +1,44 @@
 import React from 'react'
+import { uploadImage } from '../api'
 
 class ImageUpload extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       file: '',
-      imagePreviewUrl: ''
+      fileName: '',   
+      uploading: false,
+      uploaded: false
     }
   }
 
-  handleSubmit(e) {
-    e.preventDefault()
-    // TODO: do something with -> this.state.file
-    console.log('handle uploading-', this.state.file)
+  handleUpload(e) {
+    e.preventDefault()        
+    this.setState({uploading: true})
+    console.log('uploading')
+    uploadImage(this.state.file).then(fileName => {
+      this.setState({uploading: false, uploaded: true, fileName})
+      console.log('uploaded', fileName)
+    })
   }
 
   handleImageChange(e) {
-    e.preventDefault()
-
-    let reader = new FileReader()
-    let file = e.target.files[0]
-
-    reader.onloadend = () => {
+    e.preventDefault()    
+    let file = e.target.files[0]   
       this.setState({
-        file: file,
-        imagePreviewUrl: reader.result
-      })
-    }
-
-    reader.readAsDataURL(file)
+        file: file,        
+        uploaded: false     
+    })  
   }
 
   render() {
-    let {imagePreviewUrl} = this.state
+    let {fileName, file, uploading, uploaded} = this.state
     return (
-      <div >
-        <form onSubmit={(e)=>this.handleSubmit(e)}>
-          <input type="file" onChange={(e)=>this.handleImageChange(e)} />          
-        </form>
-        <div className="imgPost">
-          {imagePreviewUrl && <img src={imagePreviewUrl} />}
-        </div>
+      <div >        
+          <input type="file" onChange={(e)=>this.handleImageChange(e)} />
+          {(file && (!uploaded || uploading)) && <button onClick={(e)=>this.handleUpload(e)}>Upload</button>}
+          {uploading && <span>Uploading...</span>}
+          {fileName && <img src={`uploads/${fileName}`} />}
       </div>
     )
   }
