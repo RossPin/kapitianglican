@@ -1,6 +1,7 @@
 import React from 'react'
 import { addPost, updatePost, getPost } from '../api';
 import {connect} from 'react-redux'
+import ImageUpload from './ImageUpload';
 
 class NoticeEditor extends React.Component {
   constructor(props){
@@ -42,8 +43,10 @@ class NoticeEditor extends React.Component {
       <div className='post'>
       <h2 className="title" style={{marginBottom: '1em'}}>Notice Editor</h2>        
         <form onSubmit={e => {e.preventDefault()}}>
-          <label>Notice Title</label><br />
+          <label>Notice Title</label><br />          
           <input className="postInput" type="text" onChange={this.updateDetails} name="title" value={this.state.title}/><br/>
+          <label>Image</label><br />
+          <ImageUpload /><br />
           <label>Notice Content</label><br />
           <textarea className="postInputArea" onChange={this.updateDetails} name="text" value={this.state.text}></textarea><br/>               
         </form>
