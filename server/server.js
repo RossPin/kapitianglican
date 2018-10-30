@@ -6,8 +6,8 @@ const users = require('./routes/users')
 const upload = require('./routes/upload')
 const path = require('path')
 
-server.use('/api/upload', upload)
 server.use(bodyParser.json())
+server.use('/api/upload', upload)
 server.use('/api/posts', posts)
 server.use('/api/users', users)
 
