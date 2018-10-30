@@ -167,7 +167,8 @@ a:hover {
 
 .post img {
 	float: left;
-	margin: 0.25em;
+  margin: 0.25em 0;
+  max-width: 100%;
 }
 
 .postInput {  

@@ -49,3 +49,21 @@ export function postComment(comment) {
       return res.body
     })
 }
+
+export function uploadImage(file) {  
+  return request
+    .post('/api/upload/image')    
+    .attach('image', file)
+    .then(res => {              
+      return res.body.fileName
+    })
+}
+
+export function delFile(fileName) {
+  return request
+    .delete('/api/upload/delete')
+    .send({fileName})
+    .then(res => {              
+      return res.body
+    })
+}
