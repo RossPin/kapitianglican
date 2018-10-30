@@ -1,5 +1,5 @@
 import React from 'react'
-import { addPost, updatePost, getPost } from '../api';
+import { addPost, updatePost, getPost, delFile } from '../api';
 import {connect} from 'react-redux'
 import ImageUpload from './ImageUpload';
 
@@ -32,6 +32,11 @@ class NoticeEditor extends React.Component {
     this.setState({image: fileName})
   }
 
+  deleteImage(e, fileName){
+    e.preventDefault()
+    delFile(fileName)
+  }
+
   submit(e){
     e.preventDefault()
     const post = this.state
@@ -51,7 +56,7 @@ class NoticeEditor extends React.Component {
           <input className="postInput" type="text" onChange={this.updateDetails} name="title" value={this.state.title}/><br/>
           <label>Image</label><br />
           <ImageUpload setImage={this.setImage}/><br />
-          {this.state.image && <img src={`uploads/${this.state.image}`} />}
+          {this.state.image && <div><img src={`uploads/${this.state.image}`} /><button onClick={e=>this.deleteImage(e, this.state.image)}>delete image</button></div>}
           <label>Notice Content</label><br />
           <textarea className="postInputArea" onChange={this.updateDetails} name="text" value={this.state.text}></textarea><br/>               
         </form>
