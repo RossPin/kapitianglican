@@ -50,11 +50,20 @@ export function postComment(comment) {
     })
 }
 
-export function uploadImage(data) {  
+export function uploadImage(file) {  
   return request
     .post('/api/upload/image')    
-    .attach('image', data)
+    .attach('image', file)
     .then(res => {              
       return res.body.fileName
+    })
+}
+
+export function delFile(fileName) {
+  return request
+    .delete('/api/upload/delete')
+    .send({fileName})
+    .then(res => {              
+      return res.body
     })
 }
