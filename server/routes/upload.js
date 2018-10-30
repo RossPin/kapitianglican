@@ -26,6 +26,7 @@ router.delete('/delete', (req, res) => {
         // other errors, e.g. maybe we don't have enough permission
         res.status(500).send({message: "Error occurred while trying to remove file"})
     } else {
+      console.log(`File Deleted: ${fileName}`)
       res.status(200).send({message: "File Deleted"})
     }
   })

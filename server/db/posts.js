@@ -39,7 +39,7 @@ function delImage(image){
         // other errors, e.g. maybe we don't have enough permission
         console.log("Error occurred while trying to remove file")
     } else {
-      console.log("File Deleted")
+      console.log(`File Deleted: ${image}`)
     }
   })
 }
