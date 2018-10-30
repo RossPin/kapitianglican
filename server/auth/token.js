@@ -7,8 +7,8 @@ function issue (req, res) {
   getUserByName(req.body.username.toLowerCase())
     .then(user => {
       compare(req.body.password, user.hash, (err, match) => {
-        if (err) res.status(500).json({message: err.message})
-        else if (!match) res.status(400).json({message: 'password is incorrect'})
+        if (err) res.status(500).send({message: err.message})
+        else if (!match) res.status(400).send({message: 'password is incorrect'})
         else {
           var token = createToken(user, process.env.JWT_SECRET)
           res.json({
@@ -18,6 +18,7 @@ function issue (req, res) {
         }
       })
     })
+    .catch(err => res.status(400).send({message: err.message}))
 }
 
 function createToken (user, secret) {
