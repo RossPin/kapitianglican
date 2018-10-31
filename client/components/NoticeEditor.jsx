@@ -77,7 +77,7 @@ class NoticeEditor extends React.Component {
           <ImageUpload setImage={this.setImage}/><br />
           {this.state.image && 
             <div>
-            <button onClick={e=>this.deleteImage(e, this.state.image)}>delete image</button>
+            <button onClick={e=>this.deleteImage(e, this.state.image)}>delete image</button><br />
             <img src={`https://kapuploads.s3.amazonaws.com/${this.state.image}`} />
             </div>}
           <label>Notice Content</label><br />
