@@ -50,15 +50,6 @@ export function postComment(comment) {
     })
 }
 
-// export function uploadImage(file) {  
-//   return request
-//     .post('/api/upload/image')    
-//     .attach('image', file)
-//     .then(res => {              
-//       return res.body.fileName
-//     })
-// }
-
 export function uploadImage(file) {  
   return request
     .get(`/api/upload/sign-s3?file-name=${file.name}&file-type=${file.type}`) 
