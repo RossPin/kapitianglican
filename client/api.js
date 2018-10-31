@@ -65,7 +65,7 @@ export function uploadImage(file) {
     .then(res => {
       return uploadFile(file, res.body.signedRequest)
         .then(s3res => {
-          return res.body.url
+          return res.body.fileName
         })      
     })
 }
