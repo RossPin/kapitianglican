@@ -1,6 +1,5 @@
 const mongoose = require('./mongooseConnection')
-const fs = require('fs')
-const path = require('path')
+const deleteFile = require('../routes/upload').deleteFile
 
 const postSchema = new mongoose.Schema({ title: String, image: String, text: String, user: Object})
 const Post = mongoose.model('Post', postSchema)
@@ -24,27 +23,14 @@ function getPosts() {
 
 function delPost(postId){
   return Post.find({_id: postId}).then(posts => {
-    delImage(posts[0].image)
+    const {image} = posts[0]
+    if (image) deleteFile(image, (err) => {
+      if (err) console.log('Error deleting file')
+      else console.log(`Deleted file: ${image}`)
+    })
     return Post.deleteOne({_id: postId})
   })    
 }
-
-function delImage(image){
-  const datapath = path.join(__dirname, `../../public/uploads/${image}`)
-  if (image) fs.unlink(datapath, function(err) {
-    if(err && err.code == 'ENOENT') {
-        // file doens't exist
-        console.log("File doesn't exist, won't remove it.")
-    } else if (err) {
-        // other errors, e.g. maybe we don't have enough permission
-        console.log("Error occurred while trying to remove file")
-    } else {
-      console.log(`File Deleted: ${image}`)
-    }
-  })
-}
-
-
 
 module.exports = {
   addPost,
