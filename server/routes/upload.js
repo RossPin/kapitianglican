@@ -1,19 +1,24 @@
 const router = require('express').Router()
 const fs = require('fs')
 const path = require('path')
-const multer  = require('multer')
-const storage = multer.diskStorage({
-  destination: 'public/uploads/',
-  filename: function (req, file, cb) {
-    cb(null, file.fieldname + '-' + Date.now())
-  }
-})
 
-const upload = multer({ storage })
+const aws = require('aws-sdk')
+const S3_BUCKET = process.env.S3_BUCKET
+aws.config.region = 'ap-southeast-2'
 
-router.post('/image', upload.single('image'), (req, res) => {       
-    res.json({fileName: req.file.filename})    
-})
+// const multer  = require('multer')
+// const storage = multer.diskStorage({
+//   destination: 'public/uploads/',
+//   filename: function (req, file, cb) {
+//     cb(null, file.fieldname + '-' + Date.now())
+//   }
+// })
+
+// const upload = multer({ storage })
+
+// router.post('/image', upload.single('image'), (req, res) => {       
+//     res.json({fileName: req.file.filename})    
+// })
 
 router.delete('/delete', (req, res) => {
   const {fileName} = req.body
@@ -32,5 +37,31 @@ router.delete('/delete', (req, res) => {
   })
   else res.status(400).send({message: "No file name given"})
 })
+
+router.get('/sign-s3', (req, res) => {
+  const s3 = new aws.S3();
+  const fileName = `${Date.now()}-${req.query['file-name']}`;
+  const fileType = req.query['file-type'];
+  const s3Params = {
+    Bucket: S3_BUCKET,
+    Key: fileName,
+    Expires: 60,
+    ContentType: fileType,
+    ACL: 'public-read'
+  };
+
+  s3.getSignedUrl('putObject', s3Params, (err, data) => {
+    if(err){
+      console.log(err);
+      return res.end();
+    }
+    const returnData = {
+      signedRequest: data,
+      url: `https://${S3_BUCKET}.s3.amazonaws.com/${fileName}`,
+      fileName
+    };
+    res.json(returnData)    
+  });
+});
 
 module.exports = router
