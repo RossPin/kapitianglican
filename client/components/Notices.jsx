@@ -37,10 +37,10 @@ class Notices extends React.Component {
           {this.state.posts.map(post => (
             <div key={post._id} className="post">
               <h2 className="title">{post.title}{this.props.auth.isAuthenticated && <span> - <button onClick={()=>this.edit(post._id) }>Edit</button> - <button onClick={()=>this.delete(post._id) }>Delete</button></span>}</h2>              
-              {post.image && <img src={`uploads/${post.image}`} />}
-              <div className="entry">                
+              {post.image && <img src={`https://kapuploads.s3.amazonaws.com/${post.image}`} />}
+              {post.text && <div className="entry">                
                 <TextParser text={post.text} />
-              </div>        
+              </div>}        
             </div>
           ))}        
       </div>

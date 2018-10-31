@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const server = express()
 const posts = require('./routes/posts')
 const users = require('./routes/users')
-const upload = require('./routes/upload')
+const upload = require('./routes/upload').router
 const path = require('path')
 
 server.use(bodyParser.json())

@@ -165,8 +165,7 @@ a:hover {
 	padding: 20px 0px;
 }
 
-.post img {
-	float: left;
+.post img {	
   margin: 0.25em 0;
   max-width: 100%;
 }

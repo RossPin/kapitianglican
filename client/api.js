@@ -52,11 +52,19 @@ export function postComment(comment) {
 
 export function uploadImage(file) {  
   return request
-    .post('/api/upload/image')    
-    .attach('image', file)
-    .then(res => {              
-      return res.body.fileName
+    .get(`/api/upload/sign-s3?file-name=${file.name}&file-type=${file.type}`) 
+    .then(res => {
+      return uploadFile(file, res.body.signedRequest)
+        .then(s3res => {
+          return res.body.fileName
+        })      
     })
+}
+
+function uploadFile(file, signedRequest) {
+  return request
+    .put(signedRequest)
+    .send(file)
 }
 
 export function delFile(fileName) {

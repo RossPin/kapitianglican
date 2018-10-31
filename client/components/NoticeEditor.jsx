@@ -77,8 +77,8 @@ class NoticeEditor extends React.Component {
           <ImageUpload setImage={this.setImage}/><br />
           {this.state.image && 
             <div>
-            <button onClick={e=>this.deleteImage(e, this.state.image)}>delete image</button>
-            <img src={`uploads/${this.state.image}`} />
+            <button onClick={e=>this.deleteImage(e, this.state.image)}>delete image</button><br />
+            <img src={`https://kapuploads.s3.amazonaws.com/${this.state.image}`} />
             </div>}
           <label>Notice Content</label><br />
           <textarea className="postInputArea" onChange={this.updateDetails} name="text" value={this.state.text}></textarea><br/>               
