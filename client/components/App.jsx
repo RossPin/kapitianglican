@@ -8,6 +8,8 @@ class App extends React.Component{
       <HashRouter>
         <div>         
           <Route path='/' component={Header} />
+          <Route exact path='/' component={ParallaxImage} />
+          <Route exact path='/' component={Home} />
         </div>
       </HashRouter>   
     )
