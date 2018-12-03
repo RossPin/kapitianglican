@@ -1,13 +1,13 @@
 import React from 'react'
 import {HashRouter, Route} from 'react-router-dom'
-import Nav from './Nav'
+import Header from './Header'
 
 class App extends React.Component{
   render(){
     return (      
       <HashRouter>
         <div>         
-          <Route path='/' component={Nav} />
+          <Route path='/' component={Header} />
         </div>
       </HashRouter>   
     )
