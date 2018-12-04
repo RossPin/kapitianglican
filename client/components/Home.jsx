@@ -6,13 +6,13 @@ class Home extends React.Component {
     render () {
         return (
             <div>
-                <Parallax bgImage='/images/kapiti.jpg' strength={500} bgWidth={'100%'} >
+                <Parallax bgImage='/images/kapiti.jpg' strength={500} >
                     <div style={{ height: 400 }}> 
-                        <h1>Our Community</h1>                   
+                        <h1>Welcome to our community</h1>                   
                     </div>
                 </Parallax>                
                 <div className="about">
-                    <h1>Welcome</h1>
+                    <h1>Who we are</h1>
                     <p>Kapiti anglican is a community made up of 3 churches from Paraparaumu through to Paekakariki </p>
                     <div>
                         <Link className="parishTile" to={'/stPauls'}><h4>St Paul's</h4><img src="/images/stPauls.jpeg" /></Link>
@@ -20,6 +20,11 @@ class Home extends React.Component {
                         <Link className="parishTile" to={'/stPeters'}><h4>St Peter's</h4><img src="/images/stPeters.jpeg" /></Link>
                     </div>
                 </div>
+                <Parallax bgImage='/images/Raumati-Dune.jpg' strength={500} >
+                    <div style={{ height: 400 }}> 
+                        <h1>News</h1>                   
+                    </div>
+                </Parallax>  
             </div>
         )
     }
