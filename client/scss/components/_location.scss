@@ -1,0 +1,28 @@
+.location {
+  position: relative;
+}
+
+.details {
+  position: absolute;
+  top: 5vw;
+  left: 5vw;
+  text-align: left; 
+}
+
+.mapouter{
+  position: absolute;
+  top: 5vw;
+  right: 5vw;
+  text-align:right;
+  height:500px;
+  width:600px;
+  background: white;  
+  padding: 25px;
+}
+
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:500px;
+  width:600px;
+}

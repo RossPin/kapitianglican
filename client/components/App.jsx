@@ -4,6 +4,7 @@ import Header from './Header'
 import Home from './Home'
 import Login from './Auth/Login'
 import NoticeEditor from './NoticeEditor'
+import Location from './Location'
 
 class App extends React.Component {
   render () {
@@ -15,6 +16,7 @@ class App extends React.Component {
           <Route path='/login' component={Login} />
           <Route exact path='/NoticeEditor' component={NoticeEditor} />
           <Route path='/NoticeEditor/:id' component={NoticeEditor} />
+          <Route path='/location/:location' component={Location} />
         </div>
       </HashRouter>
     )
