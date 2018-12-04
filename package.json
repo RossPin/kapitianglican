@@ -14,7 +14,9 @@
   "scripts": {
     "postinstall": "webpack --mode production",
     "start": "node server/",
-    "dev": "webpack --mode development --watch & nodemon server"
+    "dev": "webpack --mode development --watch & nodemon server",
+    "standard": "standard",
+    "standardFix": "standard --fix"
   },
   "babel": {
     "presets": [

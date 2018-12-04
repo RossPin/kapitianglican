@@ -1,21 +1,21 @@
 const router = require('express').Router()
 const db = require('../db/posts')
 
-router.post('/addpost', (req, res) => {  
-  db.addPost(req.body).then(post => {      
-    res.json(post)    
+router.post('/addpost', (req, res) => {
+  db.addPost(req.body).then(post => {
+    res.json(post)
   })
 })
 
 router.put('/updatepost', (req, res) => {
   const { id, title, text, image } = req.body
-  db.updatePost(id, title, text, image).then(post => {      
-    res.json(post)    
+  db.updatePost(id, title, text, image).then(post => {
+    res.json(post)
   })
 })
 
 router.get('/getpost/:id', (req, res) => {
-  const {id} = req.params
+  const { id } = req.params
   db.getPost(id).then((post) => {
     res.json(post)
   })
@@ -32,6 +32,5 @@ router.delete('/delpost', (req, res) => {
     res.sendStatus(200)
   })
 })
-
 
 module.exports = router
