@@ -50,6 +50,7 @@ class Location extends React.Component {
     const location = this.state.location
     return (
       <div className='location'>
+        <div className='line' />
         <div className='details'>
           <Link to='/'><h4>BACK</h4></Link>
           <h1>{locations[location].name}</h1>
