@@ -1,13 +1,14 @@
 import React from 'react'
 import { Parallax } from "react-parallax"
 import { Link } from 'react-router-dom'
+import Notices from './Notices'
 
 class Home extends React.Component {
     render () {
         return (
             <div>
                 <Parallax bgImage='/images/kapiti.jpg' strength={500} >
-                    <div style={{ height: 400 }}> 
+                    <div className='parallaxContent' style={{ height: 400 }}> 
                         <h1>Welcome to our community</h1>                   
                     </div>
                 </Parallax>                
@@ -21,10 +22,11 @@ class Home extends React.Component {
                     </div>
                 </div>
                 <Parallax bgImage='/images/Raumati-Dune.jpg' strength={500} >
-                    <div style={{ height: 400 }}> 
-                        <h1>News</h1>                   
+                    <div className='parallaxContent' style={{ height: 400 }}> 
+                        <h1>Notices</h1>                   
                     </div>
-                </Parallax>  
+                </Parallax>
+                <Notices />  
             </div>
         )
     }

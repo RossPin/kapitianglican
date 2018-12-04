@@ -1,5 +1,5 @@
 
-.about {
+.about, .notices {
     max-width: 100%;
     margin: 0;
     padding: 5%;
@@ -20,4 +20,12 @@
 
 .parishTile img {
     width: 100%;
+}
+
+.parallaxContent {
+    padding: 5%;    
+    color: white;
+    h1 {
+        font-size: 4em;
+    }
 }

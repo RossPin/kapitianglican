@@ -32,7 +32,7 @@ class Notices extends React.Component {
 
   render(){    
     return (
-      <div className='Notices'>        
+      <div className='notices'>        
           {this.props.auth.isAuthenticated && <Link to='/NoticeEditor'>New Notice</Link>}
           {this.state.posts.map(post => (
             <div key={post._id} className="post">
