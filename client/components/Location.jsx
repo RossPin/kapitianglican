@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 const locations = {
   stPauls: {
+    name: "St Paul's",
     address: [
       '1 Langdale Ave',
       'Paraparaumu'
@@ -10,6 +11,7 @@ const locations = {
     search: 'q=st%20pauls%2C%20paraparaumu'
   },
   stMarks: {
+    name: "St Mark's",
     address: [
       '330 Rosetta Rd',
       'Raumati Beach',
@@ -18,6 +20,7 @@ const locations = {
     search: 'q=st%20marks%2C%20raumati'
   },
   stPeters: {
+    name: 'St Peters',
     address: [
       'Beach Road',
       'Paekakariki'
@@ -49,6 +52,7 @@ class Location extends React.Component {
       <div className='location'>
         <div className='details'>
           <Link to='/'><h4>BACK</h4></Link>
+          <h1>{locations[location].name}</h1>
           <img src={`/images/${location}.jpeg`} />
           <h3>Address</h3>
           <p>{locations[location].address.map((line, i) => <span key={i}>{line}<br /></span>)}</p>
