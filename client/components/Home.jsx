@@ -7,7 +7,7 @@ class Home extends React.Component {
     render () {
         return (
             <div>
-                <Parallax bgImage='/images/kapiti.jpg' strength={500} >
+                <Parallax bgImage='/images/Kapiti_island.jpg' strength={500} >
                     <div className='parallaxContent' style={{ height: 400 }}> 
                         <h1>Welcome to our community</h1>                   
                     </div>
@@ -26,7 +26,7 @@ class Home extends React.Component {
                         <h1>Notices</h1>                   
                     </div>
                 </Parallax>
-                <Notices />  
+                <Notices history={this.props.history}/>  
             </div>
         )
     }
