@@ -1,16 +1,15 @@
 
 .about, .notices {
-    max-width: 100%;
-    margin: 0;
-    padding: 5%;
-    background-color: white;
-    font-size: 1.5em;
-    overflow: hidden;
-}
-
-.about a, .about a:active {
-  text-decoration: none;
-  color: black;
+  max-width: 100%;
+  margin: 0;
+  padding: 5%;
+  background-color: white;
+  font-size: 1.5em;
+  overflow: hidden;
+  a, a:active {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 .parishTile {

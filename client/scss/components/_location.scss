@@ -1,6 +1,9 @@
 .location {
   position: relative;
-  background-color: white; 
+  background-color: white;
+  a, a:active {    
+    color: black;
+  }
 }
 
 .details {
