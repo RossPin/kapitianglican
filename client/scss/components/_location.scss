@@ -6,7 +6,12 @@
   position: absolute;
   top: 5vw;
   left: 5vw;
-  text-align: left; 
+  width: 25vw;
+  text-align: left;
+  img {
+    width: 90%;
+    
+  } 
 }
 
 .mapouter{
@@ -14,15 +19,20 @@
   top: 5vw;
   right: 5vw;
   text-align:right;
-  height:500px;
-  width:600px;
+  height:50vw;
+  width:60vw;
   background: white;  
-  padding: 25px;
+  padding: 2.5vw;
 }
 
 .gmap_canvas {
   overflow:hidden;
   background:none!important;
-  height:500px;
-  width:600px;
+  height:50vw;
+  width:60vw;
+}
+
+.mapouter iframe {
+  height: 50vw;
+  width: 60vw;
 }

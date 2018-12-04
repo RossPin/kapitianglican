@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const locations = {
   stPauls: {
@@ -41,10 +42,12 @@ class Location extends React.Component {
     return (
       <div className='location'>
         <div className='details'>
+          <Link to='/'><h4>BACK</h4></Link>
+          <img src={`/images/${location}.jpeg`} />
           <h3>Address</h3>
-          <p>{locations[location].address.map(line => <span>{line}<br /></span>)}</p>
+          <p>{locations[location].address.map((line, i) => <span key={i}>{line}<br /></span>)}</p>
         </div>
-        <div className='mapouter'><div className='gmap_canvas'><iframe width='600' height='500' id='gmap_canvas' src={`https://maps.google.com/maps?${locations[location].search}&t=&z=15&ie=UTF8&iwloc=&output=embed`} frameborder='0' scrolling='no' marginheight='0' marginwidth='0' /></div></div>
+        <div className='mapouter'><div className='gmap_canvas'><iframe id='gmap_canvas' src={`https://maps.google.com/maps?${locations[location].search}&t=&z=15&ie=UTF8&iwloc=&output=embed`} frameBorder='0' scrolling='no' marginHeight='0' marginWidth='0' /></div></div>
       </div>
     )
   }
