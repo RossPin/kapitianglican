@@ -18,7 +18,7 @@ class Home extends React.Component {
           <div>
             <Link className='parishTile' to={'/location/stPauls'}><h4>St Paul's</h4><img src='/images/stPauls.jpeg' /></Link>
             <Link className='parishTile mid' to={'/location/stMarks'}><h4>St Mark's</h4><img src='/images/stMarks.jpeg' /></Link>
-            <Link className='parishTile' to={'/location/stPeters'}><h4>St Peter's</h4><img src='/images/stPeters.jpeg' /></Link>
+            <Link className='parishTile' to={'/location/stPeters'}><h4>St Peters</h4><img src='/images/stPeters.jpeg' /></Link>
           </div>
         </div>
         <Parallax bgImage='/images/Raumati-Dune.jpg' strength={500} >

@@ -8,18 +8,27 @@
     overflow: hidden;
 }
 
+.about a, .about a:active {
+  text-decoration: none;
+  color: black;
+}
+
 .parishTile {
-    width: 30%;
-    float: left;    
+  text-align: center;
+  width: 30%;
+  float: left;
+  h4 {
+    margin: 0;
+  }   
 }
 
 .mid {
-    margin-left: 5%;
-    margin-right: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .parishTile img {
-    width: 100%;
+  width: 100%;
 }
 
 .parallaxContent {
