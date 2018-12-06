@@ -1,60 +1,60 @@
 import React from 'react'
-import { addPost, updatePost, getPost, delFile } from '../api';
-import {connect} from 'react-redux'
-import ImageUpload from './ImageUpload';
+import { addPost, updatePost, getPost, delFile } from '../api'
+import { connect } from 'react-redux'
+import ImageUpload from './ImageUpload'
 
 class NoticeEditor extends React.Component {
-  constructor(props){
+  constructor (props) {
     super(props)
     this.state = {
       title: '',
-      text: ''      
+      text: ''
     }
     this.unPostedImage = []
     this.removeImages = []
     this.updateDetails = this.updateDetails.bind(this)
-    this.submit = this.submit.bind(this)    
+    this.submit = this.submit.bind(this)
     this.setImage = this.setImage.bind(this)
     this.componentCleanup = this.componentCleanup.bind(this)
   }
 
-  componentDidMount(){
+  componentDidMount () {
     !this.props.auth.isAuthenticated && this.props.history.push('/')
     window.addEventListener('beforeunload', this.componentCleanup)
     const id = this.props.match.params.id
-    id && getPost(id).then(({title, text, image}) => {
-      this.setState({title, text, id, image})
+    id && getPost(id).then(({ title, text, image }) => {
+      this.setState({ title, text, id, image })
     })
   }
 
-  componentWillUnmount(){
+  componentWillUnmount () {
     this.componentCleanup()
     window.removeEventListener('beforeunload', this.componentCleanup)
   }
 
-  componentCleanup(){
+  componentCleanup () {
     this.unPostedImage.map(fileName => delFile(fileName))
   }
 
-  updateDetails(e){
+  updateDetails (e) {
     e.preventDefault()
-    this.setState({[e.target.name]: e.target.value})
+    this.setState({ [e.target.name]: e.target.value })
   }
 
-  setImage(fileName){
-    const {image} = this.state
+  setImage (fileName) {
+    const { image } = this.state
     if (image) this.removeImages.push(image)
     this.unPostedImage.push(fileName)
-    this.setState({image: fileName})
+    this.setState({ image: fileName })
   }
 
-  deleteImage(e, fileName){
-    e.preventDefault
+  deleteImage (e, fileName) {
+    e.preventDefault()
     this.removeImages.push(fileName)
-    this.setState({image: null})
-  }  
+    this.setState({ image: null })
+  }
 
-  submit(e){
+  submit (e) {
     e.preventDefault()
     const post = this.state
     post.user = this.props.auth.user
@@ -64,27 +64,27 @@ class NoticeEditor extends React.Component {
     handlePost(post).then(() => {
       this.props.history.push('/')
     })
-  } 
+  }
 
-  render(){
-    return(
+  render () {
+    return (
       <div className='post'>
-      <h2 className="title" style={{marginBottom: '1em'}}>Notice Editor</h2>        
-        <form onSubmit={e => {e.preventDefault()}}>
-          <label>Notice Title</label><br />          
-          <input className="postInput" type="text" onChange={this.updateDetails} name="title" value={this.state.title}/><br/>
+        <h2 className='title' style={{ marginBottom: '1em' }}>Notice Editor</h2>
+        <form onSubmit={e => { e.preventDefault() }}>
+          <label>Notice Title</label><br />
+          <input className='postInput' type='text' onChange={this.updateDetails} name='title' value={this.state.title} /><br />
           <label>Image</label><br />
-          <ImageUpload setImage={this.setImage}/><br />
-          {this.state.image && 
+          <ImageUpload setImage={this.setImage} /><br />
+          {this.state.image &&
             <div>
-            <button onClick={e=>this.deleteImage(e, this.state.image)}>delete image</button><br />
-            <img src={`https://kapuploads.s3.amazonaws.com/${this.state.image}`} />
+              <button onClick={e => this.deleteImage(e, this.state.image)}>delete image</button><br />
+              <img src={`https://kapuploads.s3.amazonaws.com/${this.state.image}`} />
             </div>}
           <label>Notice Content</label><br />
-          <textarea className="postInputArea" onChange={this.updateDetails} name="text" value={this.state.text}></textarea><br/>               
+          <textarea className='postInputArea' onChange={this.updateDetails} name='text' value={this.state.text} /><br />
         </form>
         <button onClick={this.submit}>Post Notice</button>
-        <button onClick={e => {this.props.history.push('/')}}>Back</button>
+        <button onClick={e => { this.props.history.push('/') }}>Back</button>
       </div>
     )
   }

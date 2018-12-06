@@ -1,0 +1,13 @@
+.services {
+  .section {
+    width: 100%;
+  }
+
+  @media all and (min-width: 768px) {      
+    .section {
+      width: 48%;
+      float: left;
+      margin: 0 1%;
+    }
+  }
+}

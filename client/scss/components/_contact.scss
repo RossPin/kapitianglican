@@ -1,0 +1,33 @@
+.contact {
+  th {
+    text-align: left;    
+  }
+  .section {
+    width: 90vw;
+    float: left;
+    .mapouter {
+      margin-top: 1em;
+      text-align:right;      
+    }
+    .gmap_canvas {
+      overflow:hidden;
+      background:none!important;
+    }
+    .mapouter, .gmap_canvas, .mapouter iframe {
+      height: 70vw;
+      width: 84vw;
+    }
+
+    @media all and (min-width: 768px) {      
+      width: 44vw;
+      .mapouter, .gmap_canvas, .mapouter iframe {
+        height: 35vw;
+        width: 42vw;
+      }
+    }
+  }  
+  
+}
+
+
+ 

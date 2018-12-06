@@ -1,0 +1,45 @@
+.location {
+  position: relative;  
+  a, a:active {    
+    color: black;
+  }
+  .line {
+    width: 100%;
+    height: 0.2em;
+    background-color: black;
+  }
+  
+  .details {
+    position: absolute;
+    top: 0;
+    left: 5vw;
+    width: 25vw;
+    text-align: left;
+    img {
+      width: 90%;
+      
+    } 
+  }
+  
+  .mapouter{
+    position: absolute;
+    top: 5vw;
+    right: 5vw;
+    text-align:right;
+    height:50vw;
+    width:60vw;    
+  }
+  
+  .gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:50vw;
+    width:60vw;
+  }
+  
+  .mapouter iframe {
+    height: 50vw;
+    width: 60vw;
+  }
+}
+

@@ -1,0 +1,83 @@
+.header {
+    background-color: white;
+    margin: 0;
+    position: relative;
+}    
+
+.logo {        
+    width: 60%;    
+}
+
+#menu {    
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+  padding-left: 3%;
+  display: none;
+}
+
+#menu li {
+    margin: 0.5em 2%;
+}
+
+#menu a, #collapse {
+  margin-right: 1px;
+  padding: 0.2em;   
+	text-decoration: none;
+	text-align: center;		
+	font-weight: bold;	
+}
+
+#collapse {
+   display: block;
+	float: right;   
+  font-size: 2em;
+  padding: 0 .2em;
+}
+
+#menu .show {
+  z-index: 2;
+  display: block;
+  margin-left: 2em;
+  background-color: white;   
+}
+
+#menu .active a {
+  color: grey;
+}
+
+@media all and (min-width: 768px) {
+    .logo {        
+        width: 25%;
+        height: auto;
+        margin-left: 10%;
+    }
+
+    #menu {
+        width: 60%; 
+        right: 5%;
+    }
+  
+    #menu ul {
+        text-align: right;
+      display: block;    
+    }
+  
+    #menu li {
+      display: inline-block;
+      text-align: center;
+    }
+  
+    #collapse {
+      display: none;
+    }   
+    
+  }

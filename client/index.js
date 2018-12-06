@@ -1,11 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {Provider} from 'react-redux'
-import {createStore, applyMiddleware, compose} from 'redux'
+import { Provider } from 'react-redux'
+import { createStore, applyMiddleware, compose } from 'redux'
 import thunkMiddleware from 'redux-thunk'
 
 import reducers from './reducers'
 import App from './components/App'
+import './scss/main.scss'
 
 let store = createStore(reducers, compose(
   applyMiddleware(thunkMiddleware),
@@ -13,10 +14,10 @@ let store = createStore(reducers, compose(
 ))
 
 document.addEventListener('DOMContentLoaded', () => {
-    ReactDOM.render(
-      <Provider store={store}>
-        <App/>
-      </Provider>,
-      document.getElementById('app')
-    )
-  })
+  ReactDOM.render(
+    <Provider store={store}>
+      <App />
+    </Provider>,
+    document.getElementById('app')
+  )
+})
