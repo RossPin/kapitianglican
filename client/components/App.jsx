@@ -5,6 +5,8 @@ import Home from './Home'
 import Login from './Auth/Login'
 import NoticeEditor from './NoticeEditor'
 import Location from './Location'
+import Services from './Services';
+import Groups from './Groups';
 
 class App extends React.Component {
   render () {
@@ -17,6 +19,9 @@ class App extends React.Component {
           <Route exact path='/NoticeEditor' component={NoticeEditor} />
           <Route path='/NoticeEditor/:id' component={NoticeEditor} />
           <Route path='/location/:location' component={Location} />
+          <Route path='/Services' component={Services} />
+          <Route path='/Groups' component={Groups} />
+          <Route path='/Contact' component={Contact} />
         </div>
       </HashRouter>
     )
