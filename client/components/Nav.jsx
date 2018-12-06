@@ -35,9 +35,8 @@ class Nav extends React.Component {
             <li className={`${path === '/Groups' ? 'active' : ''}`} onClick={this.collapse}><Link to='/Groups'><span>Parish Groups</span></Link></li>
             <li className={`${path === '/Contact' ? 'active' : ''}`} onClick={this.collapse}><Link to='/Contact'><span>Contacting us</span></Link></li>
             {!this.state.collapsed && <li className={`${path === '/Links' ? 'active' : ''}`} onClick={this.collapse}><Link to='/Links'><span>Links</span></Link></li>}
-            {this.props.auth.isAuthenticated
-              ? <li><Link to='/' onClick={this.collapse}><span onClick={() => this.props.dispatch(logoutUser())}>Logout</span></Link></li>
-              : <li className={`${path === '/login' ? 'active' : ''}`} onClick={this.collapse}><Link to='/login'><span>Login</span></Link></li>
+            {this.props.auth.isAuthenticated &&
+              <li><Link to='/' onClick={this.collapse}><span onClick={() => this.props.dispatch(logoutUser())}>Logout</span></Link></li>
             }
           </ul>
         </div>
