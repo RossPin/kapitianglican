@@ -35,6 +35,7 @@ class Contact extends React.Component {
               </tr>
             </table>
           </div>
+          <div className='mapouter'><div className='gmap_canvas'><iframe id='gmap_canvas' src={`https://maps.google.com/maps?q=st%20pauls%2C%20paraparaumu&t=&z=15&ie=UTF8&iwloc=&output=embed`} frameBorder='0' scrolling='no' marginHeight='0' marginWidth='0' /></div></div>
           <div className='section'>
             <h1>Parish Directory</h1>
             <table>
