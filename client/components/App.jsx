@@ -5,8 +5,9 @@ import Home from './Home'
 import Login from './Auth/Login'
 import NoticeEditor from './NoticeEditor'
 import Location from './Location'
-import Services from './Services';
-import Groups from './Groups';
+import Services from './Services'
+import Groups from './Groups'
+import Contact from './Contact'
 
 class App extends React.Component {
   render () {
