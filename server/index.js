@@ -1,6 +1,9 @@
 require('dotenv').config()
+const express = require('express')
+const server = express()
+const path = require('path')
 
-const server = require('./server')
+server.use(express.static(path.join(__dirname, '../public')))
 
 const PORT = process.env.PORT || 3000
 
