@@ -54,7 +54,7 @@ class Location extends React.Component {
         <div className='details'>
           <Link to='/'><h4>BACK</h4></Link>
           <h1>{locations[location].name}</h1>
-          <img src={`/images/${location}.jpeg`} />
+          <img src={`images/${location}.jpeg`} />
           <h3>Address</h3>
           <p>{locations[location].address.map((line, i) => <span key={i}>{line}<br /></span>)}</p>
           <h3>Other Locations</h3>

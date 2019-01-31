@@ -4,7 +4,7 @@ class Contact extends React.Component {
   render () {
     return (
       <div className='contact'>
-        <img src='/images/kapiti.jpg' className='fullWidth' />
+        <img src='images/kapiti.jpg' className='fullWidth' />
         <div className='content'>
           <div className='section'>
             <h1>Contact Kapiti Anglican</h1>

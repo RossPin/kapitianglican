@@ -4,7 +4,7 @@ class Services extends React.Component {
   render () {
     return (
       <div className='services'>
-        <img src='/images/img03.jpg' className='fullWidth' />
+        <img src='images/img03.jpg' className='fullWidth' />
         <div className='content'>
           <h1>Sunday Service Worship Times</h1>
           <div className='section'>
