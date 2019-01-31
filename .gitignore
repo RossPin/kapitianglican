@@ -1,6 +1,5 @@
 node_modules/
 .env
-public/bundle.js.map
-public/uploads/*
+docs/bundle.js.map
 yarn-error.log
 yarn.lock
