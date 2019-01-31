@@ -1,7 +1,5 @@
 import React from 'react'
-import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { logoutUser } from '../actions/logout'
 
 class Nav extends React.Component {
   constructor (props) {
@@ -35,9 +33,6 @@ class Nav extends React.Component {
             <li className={`${path === '/Groups' ? 'active' : ''}`} onClick={this.collapse}><Link to='/Groups'><span>Parish Groups</span></Link></li>
             <li className={`${path === '/Contact' ? 'active' : ''}`} onClick={this.collapse}><Link to='/Contact'><span>Contacting us</span></Link></li>
             {!this.state.collapsed && <li className={`${path === '/Links' ? 'active' : ''}`} onClick={this.collapse}><Link to='/Links'><span>Links</span></Link></li>}
-            {this.props.auth.isAuthenticated &&
-              <li><Link to='/' onClick={this.collapse}><span onClick={() => this.props.dispatch(logoutUser())}>Logout</span></Link></li>
-            }
           </ul>
         </div>
       </div>
@@ -45,8 +40,4 @@ class Nav extends React.Component {
   }
 }
 
-const mapStateToProps = ({ auth }) => {
-  return { auth }
-}
-
-export default connect(mapStateToProps)(Nav)
+export default Nav
