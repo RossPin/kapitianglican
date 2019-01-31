@@ -13,8 +13,7 @@ class App extends React.Component {
       <HashRouter>
         <div>
           <Route path='/' component={Header} />
-          <Route exact path='/' component={Home} />          
-          <Route exact path='/NoticeEditor' component={NoticeEditor} />          
+          <Route exact path='/' component={Home} />
           <Route path='/location/:location' component={Location} />
           <Route path='/Services' component={Services} />
           <Route path='/Groups' component={Groups} />
