@@ -1,8 +1,7 @@
 import React from 'react'
 import { HashRouter, Route } from 'react-router-dom'
 import Header from './Header'
-import Home from './Home'
-import NoticeEditor from './NoticeEditor'
+import Home from './Home''
 import Location from './Location'
 import Services from './Services'
 import Groups from './Groups'
@@ -15,8 +14,7 @@ class App extends React.Component {
         <div>
           <Route path='/' component={Header} />
           <Route exact path='/' component={Home} />          
-          <Route exact path='/NoticeEditor' component={NoticeEditor} />
-          <Route path='/NoticeEditor/:id' component={NoticeEditor} />
+          <Route exact path='/NoticeEditor' component={NoticeEditor} />          
           <Route path='/location/:location' component={Location} />
           <Route path='/Services' component={Services} />
           <Route path='/Groups' component={Groups} />
