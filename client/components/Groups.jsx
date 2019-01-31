@@ -4,7 +4,7 @@ class Groups extends React.Component {
   render () {
     return (
       <div className='groups'>
-        <img src='/images/kapiti.jpg' className='fullWidth' />
+        <img src='images/kapiti.jpg' className='fullWidth' />
         <div className='content'>
           <h1>Parish Groups</h1>
           <p>There are many groups operating within the parish on a regular basis and there are many ways for people to be able to contribute to the mission and the ministry of the parish, the giving of 'Talents, Time and Treasure'.</p>
