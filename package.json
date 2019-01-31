@@ -5,6 +5,7 @@
   "license": "MIT",  
   "scripts": {
     "build": "webpack --mode production",
+    "update": "git add -f docs/bundle.js && git commit -m 'Update Bundle'",
     "start": "node server/",
     "dev": "webpack --mode development --watch & node server",
     "standard": "standard",
