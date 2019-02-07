@@ -1,9 +1,9 @@
 import React from 'react'
 
-class Groups extends React.Component {
+class WhoWeAre extends React.Component {
   render () {
     return (
-      <div className='groups'>
+      <div className='whoWeAre'>
         <img src='images/kapiti.jpg' className='fullWidth' />
         <div className='content'>
           <h1>Parish Groups</h1>
@@ -21,4 +21,4 @@ class Groups extends React.Component {
   }
 }
 
-export default Groups
+export default WhoWeAre
