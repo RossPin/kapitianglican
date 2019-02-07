@@ -1,0 +1,25 @@
+.tile {
+  text-align: center;
+  width: 33%;
+  float: left;
+  margin: 1em 0;  
+  h4 {
+    margin: 0;
+  }   
+}
+
+.tile img {
+  width: 80%;
+}
+
+@media all and (min-width: 768px) {
+  .tile {
+    width: 25%;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .tile {
+    width: 20%;
+  }
+}

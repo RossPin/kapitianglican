@@ -1,9 +1,37 @@
 import React from 'react'
+import { Parallax } from 'react-parallax'
 
 class WhoWeAre extends React.Component {
   render () {
     return (
       <div className='whoWeAre'>
+        <Parallax bgImage='images/GroupPhoto.jpeg' strength={500} >
+          <div className='parallaxContent' style={{ height: 400 }}>
+            <h1>Key People</h1>
+          </div>
+        </Parallax>
+        <div className='content'>
+          <div className='tile'>
+            <img src='images/Character_Placeholder.png' alt='images/Character_Placeholder.png' />
+            <h4>Key Person</h4>
+          </div>
+          <div className='tile'>
+            <img src='images/Character_Placeholder.png' alt='images/Character_Placeholder.png' />
+            <h4>Key Person</h4>
+          </div>
+          <div className='tile'>
+            <img src='images/Character_Placeholder.png' alt='images/Character_Placeholder.png' />
+            <h4>Key Person</h4>
+          </div>
+          <div className='tile'>
+            <img src='images/Character_Placeholder.png' alt='images/Character_Placeholder.png' />
+            <h4>Key Person</h4>
+          </div>
+          <div className='tile'>
+            <img src='images/Character_Placeholder.png' alt='images/Character_Placeholder.png' />
+            <h4>Key Person</h4>
+          </div>
+        </div>
         <img src='images/kapiti.jpg' className='fullWidth' />
         <div className='content'>
           <h1>Parish Groups</h1>
