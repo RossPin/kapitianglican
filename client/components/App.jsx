@@ -4,7 +4,7 @@ import Header from './Header'
 import Home from './Home'
 import Location from './Location'
 import Services from './Services'
-import Groups from './Groups'
+import WhoWeAre from './WhoWeAre'
 import Contact from './Contact'
 
 class App extends React.Component {
@@ -15,8 +15,8 @@ class App extends React.Component {
           <Route path='/' component={Header} />
           <Route exact path='/' component={Home} />
           <Route path='/location/:location' component={Location} />
-          <Route path='/Services' component={Services} />
-          <Route path='/Groups' component={Groups} />
+          <Route path='/ChurchServices' component={Services} />
+          <Route path='/WhoWeAre' component={WhoWeAre} />
           <Route path='/Contact' component={Contact} />
         </div>
       </HashRouter>
