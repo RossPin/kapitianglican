@@ -6,6 +6,7 @@ import Location from './Location'
 import Services from './Services'
 import WhoWeAre from './WhoWeAre'
 import WhatWeDo from './WhatWeDo'
+import PersonalNeeds from './PersonalNeeds'
 import Contact from './Contact'
 
 class App extends React.Component {
@@ -19,6 +20,7 @@ class App extends React.Component {
           <Route path='/ChurchServices' component={Services} />
           <Route path='/WhoWeAre' component={WhoWeAre} />
           <Route path='/WhatWeDo' component={WhatWeDo} />
+          <Route path='/PersonalNeeds' component={PersonalNeeds} />
           <Route path='/Contact' component={Contact} />
         </div>
       </HashRouter>
