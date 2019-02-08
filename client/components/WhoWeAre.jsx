@@ -1,8 +1,8 @@
 import React from 'react'
 import { Parallax } from 'react-parallax'
-import KeyPeople from './KeyPeople'
-import ParishGroups from './ParishGroups'
-import MissionVisionValues from './MissionVisionValues'
+import KeyPeople from './sectionComponents/KeyPeople'
+import ParishGroups from './sectionComponents/ParishGroups'
+import MissionVisionValues from './sectionComponents/MissionVisionValues'
 
 class WhoWeAre extends React.Component {
   render () {
