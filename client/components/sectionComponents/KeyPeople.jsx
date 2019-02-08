@@ -10,25 +10,27 @@ class KeyPeople extends React.Component {
             <h1>Key People</h1>
           </div>
         </Parallax>
-        <div className='tile'>
-          <img src='images/Character_Placeholder.png' alt='images/Character_Placeholder.png' />
-          <h4>Key Person</h4>
-        </div>
-        <div className='tile'>
-          <img src='images/Character_Placeholder.png' alt='images/Character_Placeholder.png' />
-          <h4>Key Person</h4>
-        </div>
-        <div className='tile'>
-          <img src='images/Character_Placeholder.png' alt='images/Character_Placeholder.png' />
-          <h4>Key Person</h4>
-        </div>
-        <div className='tile'>
-          <img src='images/Character_Placeholder.png' alt='images/Character_Placeholder.png' />
-          <h4>Key Person</h4>
-        </div>
-        <div className='tile'>
-          <img src='images/Character_Placeholder.png' alt='images/Character_Placeholder.png' />
-          <h4>Key Person</h4>
+        <div className='content'>
+          <div className='tile'>
+            <img src='images/Character_Placeholder.png' alt='images/Character_Placeholder.png' />
+            <h4>Key Person</h4>
+          </div>
+          <div className='tile'>
+            <img src='images/Character_Placeholder.png' alt='images/Character_Placeholder.png' />
+            <h4>Key Person</h4>
+          </div>
+          <div className='tile'>
+            <img src='images/Character_Placeholder.png' alt='images/Character_Placeholder.png' />
+            <h4>Key Person</h4>
+          </div>
+          <div className='tile'>
+            <img src='images/Character_Placeholder.png' alt='images/Character_Placeholder.png' />
+            <h4>Key Person</h4>
+          </div>
+          <div className='tile'>
+            <img src='images/Character_Placeholder.png' alt='images/Character_Placeholder.png' />
+            <h4>Key Person</h4>
+          </div>
         </div>
       </div>
     )
