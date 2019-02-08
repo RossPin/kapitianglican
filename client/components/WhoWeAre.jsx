@@ -2,6 +2,7 @@ import React from 'react'
 import { Parallax } from 'react-parallax'
 import KeyPeople from './KeyPeople'
 import ParishGroups from './ParishGroups'
+import MissionVisionValues from './MissionVisionValues'
 
 class WhoWeAre extends React.Component {
   render () {
@@ -13,6 +14,8 @@ class WhoWeAre extends React.Component {
           </div>
         </Parallax>
         <KeyPeople />
+        <img src='images/missionVision.jpg' className='fullWidth' />
+        <MissionVisionValues />
         <img src='images/kapiti.jpg' className='fullWidth' />
         <ParishGroups />
       </div>
