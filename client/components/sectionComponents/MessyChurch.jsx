@@ -4,7 +4,7 @@ class MessyChurch extends React.Component {
   render () {
     return (
       <div className='messyChurch'>
-        <img src='images/messyChurch.jpg' className='fullWidth' />
+        <img src='images/messyChurch.jpg' className='fullWidth borderHz' />
         <div className='content'>
           <h1>Messy Church</h1>
           <p><strong>4pm Third Sunday of the month - St Paul’s </strong></p>
