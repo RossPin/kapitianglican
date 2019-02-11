@@ -71,7 +71,7 @@ class Location extends React.Component {
             <div className='mapouter'><div className='gmap_canvas'><iframe id='gmap_canvas' src={`https://maps.google.com/maps?${locations[location].search}&t=&z=15&ie=UTF8&iwloc=&output=embed`} frameBorder='0' scrolling='no' marginHeight='0' marginWidth='0' /></div></div>
           </div>
           {locations[location].address.map((line, i) => <span key={i}>{line}<br /></span>)}
-          <a href={`https://maps.google.com/maps?${locations[location].search}`} target='_blank'>Map</a>
+          <a href={`https://maps.google.com/maps?${locations[location].search}`} target='_blank'>Google Maps</a>
           <h2>Sunday Services</h2>
           {locations[location].services}
           <p><strong>Every 5th Sunday of any month there is a Combined Parish Service at St Paul’s at 10am. There are no other services in the Parish on these Sundays.</strong></p>
