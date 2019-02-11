@@ -23,6 +23,7 @@ import Loved4Life from './sectionComponents/Loved4Life'
 import PrayersSquares from './sectionComponents/PrayersSquares'
 import FuneralMarriageBaptism from './sectionComponents/FuneralMarriageBaptism'
 import PastoralCare from './sectionComponents/PastoralCare'
+import MessyChurch from './sectionComponents/MessyChurch'
 
 class App extends React.Component {
   render () {
@@ -52,6 +53,7 @@ class App extends React.Component {
             <Route path='/PrayersSquares' component={PrayersSquares} />
             <Route path='/FuneralMarriageBaptism' component={FuneralMarriageBaptism} />
             <Route path='/PastoralCare' component={PastoralCare} />
+            <Route path='/MessyChurch' component={MessyChurch} />
           </div>
         </div>
       </HashRouter>
