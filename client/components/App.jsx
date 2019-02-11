@@ -9,8 +9,20 @@ import WhatWeDo from './WhatWeDo'
 import PersonalNeeds from './PersonalNeeds'
 import ParishResources from './ParishResources'
 import Gallery from './Gallery'
-import FoodCoOp from './sectionComponents/FoodCoOp'
 import Contact from './Contact'
+
+import FoodCoOp from './sectionComponents/FoodCoOp'
+import KeyPeople from './sectionComponents/KeyPeople'
+import MissionVisionValues from './sectionComponents/MissionVisionValues'
+import ParishGroups from './sectionComponents/ParishGroups'
+import PlayGroup from './sectionComponents/PlayGroup'
+import RestHomeMinistry from './sectionComponents/RestHomeMinistry'
+import ParishPrayer from './sectionComponents/ParishPrayer'
+import SpecialEvents from './sectionComponents/SpecialEvents'
+import Loved4Life from './sectionComponents/Loved4Life'
+import PrayersSquares from './sectionComponents/PrayersSquares'
+import FuneralMarriageBaptism from './sectionComponents/FuneralMarriageBaptism'
+import PastoralCare from './sectionComponents/PastoralCare'
 
 class App extends React.Component {
   render () {
@@ -28,6 +40,19 @@ class App extends React.Component {
           <Route path='/Gallery' component={Gallery} />
           <Route path='/FoodCo-op' component={FoodCoOp} />
           <Route path='/Contact' component={Contact} />
+          <div>
+            <Route path='/KeyPeople' component={KeyPeople} />
+            <Route path='/MissionVisionValues' component={MissionVisionValues} />
+            <Route path='/ParishGroups' component={ParishGroups} />
+            <Route path='/PlayGroup' component={PlayGroup} />
+            <Route path='/RestHomeMinistry' component={RestHomeMinistry} />
+            <Route path='/ParishPrayer' component={ParishPrayer} />
+            <Route path='/SpecialEvents' component={SpecialEvents} />
+            <Route path='/Loved4Life' component={Loved4Life} />
+            <Route path='/PrayersSquares' component={PrayersSquares} />
+            <Route path='/FuneralMarriageBaptism' component={FuneralMarriageBaptism} />
+            <Route path='/PastoralCare' component={PastoralCare} />
+          </div>
         </div>
       </HashRouter>
     )
@@ -35,3 +60,7 @@ class App extends React.Component {
 }
 
 export default App
+/*
+import sub from './sectionComponents/sub'
+<Route path='/sub' component={sub} />
+*/
