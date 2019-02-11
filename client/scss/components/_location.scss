@@ -1,40 +1,49 @@
 .location {
-  position: relative;  
   a, a:active {    
     color: black;
   }
   
-  .details {
-    position: absolute;
-    top: 0;
-    left: 5vw;
-    width: 25vw;
-    text-align: left;
-    img {
-      width: 90%;
-      
-    } 
+  img {
+    width: 100%;
   }
   
   .mapouter{
-    position: absolute;
-    top: 5vw;
-    right: 5vw;
-    text-align:right;
-    height:50vw;
-    width:60vw;    
+    display: none;    
   }
-  
-  .gmap_canvas {
-    overflow:hidden;
-    background:none!important;
-    height:50vw;
-    width:60vw;
+
+  #mapLink {
+    display: block;
   }
-  
-  .mapouter iframe {
-    height: 50vw;
-    width: 60vw;
+
+  @media all and (min-width: 768px) {
+    img {
+      width: 45vw;
+    }
+
+    .mapouter{
+      display: block;
+      float: right;
+      height:35vw;
+      width:40vw;    
+    }
+    
+    .gmap_canvas {
+      overflow:hidden;
+      background:none!important;
+      height:35vw;
+      width:40vw;
+    }
+    
+    .mapouter iframe {
+      height: 35vw;
+      width: 40vw;
+    }
+
+    #mapLink {
+      display: none;
+    }
+
   }
+
 }
 
