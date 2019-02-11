@@ -1,5 +1,5 @@
 import React from 'react'
-import FuneralMarriageBaptism from './sectionComponents/FuneralMarriageBaptisim'
+import FuneralMarriageBaptism from './sectionComponents/FuneralMarriageBaptism'
 import PastoralCare from './sectionComponents/PastoralCare'
 import ParishPrayer from './sectionComponents/ParishPrayer'
 import Loved4Life from './sectionComponents/Loved4Life'
