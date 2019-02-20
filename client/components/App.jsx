@@ -27,6 +27,7 @@ import MessyChurch from './sectionComponents/MessyChurch'
 import Newsletter from './Newsletter'
 import Magazine from './Magazine'
 import Sermons from './Sermons'
+import Calendar from './Calendar'
 
 class App extends React.Component {
   render () {
@@ -44,6 +45,7 @@ class App extends React.Component {
           <Route path='/ParishResources/Newsletter' component={Newsletter} />
           <Route path='/ParishResources/Magazine' component={Magazine} />
           <Route path='/ParishResources/sermons' component={Sermons} />
+          <Route path='/ParishResources/calendar' component={Calendar} />
           <Route path='/Gallery' component={Gallery} />
           <Route path='/FoodCo-op' component={FoodCoOp} />
           <Route path='/Contact' component={Contact} />
