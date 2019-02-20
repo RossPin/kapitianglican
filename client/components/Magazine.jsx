@@ -8,7 +8,7 @@ class Magazine extends React.Component {
         <div className='content'>
           <h1>Magazine</h1>
           <h2>Latest</h2>
-          <a href='http://kapitianglican.org.nz/weeklynewssheet.pdf' target='_blank'>
+          <a href='http://kapitianglican.org.nz/contact.pdf' target='_blank'>
             <img src='images/Magazine.png' />
           </a>
           <h2>Archive</h2>
