@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 class ParishResources extends React.Component {
   render () {
@@ -8,19 +9,19 @@ class ParishResources extends React.Component {
         <div className='content'>
           <h1>Parish Resources</h1>
           <div className='tile'>
-            <img src='images/placeholder.jpeg' />
+            <Link to='/ParishResources/Newsletter'><img src='images/placeholder.jpeg' /></Link>
             <h4>Weekly Newsletter</h4>
           </div>
           <div className='tile'>
-            <img src='images/placeholder.jpeg' />
+            <Link to='/ParishResources/Magazine'><img src='images/placeholder.jpeg' /></Link>
             <h4>Magazine</h4>
           </div>
           <div className='tile'>
-            <img src='images/placeholder.jpeg' />
+            <Link to='/ParishResources/Sermons'><img src='images/placeholder.jpeg' /></Link>
             <h4>Sermons</h4>
           </div>
           <div className='tile'>
-            <img src='images/placeholder.jpeg' />
+            <Link to='/ParishResources/Calendar'><img src='images/placeholder.jpeg' /></Link>
             <h4>Calender</h4>
           </div>
         </div>
