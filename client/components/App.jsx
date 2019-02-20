@@ -24,6 +24,7 @@ import PrayersSquares from './sectionComponents/PrayersSquares'
 import FuneralMarriageBaptism from './sectionComponents/FuneralMarriageBaptism'
 import PastoralCare from './sectionComponents/PastoralCare'
 import MessyChurch from './sectionComponents/MessyChurch'
+import Newsletter from './Newsletter'
 
 class App extends React.Component {
   render () {
@@ -38,9 +39,10 @@ class App extends React.Component {
           <Route path='/WhatWeDo' component={WhatWeDo} />
           <Route path='/PersonalNeeds' component={PersonalNeeds} />
           <Route path='/ParishResources' component={ParishResources} />
+          <Route path='/ParishResources/Newsletter' component={Newsletter} />
           <Route path='/Gallery' component={Gallery} />
           <Route path='/FoodCo-op' component={FoodCoOp} />
-          <Route path='/Contact' component={Contact} />
+          <Route path='/Contact' component={Contact} />          
           <div>
             <Route path='/KeyPeople' component={KeyPeople} />
             <Route path='/MissionVisionValues' component={MissionVisionValues} />
