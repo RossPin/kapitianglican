@@ -8,7 +8,7 @@ class Evensong extends React.Component {
         <div className='content'>
           <h1>Evensong</h1>
           <p><strong>5pm Second Sunday of the month - St Marks’s </strong></p>
-          <p><strong>Evensong is:</strong></p>
+          <p><strong>Evensong is:</strong> A Choral service</p>
         </div>
       </div>
     )
