@@ -3,16 +3,16 @@ import Lightbox from 'react-image-lightbox'
 import 'react-image-lightbox/style.css'
 
 const pictures = [
-  'images/placeholder.jpeg',
-  'images/placeholder.jpeg',
-  'images/placeholder.jpeg',
-  'images/placeholder.jpeg',
-  'images/placeholder.jpeg',
-  'images/placeholder.jpeg',
-  'images/placeholder.jpeg',
-  'images/placeholder.jpeg',
-  'images/placeholder.jpeg',
-  'images/placeholder.jpeg'
+  { image: 'images/placeholder.jpeg', caption: 'Sample 1' },
+  { image: 'images/placeholder.jpeg', caption: 'Sample 2' },
+  { image: 'images/placeholder.jpeg', caption: 'Sample 3' },
+  { image: 'images/placeholder.jpeg', caption: 'Sample 4' },
+  { image: 'images/placeholder.jpeg', caption: 'Sample 5' },
+  { image: 'images/placeholder.jpeg', caption: 'Sample 6' },
+  { image: 'images/placeholder.jpeg', caption: 'Sample 7' },
+  { image: 'images/placeholder.jpeg', caption: 'Sample 8 ' },
+  { image: 'images/placeholder.jpeg', caption: 'Sample 9' },
+  { image: 'images/placeholder.jpeg', caption: 'Sample 10' }
 ]
 
 class Gallery extends React.Component {
@@ -32,15 +32,15 @@ class Gallery extends React.Component {
           <h1>Gallery</h1>
           {pictures.map((picture, i) => (
             <div className='tile' key={i}>
-              <img src={picture} onClick={() => this.setState({ isOpen: true, photoIndex: i })} />
+              <img src={picture.image} onClick={() => this.setState({ isOpen: true, photoIndex: i })} />
             </div>
           ))}
         </div>
         {isOpen && (
           <Lightbox
-            mainSrc={pictures[photoIndex]}
-            nextSrc={pictures[(photoIndex + 1) % pictures.length]}
-            prevSrc={pictures[(photoIndex + pictures.length - 1) % pictures.length]}
+            mainSrc={pictures[photoIndex].image}
+            nextSrc={(photoIndex < pictures.length - 1) ? pictures[(photoIndex + 1) % pictures.length].image : undefined}
+            prevSrc={(photoIndex > 0) ? pictures[(photoIndex + pictures.length - 1) % pictures.length].image : undefined}
             onCloseRequest={() => this.setState({ isOpen: false })}
             onMovePrevRequest={() =>
               this.setState({
@@ -52,6 +52,7 @@ class Gallery extends React.Component {
                 photoIndex: (photoIndex + 1) % pictures.length
               })
             }
+            imageCaption={pictures[photoIndex].caption}
           />
         )}
       </div>
