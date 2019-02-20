@@ -28,6 +28,8 @@ import Newsletter from './Newsletter'
 import Magazine from './Magazine'
 import Sermons from './Sermons'
 import Calendar from './Calendar'
+import Evensong from './sectionComponents/Evensong'
+import Stillpoint from './sectionComponents/Stillpoint'
 
 class App extends React.Component {
   render () {
@@ -62,6 +64,8 @@ class App extends React.Component {
             <Route path='/FuneralMarriageBaptism' component={FuneralMarriageBaptism} />
             <Route path='/PastoralCare' component={PastoralCare} />
             <Route path='/MessyChurch' component={MessyChurch} />
+            <Route path='/Evensong' component={Evensong} />
+            <Route path='/Stillpoint' component={Stillpoint} />
           </div>
         </div>
       </HashRouter>
