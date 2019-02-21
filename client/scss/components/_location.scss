@@ -4,10 +4,10 @@
   }
   
   img {
-    width: 100%;
+    width: 45vw;
   }
   
-  .mapouter{
+  .mapouter {
     display: none;    
   }
 
@@ -16,10 +16,6 @@
   }
 
   @media all and (min-width: 768px) {
-    img {
-      width: 45vw;
-    }
-
     .mapouter{
       display: block;
       float: right;
