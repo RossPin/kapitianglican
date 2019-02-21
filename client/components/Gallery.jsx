@@ -3,16 +3,16 @@ import Lightbox from 'react-image-lightbox'
 import 'react-image-lightbox/style.css'
 
 const pictures = [
-  { image: 'images/placeholder.jpeg', caption: 'Sample 1' },
-  { image: 'images/placeholder.jpeg', caption: 'Sample 2' },
-  { image: 'images/placeholder.jpeg', caption: 'Sample 3' },
-  { image: 'images/placeholder.jpeg', caption: 'Sample 4' },
-  { image: 'images/placeholder.jpeg', caption: 'Sample 5' },
-  { image: 'images/placeholder.jpeg', caption: 'Sample 6' },
-  { image: 'images/placeholder.jpeg', caption: 'Sample 7' },
-  { image: 'images/placeholder.jpeg', caption: 'Sample 8 ' },
-  { image: 'images/placeholder.jpeg', caption: 'Sample 9' },
-  { image: 'images/placeholder.jpeg', caption: 'Sample 10' }
+  { image: 'images/gallery/sample1.jpg', caption: 'Sample caption about photo 1' },
+  { image: 'images/gallery/sample2.jpg', caption: 'Sample caption about photo 2' },
+  { image: 'images/gallery/sample3.jpg', caption: 'Sample caption about photo 3' },
+  { image: 'images/gallery/sample4.jpg', caption: 'Sample caption about photo 4' },
+  { image: 'images/gallery/sample5.jpg', caption: 'Sample caption about photo 5' },
+  { image: 'images/gallery/sample6.jpg', caption: 'Sample caption about photo 6' },
+  { image: 'images/gallery/sample7.jpg', caption: 'Sample caption about photo 7' },
+  { image: 'images/gallery/sample8.jpg', caption: 'Sample caption about photo 8 ' },
+  { image: 'images/gallery/sample9.jpg', caption: 'Sample caption about photo 9' },
+  { image: 'images/gallery/sample10.jpg', caption: 'Sample caption about photo 10' }
 ]
 
 class Gallery extends React.Component {
