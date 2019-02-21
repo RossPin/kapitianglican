@@ -2,14 +2,21 @@
   text-align: center;
   width: 33%;
   float: left;
-  margin: 1em 0;  
+  margin-top: 3.3%;  
   h4 {
     margin: 0;
   }   
 }
 
 .tile img {
-  width: 80%;
+  width: 90%;
+  height: calc(33vw * 0.7);
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.tile img:hover {
+  cursor: pointer;
 }
 
 .line {
@@ -43,11 +50,20 @@
 @media all and (min-width: 768px) {
   .tile {
     width: 25%;
+    margin-top: 2.5%;
+  }
+
+  .tile img {
+    height: calc(25vw * 0.7);
   }
 }
 
 @media all and (min-width: 1024px) {
   .tile {
     width: 20%;
+    margin-top: 2%;
+  }
+  .tile img {
+    height: calc(20vw * 0.7);
   }
 }
