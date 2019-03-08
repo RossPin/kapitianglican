@@ -30,6 +30,7 @@ import Sermons from './Sermons'
 import Calendar from './Calendar'
 import Evensong from './sectionComponents/Evensong'
 import Stillpoint from './sectionComponents/Stillpoint'
+import Footer from './Footer';
 
 class App extends React.Component {
   render () {
@@ -67,6 +68,7 @@ class App extends React.Component {
             <Route path='/Evensong' component={Evensong} />
             <Route path='/Stillpoint' component={Stillpoint} />
           </div>
+          <Footer />
         </div>
       </HashRouter>
     )
