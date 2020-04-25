@@ -6,12 +6,12 @@ class Sermons extends React.Component {
       <div className='Sermons'>
         <img src='images/Sermons.jpg' className='fullWidth' />
         <div className='content'>
-          <h1>Sermons</h1>
-          <h2>Latest</h2>
+          <h2>Sermons</h2>
+          <h3>Latest</h3>
           <a href='sample.mp3' target='_blank'>
             <img src='images/SundaySermon.jpeg' />
           </a>
-          <h2>Archive</h2>
+          <h3>Archive</h3>
           <ul>
             <li>DD/MM/YY</li>
             <li>DD/MM/YY</li>

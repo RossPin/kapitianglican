@@ -7,7 +7,7 @@ class ParishResources extends React.Component {
       <div className='parishResources'>
         <img src='images/widePlaceholder.jpeg' className='fullWidth' />
         <div className='content'>
-          <h1>Parish Resources</h1>
+          <h2>Parish Resources</h2>
           <div className='tile'>
             <Link to='/ParishResources/Newsletter'><img src='images/placeholder.jpeg' /></Link>
             <h4>Weekly Newsletter</h4>

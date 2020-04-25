@@ -6,7 +6,7 @@ class MessyChurch extends React.Component {
       <div className='messyChurch'>
         <img src='images/messyChurch.jpg' className='fullWidth borderHz' />
         <div className='content'>
-          <h1>Messy Church</h1>
+          <h2>Messy Church</h2>
           <p><strong>4pm Third Sunday of the month - St Paul’s </strong></p>
           <p><strong>Messy Church is:</strong></p>
           <ul>

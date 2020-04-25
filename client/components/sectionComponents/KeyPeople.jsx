@@ -7,7 +7,7 @@ class KeyPeople extends React.Component {
       <div className='keyPeople'>
         <Parallax bgImage='images/GroupPhoto.jpeg' strength={500} >
           <div className='parallaxContent' style={{ height: 400 }}>
-            <h1>Key People</h1>
+            <h2>Key People</h2>
           </div>
         </Parallax>
         <div className='content'>

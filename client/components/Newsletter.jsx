@@ -6,12 +6,12 @@ class Newsletter extends React.Component {
       <div className='newsletter'>
         <img src='images/widePlaceholder.jpeg' className='fullWidth' />
         <div className='content'>
-          <h1>Weekly Newsletter</h1>
-          <h2>Latest</h2>
+          <h2>Weekly Newsletter</h2>
+          <h3>Latest</h3>
           <a href='http://kapitianglican.org.nz/weeklynewssheet.pdf' target='_blank'>
             <img src='images/Newsletter.png' />
           </a>
-          <h2>Archive</h2>
+          <h3>Archive</h3>
           <ul>
             <li>DD/MM/YY</li>
             <li>DD/MM/YY</li>
