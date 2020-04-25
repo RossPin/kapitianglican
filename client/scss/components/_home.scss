@@ -8,6 +8,12 @@
   overflow: hidden;
   a, a:active {
     text-decoration: none;
+    color: dodgerblue
+  }
+}
+
+.tileBoard {
+  a {
     color: black;
   }
 }
@@ -18,7 +24,7 @@
   float: left;
   h4 {
     margin: 0;
-  }   
+  }
 }
 
 .mid {

@@ -27,7 +27,7 @@ class Home extends React.Component {
           </div>
           <h2>Who we are</h2>
           <p>We are a growing, mission shaped, multigenerational, multicultural parish that is open to a mixture of expressions of being Church. We aim to bring Christ into the community and the community to Christ. The love of Christ comes before all else. We strive to reflect a life style that is distinctive, counter cultural, authentic and attractive.</p>
-          <div>
+          <div className='tileBoard'>
             <Link className='parishTile' to={'/location/stPauls'}><h4>St Paul's</h4><img src='images/stPauls.jpeg' /></Link>
             <Link className='parishTile mid' to={'/location/stMarks'}><h4>St Mark's</h4><img src='images/stMarks.jpeg' /></Link>
             <Link className='parishTile' to={'/location/stPeters'}><h4>St Peters</h4><img src='images/stPeters.jpeg' /></Link>
