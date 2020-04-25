@@ -4,3 +4,4 @@ docs/bundle.js
 docs/bundle.js.map
 yarn-error.log
 yarn.lock
+package-lock.json
