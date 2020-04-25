@@ -7,7 +7,7 @@ class Contact extends React.Component {
         <img src='images/kapiti.jpg' className='fullWidth' />
         <div className='content'>
           <div className='section'>
-            <h1>Contact Kapiti Anglican</h1>
+            <h2>Contact Kapiti Anglican</h2>
             <table>
               <tr>
                 <th colspan='2'>Parish Office situated at St Paul’s</th>
@@ -37,7 +37,7 @@ class Contact extends React.Component {
             <div className='mapouter'><div className='gmap_canvas'><iframe id='gmap_canvas' src={`https://maps.google.com/maps?q=st%20pauls%2C%20paraparaumu&t=&z=15&ie=UTF8&iwloc=&output=embed`} frameBorder='0' scrolling='no' marginHeight='0' marginWidth='0' /></div></div>
           </div>
           <div className='section'>
-            <h1>Parish Directory</h1>
+            <h2>Parish Directory</h2>
             <table>
               <tr>
                 <th colspan='2'>Vicar & St Paul’s 8am & 9.30am services</th>
