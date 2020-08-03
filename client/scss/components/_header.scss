@@ -85,13 +85,13 @@
 }
 
 /* Change color of dropdown links on hover */
-.dropdownContent a:hover {background-color: $color2;}
+.dropdownContent a:hover {background-color: $color3;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdownContent {display: block; width: 100%;}
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: $color2;}
+/* Change the background color of the li on hover*/
+#menu li:hover {background-color: $color3;}
 
 
 @media all and (min-width: 768px) {
