@@ -1,5 +1,7 @@
+@import "variables";
+
 .header {
-    background-color: white;
+    background-color: $color1;
     margin: 0;
     position: relative;
 }    
@@ -9,6 +11,7 @@
 }
 
 #menu {    
+   background-color: $color1;
     position: absolute;
     bottom: 0;
     right: 0;    
@@ -33,7 +36,7 @@
 	text-decoration: none;
 	text-align: center;		
   font-weight: bold;
-  color: black;	
+  color: white;	
 }
 
 #collapse {
@@ -50,11 +53,11 @@
   z-index: 1;
   display: block;
   margin-left: 2em;
-  background-color: white;   
+  background-color: $color1;   
 }
 
 #menu .active .menuLink {
-  color: grey;
+  color: $color4;
 }
 
 /* The container <li> - needed to position the dropdown content */
@@ -68,7 +71,7 @@
   position: absolute;
   top: 0;
   right: 100%;
-  background-color: #f1f1f1;
+  background-color: $color1;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;  
 }
@@ -82,13 +85,13 @@
 }
 
 /* Change color of dropdown links on hover */
-.dropdownContent a:hover {background-color: #ddd;}
+.dropdownContent a:hover {background-color: $color2;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdownContent {display: block; width: 100%;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #ddd;}
+.dropdown:hover .dropbtn {background-color: $color2;}
 
 
 @media all and (min-width: 768px) {
