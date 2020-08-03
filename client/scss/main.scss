@@ -6,6 +6,10 @@ html, body {
   }
 
 body {
-    background-color: white;
+    background-color: $backgroundcolor;
+}
+
+body, a {
+  color: $textcolor;
 }
 

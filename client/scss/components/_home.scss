@@ -1,20 +1,20 @@
+@import "variables";
 
 .about, .notices {
   max-width: 100%;
   margin: 0;
   padding: 5%;
-  background-color: white;
   font-size: 1.5em;
   overflow: hidden;
   a, a:active {
     text-decoration: none;
-    color: dodgerblue
+    color: $color4;
   }
 }
 
 .tileBoard {
   a {
-    color: black;
+    color: $textcolor;
   }
 }
 
