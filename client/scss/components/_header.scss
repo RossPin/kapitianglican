@@ -57,7 +57,7 @@
 }
 
 #menu .active .menuLink {
-  color: $color4;
+  color: $color3;
 }
 
 /* The container <li> - needed to position the dropdown content */
@@ -85,13 +85,13 @@
 }
 
 /* Change color of dropdown links on hover */
-.dropdownContent a:hover {background-color: $color3;}
+ .dropdownContent a:hover {background-color: $color4;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdownContent {display: block; width: 100%;}
 
 /* Change the background color of the li on hover*/
-#menu li:hover {background-color: $color3;}
+#menu li:hover {background-color: $color4;}
 
 
 @media all and (min-width: 768px) {
@@ -119,6 +119,8 @@
         width: 100%;
       }
     }
+
+    #menu li:hover {background-color: $color1;}
   
     #collapse {
       display: none;
