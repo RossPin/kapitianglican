@@ -25,13 +25,11 @@ class WhosWho extends React.Component {
           </div>
           <div className='tile'>
             <img src='images/Character_Placeholder.png' alt='images/Character_Placeholder.png' />
-            <h4>Reverend Lynda Wards,  Associate Priest</h4> 
-            <p>Responsible for St Peter’s, Parish Prayer and Parish wide pastoral care</p>
+            <h4>Reverend Lynda Wards,  Associate Priest, Responsible for St Peter’s, Parish Prayer and Parish wide pastoral care</h4>
           </div>
           <div className='tile'>
             <img src='images/Character_Placeholder.png' alt='images/Character_Placeholder.png' />
-            <h4>Reverends Barbara and John Bonifant, Priest Assistants</h4>
-            <p>Responsible for St Mark’s</p>
+            <h4>Reverends Barbara and John Bonifant, Priest Assistants, Responsible for St Mark’s</h4>
           </div>
           <div className='tile'>
             <img src='images/Character_Placeholder.png' alt='images/Character_Placeholder.png' />
@@ -40,8 +38,14 @@ class WhosWho extends React.Component {
           <div className='tile'>
             <img src='images/Character_Placeholder.png' alt='images/Character_Placeholder.png' />
             <h4>Reverend Willie Brown, Priest Assistant, responsible for Parish Evensong Service</h4>
-          </div>
+          </div>          
         </div>
+        <h2>Ministry leaders</h2>
+          <ul>
+            <li>Small groups/Rest Home ministry: Kathleen Fleck</li>
+            <li>Playgroup: Katie Lewis</li>
+            <li>Kapiti Fruit and Vege Coop: Christine Bull</li>
+          </ul>
       </div>
     )
   }
