@@ -9,24 +9,11 @@ class Home extends React.Component {
       <div>
         <Parallax bgImage='images/Kapiti_island.jpg' strength={500} >
           <div className='parallaxContent' style={{ height: 400 }}>
-            <h2>Welcome to our community</h2>
+            <h2>Welcome to the Home page for Kapiti Anglicans.</h2>
           </div>
         </Parallax>
         <div className='about'>
-          <h2 >Changes to Services During COVID-19</h2>
-          <div >
-            <p>All church services are currently suspended until a return to level 2 on the Coved-19 alert scale. In the meantime we are hosting church@home.</p>
-            <h4>Morning Prayer - 8.30am Mon to Fri</h4>
-            <p><a target='_blank' href='https://us04web.zoom.us/j/703543297'>https://us04web.zoom.us/j/703543297</a> or <a target='_blank' href='https://www.zoom.us/'>https://www.zoom.us</a>. Please click on JOIN A MEETING (top right). The Meeting ID is 703 543 297.</p>
-            <h4>Night prayer - 8pm Mon to Fri</h4>
-            <p><a target='_blank' href='https://us04web.zoom.us/j/162960012'>https://us04web.zoom.us/j/162960012</a> or <a target='_blank' href='https://www.zoom.us/'>https://www.zoom.us</a>. Please click on JOIN A MEETING (top right). The Meeting ID is 162 960 012.</p> 
-            <h4>Short Communion Service- Sunday 8.30am</h4>
-            <p><a target='_blank' href='https://us04web.zoom.us/j/163441912'>https://us04web.zoom.us/j/163441912</a> or <a target='_blank' href='https://www.zoom.us/'>https://www.zoom.us</a>. Please click on JOIN A MEETING (top right). The Meeting ID is 163 441 912.</p> 
-            <h4>Wider Church Online Service - Sunday 10am</h4>
-            <p>Live stream on <a target='_blank' href='https://movementonline.org.nz/'>Anglican Movement</a> or Freeview channel 200.</p>
-          </div>
-          <h2>Who we are</h2>
-          <p>We are a growing, mission shaped, multigenerational, multicultural parish that is open to a mixture of expressions of being Church. We aim to bring Christ into the community and the community to Christ. The love of Christ comes before all else. We strive to reflect a life style that is distinctive, counter cultural, authentic and attractive.</p>
+          <p>We are a worshipping community of three churches, eight congregations and 100’s of people, who are looking to welcome, grow and transform themselves and their local community here on the beautiful Kapiti Coast. We love Jesus and are growing to become more like him in every aspect, as we do life together. Our size means we have some diversity in expressions of worship, discipleship and mission, so there is bound to be something that will help you belong in the way that best suits you. This website will give you a taster of who we are and what we do. So why not get to know us and give us opportunity to get to know you by joining us for worship or one of the many activities we run in or for the community- we would love to meet you and your family!</p>
           <div className='tileBoard'>
             <Link className='parishTile' to={'/location/stPauls'}><h4>St Paul's</h4><img src='images/stPauls.jpeg' /></Link>
             <Link className='parishTile mid' to={'/location/stMarks'}><h4>St Mark's</h4><img src='images/stMarks.jpeg' /></Link>

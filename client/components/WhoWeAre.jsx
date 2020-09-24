@@ -1,5 +1,5 @@
 import React from 'react'
-import KeyPeople from './sectionComponents/KeyPeople'
+import WhosWho from './sectionComponents/WhosWho'
 import ParishGroups from './sectionComponents/ParishGroups'
 import MissionVisionValues from './sectionComponents/MissionVisionValues'
 
@@ -7,7 +7,7 @@ class WhoWeAre extends React.Component {
   render () {
     return (
       <div className='whoWeAre'>
-        <KeyPeople />
+        <WhosWho />
         <MissionVisionValues />
         <ParishGroups />
       </div>

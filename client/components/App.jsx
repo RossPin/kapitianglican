@@ -12,7 +12,7 @@ import Gallery from './Gallery'
 import Contact from './Contact'
 
 import FoodCoOp from './sectionComponents/FoodCoOp'
-import KeyPeople from './sectionComponents/KeyPeople'
+import WhosWho from './sectionComponents/WhosWho'
 import MissionVisionValues from './sectionComponents/MissionVisionValues'
 import ParishGroups from './sectionComponents/ParishGroups'
 import PlayGroup from './sectionComponents/PlayGroup'
@@ -54,7 +54,7 @@ class App extends React.Component {
             <Route path='/FoodCo-op' component={FoodCoOp} />
             <Route path='/Contact' component={Contact} />
             <div>
-              <Route path='/KeyPeople' component={KeyPeople} />
+              <Route path='/WhosWho' component={WhosWho} />
               <Route path='/MissionVisionValues' component={MissionVisionValues} />
               <Route path='/ParishGroups' component={ParishGroups} />
               <Route path='/PlayGroup' component={PlayGroup} />
