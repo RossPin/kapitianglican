@@ -62,12 +62,13 @@ class Nav extends React.Component {
             <li className={`${path === '/ServingKapiti' ? 'active' : ''} dropdown`} onClick={this.collapse}>
               <Link to='/ServingKapiti' className='menuLink'><span>Serving Kapiti</span></Link>
               <div className='dropdownContent'>
-                <Link to='/RestHomeMinistry'>Rest Home Ministry</Link>
-                <Link to='/FuneralMarriageBaptism'>Funeral Marriage Baptism</Link>
-                <Link to='/PastoralCare'>Pastoral Care</Link>
-                <Link to='/ParishPrayer'>Parish Prayer</Link>
+                <Link to='/PlayGroup'>Play Group</Link>
                 <Link to='/Loved4Life'>Loved 4 Life</Link>
-                <Link to='/PrayersSquares'>Prayers & Squares</Link>
+                <Link to='/FoodCo-op'>Kapiti Fruit and Vege Coop</Link>
+                <Link to='/RestHomeMinistry'>Rest Home Ministry</Link>
+                <Link to='/GamesAfternoon'>Games Afternoon</Link>
+                <Link to='/ALphaCourses'>Alpha and Alpha Marriage Courses</Link>
+                <Link to='/VenueHire'>Venue Hire</Link>
               </div>
             </li>            
           </ul>

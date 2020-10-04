@@ -26,13 +26,12 @@ import FuneralMarriageBaptism from './sectionComponents/FuneralMarriageBaptism'
 import PastoralCare from './sectionComponents/PastoralCare'
 import MessyChurch from './sectionComponents/MessyChurch'
 import Newsletter from './Newsletter'
-import Magazine from './Magazine'
 import Sermons from './Sermons'
 import Calendar from './Calendar'
-import Evensong from './sectionComponents/Evensong'
-import Stillpoint from './sectionComponents/Stillpoint'
 import VenueHire from './sectionComponents/VenueHire'
 import Footer from './Footer';
+import AlphaCourses from './sectionComponents/AlphaCourses'
+import GamesAfternoon from './sectionComponents/GamesAfternoon'
 
 class App extends React.Component {
   render () {
@@ -48,7 +47,6 @@ class App extends React.Component {
             <Route path='/ChildrenAndFamilies' component={ChildrenAndFamilies} />
             <Route exact path='/WhatsHappening' component={WhatsHappening} />
             <Route path='/WhatsHappening/Newsletter' component={Newsletter} />
-            <Route path='/WhatsHappening/Magazine' component={Magazine} />
             <Route path='/WhatsHappening/sermons' component={Sermons} />
             <Route path='/WhatsHappening/calendar' component={Calendar} />
             <Route path='/Gallery' component={Gallery} />
@@ -69,8 +67,8 @@ class App extends React.Component {
               <Route path='/FuneralMarriageBaptism' component={FuneralMarriageBaptism} />
               <Route path='/PastoralCare' component={PastoralCare} />
               <Route path='/MessyChurch' component={MessyChurch} />
-              <Route path='/Evensong' component={Evensong} />
-              <Route path='/Stillpoint' component={Stillpoint} />
+              <Route path='/AlphaCourses' component={AlphaCourses} />
+              <Route path='/GamesAfternoon' component={GamesAfternoon} />
               <Route path='/VenueHire' component={VenueHire} />
             </div>
           </div>
