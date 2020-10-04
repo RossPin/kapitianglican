@@ -3,10 +3,10 @@ import WhosWho from './sectionComponents/WhosWho'
 import ParishGroups from './sectionComponents/ParishGroups'
 import MissionVisionValues from './sectionComponents/MissionVisionValues'
 
-class WhoWeAre extends React.Component {
+class AboutUs extends React.Component {
   render () {
     return (
-      <div className='whoWeAre'>
+      <div className='aboutUs'>
         <WhosWho />
         <MissionVisionValues />
         <ParishGroups />
@@ -15,4 +15,4 @@ class WhoWeAre extends React.Component {
   }
 }
 
-export default WhoWeAre
+export default AboutUs

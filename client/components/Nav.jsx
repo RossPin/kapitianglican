@@ -29,8 +29,8 @@ class Nav extends React.Component {
         <div >
           <ul className={this.state.collapsed ? '' : 'show'}>
             <li className={`${path === '/' ? 'active' : ''}`} onClick={this.collapse}><Link to='/' className='menuLink'><span>Home</span></Link></li>
-            <li className={`${path === '/WhoWeAre' ? 'active' : ''} dropdown`} onClick={this.collapse}>
-              <Link to='/WhoWeAre' className='menuLink'><span>Who We Are</span></Link>
+            <li className={`${path === '/AboutUs' ? 'active' : ''} dropdown`} onClick={this.collapse}>
+              <Link to='/AboutUs' className='menuLink'><span>About Us</span></Link>
               <div className='dropdownContent'>
                 <Link to='/WhosWho'>Who's Who</Link>
                 <Link to='/MissionVisionValues'>Mission Vision Values</Link>
