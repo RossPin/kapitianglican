@@ -13,6 +13,9 @@ import Contact from './Contact'
 import FoodCoOp from './sectionComponents/FoodCoOp'
 import WhosWho from './sectionComponents/WhosWho'
 import WhatWeAreAbout from './sectionComponents/WhatWeAreAbout'
+import Sundays from './sectionComponents/Sundays'
+import FourPlusMore from './sectionComponents/FourPlusMore'
+import SchoolsSupport from './sectionComponents/SchoolsSupport'
 import PlayGroup from './sectionComponents/PlayGroup'
 import RestHomeMinistry from './sectionComponents/RestHomeMinistry'
 import ParishPrayer from './sectionComponents/ParishPrayer'
@@ -54,6 +57,9 @@ class App extends React.Component {
             <div>
               <Route path='/WhosWho' component={WhosWho} />
               <Route path='/WhatWeAreAbout' component={WhatWeAreAbout} />              
+              <Route path='/Sundays' component={Sundays} />
+              <Route path='/FourPlusMore' component={FourPlusMore} />
+              <Route path='/SchoolsSupport' component={SchoolsSupport} />
               <Route path='/PlayGroup' component={PlayGroup} />
               <Route path='/RestHomeMinistry' component={RestHomeMinistry} />
               <Route path='/ParishPrayer' component={ParishPrayer} />
