@@ -1,6 +1,6 @@
 import React from 'react'
 import WhosWho from './sectionComponents/WhosWho'
-import ParishGroups from './sectionComponents/ParishGroups'
+import VenueHire from './sectionComponents/VenueHire'
 import WhatWeAreAbout from './sectionComponents/WhatWeAreAbout'
 
 class AboutUs extends React.Component {
@@ -9,7 +9,7 @@ class AboutUs extends React.Component {
       <div className='aboutUs'>
         <WhosWho />
         <WhatWeAreAbout />
-        <ParishGroups />
+        <VenueHire />
       </div>
     )
   }

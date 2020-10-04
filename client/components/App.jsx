@@ -4,7 +4,6 @@ import Header from './Header'
 import Home from './Home'
 import OurChurches from './OurChurches'
 import Services from './Services'
-import WhoWeAre from './WhoWeAre'
 import AboutUs from './AboutUs'
 import PersonalNeeds from './PersonalNeeds'
 import ParishResources from './ParishResources'
@@ -29,6 +28,7 @@ import Sermons from './Sermons'
 import Calendar from './Calendar'
 import Evensong from './sectionComponents/Evensong'
 import Stillpoint from './sectionComponents/Stillpoint'
+import VenueHire from './sectionComponents/VenueHire'
 import Footer from './Footer';
 
 class App extends React.Component {
@@ -41,7 +41,6 @@ class App extends React.Component {
             <Route exact path='/' component={Home} />
             <Route path='/OurChurches/:location' component={OurChurches} />
             <Route path='/ChurchServices' component={Services} />
-            <Route path='/WhoWeAre' component={WhoWeAre} />
             <Route path='/AboutUs' component={AboutUs} />
             <Route path='/PersonalNeeds' component={PersonalNeeds} />
             <Route exact path='/ParishResources' component={ParishResources} />
@@ -66,6 +65,7 @@ class App extends React.Component {
               <Route path='/MessyChurch' component={MessyChurch} />
               <Route path='/Evensong' component={Evensong} />
               <Route path='/Stillpoint' component={Stillpoint} />
+              <Route path='/VenueHire' component={VenueHire} />
             </div>
           </div>
           <Footer />
