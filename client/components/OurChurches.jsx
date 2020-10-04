@@ -53,12 +53,12 @@ class OurChurches extends React.Component {
 
   componentDidMount () {
     const location = this.props.match.params.location
-    this.setState({ location })
+    if (location) this.setState({ location })
   }
 
   componentWillReceiveProps (newProps) {
     const location = newProps.match.params.location
-    this.setState({ location })
+    if (location) this.setState({ location })
   }
   render () {
     const location = this.state.location
@@ -76,8 +76,8 @@ class OurChurches extends React.Component {
           <h3>Sunday Services</h3>
           {locations[location].services}
           <p><strong>Every 5th Sunday of any month there is a Combined Parish Service at St Paul’s at 10am. There are no other services in the Parish on these Sundays.</strong></p>
-          <ParishGroups />
         </div>
+          <ParishGroups />
       </div>
     )
   }

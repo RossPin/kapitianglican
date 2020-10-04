@@ -39,6 +39,7 @@ class App extends React.Component {
           <div className='container'>
             <Route path='/' component={Header} />
             <Route exact path='/' component={Home} />
+            <Route exact path='/OurChurches' component={OurChurches} />
             <Route path='/OurChurches/:location' component={OurChurches} />
             <Route path='/ChurchServices' component={Services} />
             <Route path='/AboutUs' component={AboutUs} />
