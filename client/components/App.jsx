@@ -30,6 +30,8 @@ import VenueHire from './sectionComponents/VenueHire'
 import Footer from './Footer';
 import AlphaCourses from './sectionComponents/AlphaCourses'
 import GamesAfternoon from './sectionComponents/GamesAfternoon'
+import SmallGroups from './sectionComponents/SmallGroups'
+import ServingKapiti from './ServingKapiti'
 
 class App extends React.Component {
   render () {
@@ -41,7 +43,7 @@ class App extends React.Component {
             <Route exact path='/' component={Home} />
             <Route exact path='/OurChurches' component={OurChurches} />
             <Route path='/OurChurches/:location' component={OurChurches} />
-            <Route path='/ChurchServices' component={Services} />
+            <Route path='/Services' component={Services} />
             <Route path='/AboutUs' component={AboutUs} />
             <Route path='/ChildrenAndFamilies' component={ChildrenAndFamilies} />
             <Route exact path='/WhatsHappening' component={WhatsHappening} />
@@ -51,9 +53,11 @@ class App extends React.Component {
             <Route path='/Gallery' component={Gallery} />
             <Route path='/FoodCo-op' component={FoodCoOp} />
             <Route path='/Contact' component={Contact} />
+            <Route path='/ServingKapiti' component={ServingKapiti} />
             <div>
               <Route path='/WhosWho' component={WhosWho} />
-              <Route path='/WhatWeAreAbout' component={WhatWeAreAbout} />              
+              <Route path='/WhatWeAreAbout' component={WhatWeAreAbout} />
+              <Route path='/SmallGroups' component={SmallGroups} />            
               <Route path='/Sundays' component={Sundays} />
               <Route path='/FourPlusMore' component={FourPlusMore} />
               <Route path='/SchoolsSupport' component={SchoolsSupport} />
