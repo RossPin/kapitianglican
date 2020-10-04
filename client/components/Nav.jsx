@@ -34,7 +34,7 @@ class Nav extends React.Component {
               <div className='dropdownContent'>
                 <Link to='/WhatWeAreAbout'>What We Are About</Link>
                 <Link to='/WhosWho'>Who's Who</Link>
-                <Link to='/ParishGroups'>Parish Groups</Link>
+                <Link to='/OurChurches'>Our Churches and Congregations</Link>
               </div>
             </li>
             <li className={`${path === '/WhatWeDo' ? 'active' : ''} dropdown`} onClick={this.collapse}>

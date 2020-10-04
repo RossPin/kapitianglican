@@ -2,7 +2,7 @@ import React from 'react'
 import { HashRouter, Route } from 'react-router-dom'
 import Header from './Header'
 import Home from './Home'
-import Location from './Location'
+import OurChurches from './OurChurches'
 import Services from './Services'
 import WhoWeAre from './WhoWeAre'
 import AboutUs from './AboutUs'
@@ -14,7 +14,6 @@ import Contact from './Contact'
 import FoodCoOp from './sectionComponents/FoodCoOp'
 import WhosWho from './sectionComponents/WhosWho'
 import WhatWeAreAbout from './sectionComponents/WhatWeAreAbout'
-import ParishGroups from './sectionComponents/ParishGroups'
 import PlayGroup from './sectionComponents/PlayGroup'
 import RestHomeMinistry from './sectionComponents/RestHomeMinistry'
 import ParishPrayer from './sectionComponents/ParishPrayer'
@@ -40,7 +39,7 @@ class App extends React.Component {
           <div className='container'>
             <Route path='/' component={Header} />
             <Route exact path='/' component={Home} />
-            <Route path='/location/:location' component={Location} />
+            <Route path='/OurChurches/:location' component={OurChurches} />
             <Route path='/ChurchServices' component={Services} />
             <Route path='/WhoWeAre' component={WhoWeAre} />
             <Route path='/AboutUs' component={AboutUs} />
@@ -55,8 +54,7 @@ class App extends React.Component {
             <Route path='/Contact' component={Contact} />
             <div>
               <Route path='/WhosWho' component={WhosWho} />
-              <Route path='/WhatWeAreAbout' component={WhatWeAreAbout} />
-              <Route path='/ParishGroups' component={ParishGroups} />
+              <Route path='/WhatWeAreAbout' component={WhatWeAreAbout} />              
               <Route path='/PlayGroup' component={PlayGroup} />
               <Route path='/RestHomeMinistry' component={RestHomeMinistry} />
               <Route path='/ParishPrayer' component={ParishPrayer} />
