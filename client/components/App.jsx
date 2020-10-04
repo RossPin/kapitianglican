@@ -6,7 +6,7 @@ import OurChurches from './OurChurches'
 import Services from './Services'
 import AboutUs from './AboutUs'
 import PersonalNeeds from './PersonalNeeds'
-import ParishResources from './ParishResources'
+import WhatsHappening from './WhatsHappening'
 import Gallery from './Gallery'
 import Contact from './Contact'
 
@@ -16,7 +16,7 @@ import WhatWeAreAbout from './sectionComponents/WhatWeAreAbout'
 import PlayGroup from './sectionComponents/PlayGroup'
 import RestHomeMinistry from './sectionComponents/RestHomeMinistry'
 import ParishPrayer from './sectionComponents/ParishPrayer'
-import SpecialEvents from './sectionComponents/SpecialEvents'
+import SpecialEvents from './sectionComponents/SmallGroups'
 import Loved4Life from './sectionComponents/Loved4Life'
 import PrayersSquares from './sectionComponents/PrayersSquares'
 import FuneralMarriageBaptism from './sectionComponents/FuneralMarriageBaptism'
@@ -43,11 +43,11 @@ class App extends React.Component {
             <Route path='/ChurchServices' component={Services} />
             <Route path='/AboutUs' component={AboutUs} />
             <Route path='/PersonalNeeds' component={PersonalNeeds} />
-            <Route exact path='/ParishResources' component={ParishResources} />
-            <Route path='/ParishResources/Newsletter' component={Newsletter} />
-            <Route path='/ParishResources/Magazine' component={Magazine} />
-            <Route path='/ParishResources/sermons' component={Sermons} />
-            <Route path='/ParishResources/calendar' component={Calendar} />
+            <Route exact path='/WhatsHappening' component={WhatsHappening} />
+            <Route path='/WhatsHappening/Newsletter' component={Newsletter} />
+            <Route path='/WhatsHappening/Magazine' component={Magazine} />
+            <Route path='/WhatsHappening/sermons' component={Sermons} />
+            <Route path='/WhatsHappening/calendar' component={Calendar} />
             <Route path='/Gallery' component={Gallery} />
             <Route path='/FoodCo-op' component={FoodCoOp} />
             <Route path='/Contact' component={Contact} />

@@ -3,19 +3,19 @@ import PlayGroup from './sectionComponents/PlayGroup'
 import FoodCoOp from './sectionComponents/FoodCoOp'
 import RestHomeMinistry from './sectionComponents/RestHomeMinistry'
 import ParishPrayer from './sectionComponents/ParishPrayer'
-import SpecialEvents from './sectionComponents/SpecialEvents'
+import SmallGroups from './sectionComponents/SmallGroups'
 import Loved4Life from './sectionComponents/Loved4Life'
 import PrayersSquares from './sectionComponents/PrayersSquares'
 
-class WhatWeDo extends React.Component {
+class ServingKapiti extends React.Component {
   render () {
     return (
-      <div className='whatWeDo'>
+      <div className='ServingKapiti'>
         <PlayGroup />
         <FoodCoOp />
         <RestHomeMinistry />
         <ParishPrayer />
-        <SpecialEvents />
+        <SmallGroups />
         <Loved4Life />
         <PrayersSquares />
       </div>
@@ -23,4 +23,4 @@ class WhatWeDo extends React.Component {
   }
 }
 
-export default WhatWeDo
+export default ServingKapiti

@@ -38,14 +38,13 @@ class Nav extends React.Component {
                 <Link to='/VenueHire'>Venue Hire</Link>
               </div>
             </li>
-            <li className={`${path === '/WhatWeDo' ? 'active' : ''} dropdown`} onClick={this.collapse}>
-              <Link to='/WhatWeDo' className='menuLink'><span>What We Do</span></Link>
+            <li className={`${path === '/WhatsHappening' ? 'active' : ''} dropdown`} onClick={this.collapse}>
+              <Link to='/WhatsHappening' className='menuLink'><span>What We Do</span></Link>
               <div className='dropdownContent'>
-                <Link to='/PlayGroup'>Play Group</Link>
-                <Link to='/FoodCo-op'>Food Co-op</Link>
-                <Link to='/RestHomeMinistry'>Rest Home Ministry</Link>
+                <Link to='/Services'>Service times</Link>                
                 <Link to='/ParishPrayer'>Parish Prayer</Link>
-                <Link to='/SpecialEvents'>Special Events</Link>
+                <Link to='/SmallGroups'>Small Groups</Link>
+                <Link to='/PastoralCare'>Pastoral Care</Link>
                 <Link to='/Loved4Life'>Loved 4 Life</Link>
                 <Link to='/PrayersSquares'>Prayers & Squares</Link>
               </div>
@@ -53,6 +52,7 @@ class Nav extends React.Component {
             <li className={`${path === '/PersonalNeeds' ? 'active' : ''} dropdown`} onClick={this.collapse}>
               <Link to='/PersonalNeeds' className='menuLink'><span>Personal Needs</span></Link>
               <div className='dropdownContent'>
+              <Link to='/RestHomeMinistry'>Rest Home Ministry</Link>
                 <Link to='/FuneralMarriageBaptism'>Funeral Marriage Baptism</Link>
                 <Link to='/PastoralCare'>Pastoral Care</Link>
                 <Link to='/ParishPrayer'>Parish Prayer</Link>
