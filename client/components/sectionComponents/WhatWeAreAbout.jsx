@@ -1,15 +1,11 @@
 import React from 'react'
 
-class MissionVisionValues extends React.Component {
+class WhatWeAreAbout extends React.Component {
   render () {
     return (
-      <div className='missionVisionValues'>
+      <div className='whatWeAreAbout'>
         <img src='images/missionVision.jpg' className='fullWidth' />
         <div className='content'>
-          <h2>Our Mission</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quaerimus enim finem bonorum. Pauca mutat vel plura sane; Dempta enim aeternitate nihilo beatior Iuppiter quam Epicurus; Restatis igitur vos; Quodsi ipsam honestatem undique pertectam atque absolutam. Illa tamen simplicia, vestra versuta.</p>
-          <h2>Our Vision</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quaerimus enim finem bonorum. Pauca mutat vel plura sane; Dempta enim aeternitate nihilo beatior Iuppiter quam Epicurus; Restatis igitur vos; Quodsi ipsam honestatem undique pertectam atque absolutam. Illa tamen simplicia, vestra versuta.</p>
           <h2>Our Values</h2>
           <p>1. Prayer lies at the heart of the parish life. It holds everything together and it sustains every other activity.</p>
           <p>2. Faith is neither watered down nor ambiguous, is revealed in Holy Scripture and set forth in the historic catholic creeds. It is clearly centred on Christ and  the Gospel. Without Christ nothing makes sense; with Christ all things are possible. </p>
@@ -29,4 +25,4 @@ class MissionVisionValues extends React.Component {
   }
 }
 
-export default MissionVisionValues
+export default WhatWeAreAbout

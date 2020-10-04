@@ -13,7 +13,7 @@ import Contact from './Contact'
 
 import FoodCoOp from './sectionComponents/FoodCoOp'
 import WhosWho from './sectionComponents/WhosWho'
-import MissionVisionValues from './sectionComponents/MissionVisionValues'
+import WhatWeAreAbout from './sectionComponents/WhatWeAreAbout'
 import ParishGroups from './sectionComponents/ParishGroups'
 import PlayGroup from './sectionComponents/PlayGroup'
 import RestHomeMinistry from './sectionComponents/RestHomeMinistry'
@@ -55,7 +55,7 @@ class App extends React.Component {
             <Route path='/Contact' component={Contact} />
             <div>
               <Route path='/WhosWho' component={WhosWho} />
-              <Route path='/MissionVisionValues' component={MissionVisionValues} />
+              <Route path='/WhatWeAreAbout' component={WhatWeAreAbout} />
               <Route path='/ParishGroups' component={ParishGroups} />
               <Route path='/PlayGroup' component={PlayGroup} />
               <Route path='/RestHomeMinistry' component={RestHomeMinistry} />

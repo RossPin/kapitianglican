@@ -1,14 +1,14 @@
 import React from 'react'
 import WhosWho from './sectionComponents/WhosWho'
 import ParishGroups from './sectionComponents/ParishGroups'
-import MissionVisionValues from './sectionComponents/MissionVisionValues'
+import WhatWeAreAbout from './sectionComponents/WhatWeAreAbout'
 
 class AboutUs extends React.Component {
   render () {
     return (
       <div className='aboutUs'>
         <WhosWho />
-        <MissionVisionValues />
+        <WhatWeAreAbout />
         <ParishGroups />
       </div>
     )
