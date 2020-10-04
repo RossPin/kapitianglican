@@ -39,50 +39,34 @@ class Nav extends React.Component {
               </div>
             </li>
             <li className={`${path === '/WhatsHappening' ? 'active' : ''} dropdown`} onClick={this.collapse}>
-              <Link to='/WhatsHappening' className='menuLink'><span>What We Do</span></Link>
+              <Link to='/WhatsHappening' className='menuLink'><span>What's Happening</span></Link>
               <div className='dropdownContent'>
                 <Link to='/Services'>Service times</Link>                
                 <Link to='/ParishPrayer'>Parish Prayer</Link>
                 <Link to='/SmallGroups'>Small Groups</Link>
                 <Link to='/PastoralCare'>Pastoral Care</Link>
-                <Link to='/Loved4Life'>Loved 4 Life</Link>
-                <Link to='/PrayersSquares'>Prayers & Squares</Link>
+                <Link to='/WhatsHappening/Sermons'>Sermons</Link>
+                <Link to='/WhatsHappening/Newsletter'>Newsletter</Link>
+                <Link to='/WhatsHappening/Calendar'>Calendar</Link>
               </div>
             </li>
-            <li className={`${path === '/PersonalNeeds' ? 'active' : ''} dropdown`} onClick={this.collapse}>
-              <Link to='/PersonalNeeds' className='menuLink'><span>Personal Needs</span></Link>
+            <li className={`${path === '/ChildrenAndFamilies' ? 'active' : ''} dropdown`} onClick={this.collapse}>
+              <Link to='/ChildrenAndFamilies' className='menuLink'><span>Children and Families</span></Link>
               <div className='dropdownContent'>
-              <Link to='/RestHomeMinistry'>Rest Home Ministry</Link>
+                <Link to='/PlayGroup'>Play Group</Link>
+              </div>
+            </li>
+            <li className={`${path === '/ServingKapiti' ? 'active' : ''} dropdown`} onClick={this.collapse}>
+              <Link to='/ServingKapiti' className='menuLink'><span>Serving Kapiti</span></Link>
+              <div className='dropdownContent'>
+                <Link to='/RestHomeMinistry'>Rest Home Ministry</Link>
                 <Link to='/FuneralMarriageBaptism'>Funeral Marriage Baptism</Link>
                 <Link to='/PastoralCare'>Pastoral Care</Link>
                 <Link to='/ParishPrayer'>Parish Prayer</Link>
                 <Link to='/Loved4Life'>Loved 4 Life</Link>
                 <Link to='/PrayersSquares'>Prayers & Squares</Link>
               </div>
-            </li>
-            <li className={`${path === '/ChurchServices' ? 'active' : ''} dropdown`} onClick={this.collapse}>
-              <Link to='/ChurchServices' className='menuLink'><span>Church Services</span></Link>
-              <div className='dropdownContent'>
-                <Link to='/location/stPauls'>St Paul's</Link>
-                <Link to='/location/stMarks'>St Mark's</Link>
-                <Link to='/location/stPeters'>St Peter's</Link>
-                <Link to='/MessyChurch'>MessyChurch</Link>
-                <Link to='/Stillpoint'>Stillpoint</Link>
-                <Link to='/Evensong'>Evensong</Link>
-              </div>
-            </li>
-            <li className={`${path === '/ParishResources' ? 'active' : ''} dropdown`} onClick={this.collapse}>
-              <Link to='/ParishResources' className='menuLink'><span>Parish Resources</span></Link>
-              <div className='dropdownContent'>
-                <Link to='/ParishResources/Newsletter'>Newsletter</Link>
-                <Link to='/ParishResources/Magazine'>Magazine</Link>
-                <Link to='/ParishResources/Sermons'>Sermons</Link>
-                <Link to='/ParishResources/Calendar'>Calendar</Link>
-              </div>
-            </li>
-            <li className={`${path === '/Gallery' ? 'active' : ''}`} onClick={this.collapse}><Link to='/Gallery' className='menuLink'><span>Gallery</span></Link></li>
-            <li className={`${path === '/FoodCo-op' ? 'active' : ''}`} onClick={this.collapse}><Link to='/FoodCo-op' className='menuLink'><span>Food Co-op</span></Link></li>
-            <li className={`${path === '/Contact' ? 'active' : ''}`} onClick={this.collapse}><Link to='/Contact' className='menuLink'><span>Contact us</span></Link></li>
+            </li>            
           </ul>
         </div>
       </div>

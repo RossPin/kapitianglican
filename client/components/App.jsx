@@ -5,7 +5,7 @@ import Home from './Home'
 import OurChurches from './OurChurches'
 import Services from './Services'
 import AboutUs from './AboutUs'
-import PersonalNeeds from './PersonalNeeds'
+import ChildrenAndFamilies from './ChildrenAndFamilies'
 import WhatsHappening from './WhatsHappening'
 import Gallery from './Gallery'
 import Contact from './Contact'
@@ -42,7 +42,7 @@ class App extends React.Component {
             <Route path='/OurChurches/:location' component={OurChurches} />
             <Route path='/ChurchServices' component={Services} />
             <Route path='/AboutUs' component={AboutUs} />
-            <Route path='/PersonalNeeds' component={PersonalNeeds} />
+            <Route path='/ChildrenAndFamilies' component={ChildrenAndFamilies} />
             <Route exact path='/WhatsHappening' component={WhatsHappening} />
             <Route path='/WhatsHappening/Newsletter' component={Newsletter} />
             <Route path='/WhatsHappening/Magazine' component={Magazine} />
