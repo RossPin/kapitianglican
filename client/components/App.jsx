@@ -32,6 +32,7 @@ import AlphaCourses from './sectionComponents/AlphaCourses'
 import GamesAfternoon from './sectionComponents/GamesAfternoon'
 import SmallGroups from './sectionComponents/SmallGroups'
 import ServingKapiti from './ServingKapiti'
+import Password from './Password'
 
 class App extends React.Component {
   render () {
@@ -41,6 +42,7 @@ class App extends React.Component {
           <div className='container'>
             <Route path='/' component={Header} />
             <Route exact path='/' component={Home} />
+            <Route path='/password' component={Password} />
             <Route exact path='/OurChurches' component={OurChurches} />
             <Route path='/OurChurches/:location' component={OurChurches} />
             <Route path='/Services' component={Services} />
