@@ -32,7 +32,7 @@
     "express": "^4.16.3",
     "express-jwt": "^6.0.0",
     "html-react-parser": "^0.14.0",
-    "jwt-decode": "^3.0.0",
+    "jwt-decode": "^2.2.0",
     "node-sass": "^4.10.0",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
