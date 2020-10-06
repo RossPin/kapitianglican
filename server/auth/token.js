@@ -4,7 +4,7 @@ require('dotenv').config({ path: require('path').resolve(__dirname, '../../.env'
 
 function issue (req, res) {
   if (req.body.password === process.env.PASSWORD) {
-    var token = createToken(user, process.env.JWT_SECRET)
+    var token = createToken(process.env.JWT_SECRET)
     res.json({
       message: 'Authentication successful',
       token
@@ -13,7 +13,7 @@ function issue (req, res) {
   else res.status(400).json({message: 'password is incorrect'})
 }
 
-function createToken (user, secret) {
+function createToken (secret) {
   return jwt.sign({ 
     _id: 79845,
     username: 'Test'
