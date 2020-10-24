@@ -12,19 +12,6 @@ class Nav extends React.Component {
     this.collapse = this.collapse.bind(this)
   }
 
-  componentDidMount () {
-    if (this.props.auth.isAuthenticated == false && this.props.location.pathname != '/password') {
-      this.props.history.push('/password')
-    }
-  }
-  
-  componentDidUpdate (prevProps) {
-    if (this.props.auth.isAuthenticated == false && this.props.location.pathname != '/password') {
-      this.props.history.push('/password')
-    }
-  }
-
-
   toggle () {
     let collapsed = this.state.collapsed
     this.setState({ collapsed: !collapsed })
@@ -37,9 +24,7 @@ class Nav extends React.Component {
   render () {
     const path = this.props.location.pathname
     return (
-
       <div id='menu'>
-        {this.props.auth.isAuthenticated &&
         <div>
           <div id='collapse' onClick={this.toggle}>{this.state.collapsed ? '=' : 'X'}</div>
           <div >
@@ -91,7 +76,6 @@ class Nav extends React.Component {
             </ul>
           </div>
         </div>
-        }
       </div>
     )
   }
