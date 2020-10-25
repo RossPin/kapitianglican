@@ -1,78 +1,85 @@
 import React from 'react'
-import { HashRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
 import Header from './Header'
 import Home from './Home'
-import Location from './Location'
+import OurChurches from './OurChurches'
 import Services from './Services'
-import WhoWeAre from './WhoWeAre'
-import WhatWeDo from './WhatWeDo'
-import PersonalNeeds from './PersonalNeeds'
-import ParishResources from './ParishResources'
+import AboutUs from './AboutUs'
+import ChildrenAndFamilies from './ChildrenAndFamilies'
+import WhatsHappening from './WhatsHappening'
 import Gallery from './Gallery'
 import Contact from './Contact'
 
 import FoodCoOp from './sectionComponents/FoodCoOp'
-import KeyPeople from './sectionComponents/KeyPeople'
-import MissionVisionValues from './sectionComponents/MissionVisionValues'
-import ParishGroups from './sectionComponents/ParishGroups'
+import WhosWho from './sectionComponents/WhosWho'
+import WhatWeAreAbout from './sectionComponents/WhatWeAreAbout'
+import Sundays from './sectionComponents/Sundays'
+import FourPlusMore from './sectionComponents/FourPlusMore'
+import SchoolsSupport from './sectionComponents/SchoolsSupport'
 import PlayGroup from './sectionComponents/PlayGroup'
 import RestHomeMinistry from './sectionComponents/RestHomeMinistry'
 import ParishPrayer from './sectionComponents/ParishPrayer'
-import SpecialEvents from './sectionComponents/SpecialEvents'
+import SpecialEvents from './sectionComponents/SmallGroups'
 import Loved4Life from './sectionComponents/Loved4Life'
-import PrayersSquares from './sectionComponents/PrayersSquares'
-import FuneralMarriageBaptism from './sectionComponents/FuneralMarriageBaptism'
 import PastoralCare from './sectionComponents/PastoralCare'
 import MessyChurch from './sectionComponents/MessyChurch'
 import Newsletter from './Newsletter'
-import Magazine from './Magazine'
 import Sermons from './Sermons'
 import Calendar from './Calendar'
-import Evensong from './sectionComponents/Evensong'
-import Stillpoint from './sectionComponents/Stillpoint'
+import VenueHire from './sectionComponents/VenueHire'
 import Footer from './Footer';
+import AlphaCourses from './sectionComponents/AlphaCourses'
+import GamesAfternoon from './sectionComponents/GamesAfternoon'
+import SmallGroups from './sectionComponents/SmallGroups'
+import ServingKapiti from './ServingKapiti'
+import Password from './Password'
+import SpiritualDirection from './sectionComponents/SpititualDirection'
 
 class App extends React.Component {
   render () {
     return (
-      <HashRouter>
+      <BrowserRouter>
         <div>
           <div className='container'>
             <Route path='/' component={Header} />
             <Route exact path='/' component={Home} />
-            <Route path='/location/:location' component={Location} />
-            <Route path='/ChurchServices' component={Services} />
-            <Route path='/WhoWeAre' component={WhoWeAre} />
-            <Route path='/WhatWeDo' component={WhatWeDo} />
-            <Route path='/PersonalNeeds' component={PersonalNeeds} />
-            <Route exact path='/ParishResources' component={ParishResources} />
-            <Route path='/ParishResources/Newsletter' component={Newsletter} />
-            <Route path='/ParishResources/Magazine' component={Magazine} />
-            <Route path='/ParishResources/sermons' component={Sermons} />
-            <Route path='/ParishResources/calendar' component={Calendar} />
+            <Route path='/password' component={Password} />
+            <Route exact path='/OurChurches' component={OurChurches} />
+            <Route path='/OurChurches/:location' component={OurChurches} />
+            <Route path='/Services' component={Services} />
+            <Route path='/AboutUs' component={AboutUs} />
+            <Route path='/ChildrenAndFamilies' component={ChildrenAndFamilies} />
+            <Route exact path='/WhatsHappening' component={WhatsHappening} />
+            <Route path='/WhatsHappening/Newsletter' component={Newsletter} />
+            <Route path='/WhatsHappening/sermons' component={Sermons} />
+            <Route path='/WhatsHappening/calendar' component={Calendar} />
             <Route path='/Gallery' component={Gallery} />
             <Route path='/FoodCo-op' component={FoodCoOp} />
             <Route path='/Contact' component={Contact} />
+            <Route path='/ServingKapiti' component={ServingKapiti} />
             <div>
-              <Route path='/KeyPeople' component={KeyPeople} />
-              <Route path='/MissionVisionValues' component={MissionVisionValues} />
-              <Route path='/ParishGroups' component={ParishGroups} />
+              <Route path='/WhosWho' component={WhosWho} />
+              <Route path='/WhatWeAreAbout' component={WhatWeAreAbout} />
+              <Route path='/SmallGroups' component={SmallGroups} />            
+              <Route path='/Sundays' component={Sundays} />
+              <Route path='/FourPlusMore' component={FourPlusMore} />
+              <Route path='/SchoolsSupport' component={SchoolsSupport} />
               <Route path='/PlayGroup' component={PlayGroup} />
               <Route path='/RestHomeMinistry' component={RestHomeMinistry} />
               <Route path='/ParishPrayer' component={ParishPrayer} />
+              <Route path='/SpiritualDirection' component={SpiritualDirection} />
               <Route path='/SpecialEvents' component={SpecialEvents} />
               <Route path='/Loved4Life' component={Loved4Life} />
-              <Route path='/PrayersSquares' component={PrayersSquares} />
-              <Route path='/FuneralMarriageBaptism' component={FuneralMarriageBaptism} />
               <Route path='/PastoralCare' component={PastoralCare} />
               <Route path='/MessyChurch' component={MessyChurch} />
-              <Route path='/Evensong' component={Evensong} />
-              <Route path='/Stillpoint' component={Stillpoint} />
+              <Route path='/AlphaCourses' component={AlphaCourses} />
+              <Route path='/GamesAfternoon' component={GamesAfternoon} />
+              <Route path='/VenueHire' component={VenueHire} />
             </div>
           </div>
           <Footer />
         </div>
-      </HashRouter>
+      </BrowserRouter>
     )
   }
 }

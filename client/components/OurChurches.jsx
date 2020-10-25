@@ -1,4 +1,5 @@
 import React from 'react'
+import ParishGroups from './sectionComponents/ParishGroups'
 
 const locations = {
   stPauls: {
@@ -42,7 +43,7 @@ const locations = {
   }
 }
 
-class Location extends React.Component {
+class OurChurches extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -52,17 +53,17 @@ class Location extends React.Component {
 
   componentDidMount () {
     const location = this.props.match.params.location
-    this.setState({ location })
+    if (location) this.setState({ location })
   }
 
   componentWillReceiveProps (newProps) {
     const location = newProps.match.params.location
-    this.setState({ location })
+    if (location) this.setState({ location })
   }
   render () {
     const location = this.state.location
     return (
-      <div className='location'>
+      <div className='ourChurches'>
         <div className='line' />
         <div className='content'>
           <h2>{locations[location].name}</h2>
@@ -76,9 +77,10 @@ class Location extends React.Component {
           {locations[location].services}
           <p><strong>Every 5th Sunday of any month there is a Combined Parish Service at St Paul’s at 10am. There are no other services in the Parish on these Sundays.</strong></p>
         </div>
+          <ParishGroups />
       </div>
     )
   }
 }
 
-export default Location
+export default OurChurches

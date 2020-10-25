@@ -7,7 +7,7 @@ class Loved4Life extends React.Component {
         <img src='images/widePlaceholder.jpeg' className='fullWidth' />
         <div className='content'>
           <h2>Loved 4 Life</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quaerimus enim finem bonorum. Pauca mutat vel plura sane; Dempta enim aeternitate nihilo beatior Iuppiter quam Epicurus; Restatis igitur vos; Quodsi ipsam honestatem undique pertectam atque absolutam. Illa tamen simplicia, vestra versuta.</p>
+          <p>Loved for life is an interdenominational ministry of support for newborns and parents that was begun here on the Kapiti coast in 2007. Founder Marcia Guest grounded the ministry on the beliefs that every child is a gift from God and deserves to be loved for life, and that strong families build strong communities which in turn builds a strong country, one family at a time. Loved4life provides a handmade bassinette quilt for babies born in Kapiti and a meal for the family, which are delivered in person, on referral from local midwives or community members. Volunteers can be involved in a number of ways including cutting, sewing or making quilts, knitting, cooking or delivering. Jill Lane is our local coordinator. Contact the office for details.</p>
         </div>
       </div>
     )

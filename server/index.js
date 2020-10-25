@@ -1,11 +1,9 @@
-const express = require('express')
-const server = express()
-const path = require('path')
+require('dotenv').config({ path: require('path').resolve(__dirname, '../.env') })
 
-server.use(express.static(path.join(__dirname, '../docs')))
+const server = require('./server')
 
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 server.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`)
+    console.log(`Server is listening on port ${PORT}`)
 })
