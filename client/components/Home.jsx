@@ -2,6 +2,7 @@ import React from 'react'
 import { Parallax } from 'react-parallax'
 import { Link } from 'react-router-dom'
 import Notices from './Notices'
+import Slideshow from './Slideshow'
 
 class Home extends React.Component {
   render () {
@@ -20,11 +21,8 @@ class Home extends React.Component {
             <Link className='parishTile' to={'/OurChurches/stPeters'}><h4>St Peters</h4><img src='images/stPeters.jpeg' /></Link>
           </div>
         </div>
-        <Parallax bgImage='images/Raumati-Dune.jpg' strength={500} >
-          <div className='parallaxContent' style={{ height: 400 }}>
-            <h2>Notices</h2>
-          </div>
-        </Parallax>
+        <Slideshow />
+        <h2>Notices</h2>       
         <Notices history={this.props.history} />
       </div>
     )
