@@ -45,6 +45,7 @@ class Nav extends React.Component {
                 <div className='dropdownContent'>
                   <Link to='/Services'>Service times</Link>                
                   <Link to='/ParishPrayer'>Parish Prayer</Link>
+                  <Link to='/SpiritualDirection'>Spiritual Direction</Link>
                   <Link to='/SmallGroups'>Small Groups</Link>
                   <Link to='/PastoralCare'>Pastoral Care</Link>
                   <Link to='/WhatsHappening/Sermons'>Sermons</Link>

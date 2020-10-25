@@ -33,6 +33,7 @@ import GamesAfternoon from './sectionComponents/GamesAfternoon'
 import SmallGroups from './sectionComponents/SmallGroups'
 import ServingKapiti from './ServingKapiti'
 import Password from './Password'
+import SpiritualDirection from './sectionComponents/SpititualDirection'
 
 class App extends React.Component {
   render () {
@@ -66,6 +67,7 @@ class App extends React.Component {
               <Route path='/PlayGroup' component={PlayGroup} />
               <Route path='/RestHomeMinistry' component={RestHomeMinistry} />
               <Route path='/ParishPrayer' component={ParishPrayer} />
+              <Route path='/SpiritualDirection' component={SpiritualDirection} />
               <Route path='/SpecialEvents' component={SpecialEvents} />
               <Route path='/Loved4Life' component={Loved4Life} />
               <Route path='/PastoralCare' component={PastoralCare} />
