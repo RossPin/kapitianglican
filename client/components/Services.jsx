@@ -5,7 +5,7 @@ class Services extends React.Component {
     return (
       <div className='services'>
         <img src='images/img03.jpg' className='fullWidth' />
-        <div>
+        <div className='content'>
           <h2>Church Services</h2>
           <h3>Sunday Morning</h3>
           <p><strong>St Marks Church, Rosetta Rd, Raumati Beach</strong><br />

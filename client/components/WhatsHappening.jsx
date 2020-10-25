@@ -5,11 +5,8 @@ import Services from './Services'
 class WhatsHappening extends React.Component {
   render () {
     return (
-      <div className='WhatsHappening'>
-        <div className='content'>
-          <h2>What's Happening</h2>
-          <Services />
-        </div>
+      <div className='WhatsHappening'> 
+        <Services />
       </div>
     )
   }
