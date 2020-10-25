@@ -7,7 +7,7 @@ class GamesAfternoon extends React.Component {
         <img src='images/widePlaceholder.jpeg' className='fullWidth' />
         <div className='content'>
           <h2>Games Afternoon</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quaerimus enim finem bonorum. Pauca mutat vel plura sane; Dempta enim aeternitate nihilo beatior Iuppiter quam Epicurus; Restatis igitur vos; Quodsi ipsam honestatem undique pertectam atque absolutam. Illa tamen simplicia, vestra versuta.</p>
+          <p>A fun time of fellowship over board and card games with afternoon tea included. Every 4th Wednesday of the month in the Parish Lounge 2-4pm. A gold coin donation for Afternoon tea is appreciated. Coordinator- Christine Bull.</p>
         </div>
       </div>
     )
