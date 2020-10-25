@@ -9,18 +9,6 @@ class WhatsHappening extends React.Component {
         <div className='content'>
           <h2>What's Happening</h2>
           <Services />
-          <div className='tile'>
-            <Link to='/WhatsHappening/Newsletter'><img src='images/placeholder.jpeg' /></Link>
-            <h4>Weekly Newsletter</h4>
-          </div>          
-          <div className='tile'>
-            <Link to='/WhatsHappening/Sermons'><img src='images/placeholder.jpeg' /></Link>
-            <h4>Sermons</h4>
-          </div>
-          <div className='tile'>
-            <Link to='/WhatsHappening/Calendar'><img src='images/placeholder.jpeg' /></Link>
-            <h4>Calender</h4>
-          </div>
         </div>
       </div>
     )
