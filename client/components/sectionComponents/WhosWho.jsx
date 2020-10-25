@@ -10,7 +10,7 @@ class WhosWho extends React.Component {
             <h2>Who’s who</h2>
           </div>
         </Parallax>
-        <div className='content'>
+        <div className='content'>          
           <div className='tile'>
             <img src='images/Character_Placeholder.png' alt='images/Character_Placeholder.png' />
             <h4>Parish Wardens- Sheridan David and Mary Cropp</h4>
@@ -39,13 +39,15 @@ class WhosWho extends React.Component {
             <img src='images/Character_Placeholder.png' alt='images/Character_Placeholder.png' />
             <h4>Reverend Willie Brown, Priest Assistant, responsible for Parish Evensong Service</h4>
           </div>          
+          <div className='clearLeft'>
+            <h2>Ministry leaders</h2>
+              <ul>
+                <li>Small groups/Rest Home ministry: Kathleen Fleck</li>
+                <li>Playgroup: Katie Lewis</li>
+                <li>Kapiti Fruit and Vege Coop: Christine Bull</li>
+              </ul>
+          </div>
         </div>
-        <h2>Ministry leaders</h2>
-          <ul>
-            <li>Small groups/Rest Home ministry: Kathleen Fleck</li>
-            <li>Playgroup: Katie Lewis</li>
-            <li>Kapiti Fruit and Vege Coop: Christine Bull</li>
-          </ul>
       </div>
     )
   }
