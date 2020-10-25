@@ -54,12 +54,12 @@ class Nav extends React.Component {
               </li>
               <li className={`${path === '/ChildrenAndFamilies' ? 'active' : ''} dropdown`} onClick={this.collapse}>
                 <Link to='/ChildrenAndFamilies' className='menuLink'><span>Children and Families</span></Link>
-                <div className='dropdownContent'>
+                {/* <div className='dropdownContent'>
                   <Link to='/Sundays'>Sundays</Link>
                   <Link to='/FourPlusMore'>4+More</Link>
                   <Link to='/SchoolsSupport'>SchoolsSupport</Link>
                   <Link to='/PlayGroup'>Play Group</Link>
-                </div>
+                </div> */}
               </li>
               <li className={`${path === '/ServingKapiti' ? 'active' : ''} dropdown`} onClick={this.collapse}>
                 <Link to='/ServingKapiti' className='menuLink'><span>Serving Kapiti</span></Link>
