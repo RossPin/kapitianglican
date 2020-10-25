@@ -8,8 +8,8 @@ class ChildrenAndFamilies extends React.Component {
   render () {
     return (
       <div className='childrenAndFamilies'>
+        <img src='images/widePlaceholder.jpeg' className='fullWidth' />        
         <div className='content'>
-          <img src='images/widePlaceholder.jpeg' className='fullWidth' />        
           <h2>Children and Families Ministry</h2>
           <h3>Sundays</h3>
           <p>Family is important - no matter how many people there are! We love to include kids, and adults, in worship at all our venues each Sunday. Whether your style is energetic, easy-going, expressive, or enquiring, you are welcome among us. During school term time, we offer kid’s sessions at our Raumati and Paraparaumu venues each Sunday morning, plus an All-In worship service each month, when everyone mixes together during worship: we love the joy and fun that creates!</p>
