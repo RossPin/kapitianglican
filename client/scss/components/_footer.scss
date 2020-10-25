@@ -3,12 +3,13 @@
 .footer {
   background-color: $color4;
   color: white;
-  padding: 1em 5vw;
+  padding: 0.5em 5vw;
   height: 100px;
 
   ul {
     list-style: none;
-    padding: 1em 0 0 0;
+    padding: 0;
+    margin: 0;
   }
 
   li {
@@ -24,6 +25,15 @@
     width: 33%;
     float: left;
     margin: 0;
-    p {margin: 0;}
+    p {margin: 0.5em 0;}
+  }
+
+  .right {
+    text-align: right;
+  }
+  
+  .center p {
+    width: fit-content;
+    margin: 0.5em auto;
   }
 }
