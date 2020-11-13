@@ -35,6 +35,7 @@ class Gallery extends React.Component {
               <img src={picture.image} onClick={() => this.setState({ isOpen: true, photoIndex: i })} />
             </div>
           ))}
+          <div className='clearLeft'></div>
         </div>
         {isOpen && (
           <Lightbox
