@@ -10,7 +10,7 @@ class Home extends React.Component {
       <div>
         <Parallax bgImage='images/Kapiti_island.jpg' strength={500} >
           <div className='parallaxContent' style={{ height: 400 }}>
-            <h2>Welcome to the Home page for Kapiti Anglicans.</h2>
+            <h2>Welcome</h2>
           </div>
         </Parallax>
         <div className='about'>
