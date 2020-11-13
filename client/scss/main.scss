@@ -1,4 +1,5 @@
 @import "components/index";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 
 html, body {
     padding: 0;
@@ -7,6 +8,8 @@ html, body {
 
 body {
     background-color: $backgroundcolor;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.5em;
 }
 
 body, a {
