@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 import Header from './Header'
 import Home from './Home'
 import OurChurches from './OurChurches'
@@ -41,23 +41,23 @@ class App extends React.Component {
       <BrowserRouter>
         <div>
           <div className='container'>
-            <Route path='/' component={Header} />
-            <Route exact path='/' component={Home} />
-            <Route path='/password' component={Password} />
-            <Route exact path='/OurChurches' component={OurChurches} />
-            <Route path='/OurChurches/:location' component={OurChurches} />
-            <Route path='/Services' component={Services} />
-            <Route path='/AboutUs' component={AboutUs} />
-            <Route path='/ChildrenAndFamilies' component={ChildrenAndFamilies} />
-            <Route exact path='/WhatsHappening' component={WhatsHappening} />
-            <Route path='/WhatsHappening/Newsletter' component={Newsletter} />
-            <Route path='/WhatsHappening/sermons' component={Sermons} />
-            <Route path='/WhatsHappening/calendar' component={Calendar} />
-            <Route path='/Gallery' component={Gallery} />
-            <Route path='/FoodCo-op' component={FoodCoOp} />
-            <Route path='/Contact' component={Contact} />
-            <Route path='/ServingKapiti' component={ServingKapiti} />
-            <div>
+            <Header />
+            <Switch>
+              <Route exact path='/' component={Home} />
+              <Route path='/password' component={Password} />
+              <Route exact path='/OurChurches' component={OurChurches} />
+              <Route path='/OurChurches/:location' component={OurChurches} />
+              <Route path='/Services' component={Services} />
+              <Route path='/AboutUs' component={AboutUs} />
+              <Route path='/ChildrenAndFamilies' component={ChildrenAndFamilies} />
+              <Route exact path='/WhatsHappening' component={WhatsHappening} />
+              <Route path='/WhatsHappening/Newsletter' component={Newsletter} />
+              <Route path='/WhatsHappening/sermons' component={Sermons} />
+              <Route path='/WhatsHappening/calendar' component={Calendar} />
+              <Route path='/Gallery' component={Gallery} />
+              <Route path='/FoodCo-op' component={FoodCoOp} />
+              <Route path='/Contact' component={Contact} />
+              <Route path='/ServingKapiti' component={ServingKapiti} />
               <Route path='/WhosWho' component={WhosWho} />
               <Route path='/WhatWeAreAbout' component={WhatWeAreAbout} />
               <Route path='/SmallGroups' component={SmallGroups} />            
@@ -75,7 +75,8 @@ class App extends React.Component {
               <Route path='/AlphaCourses' component={AlphaCourses} />
               <Route path='/GamesAfternoon' component={GamesAfternoon} />
               <Route path='/VenueHire' component={VenueHire} />
-            </div>
+              <Route render={() => <Redirect to="/" />} />
+            </Switch>
           </div>
           <Footer />
         </div>
