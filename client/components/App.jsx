@@ -46,7 +46,6 @@ class App extends React.Component {
               <Route exact path='/' component={Home} />
               <Route path='/password' component={Password} />
               <Route exact path='/OurChurches' component={OurChurches} />
-              <Route path='/OurChurches/:location' component={OurChurches} />
               <Route path='/Services' component={Services} />
               <Route path='/AboutUs' component={AboutUs} />
               <Route path='/ChildrenAndFamilies' component={ChildrenAndFamilies} />
@@ -75,7 +74,7 @@ class App extends React.Component {
               <Route path='/AlphaCourses' component={AlphaCourses} />
               <Route path='/GamesAfternoon' component={GamesAfternoon} />
               <Route path='/VenueHire' component={VenueHire} />
-              <Route render={() => <Redirect to="/" />} />
+              <Route render={() => <Redirect to='/' />} />
             </Switch>
           </div>
           <Footer />

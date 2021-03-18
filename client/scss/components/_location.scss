@@ -2,6 +2,28 @@
   a, a:active {    
     color: black;
   }
+
+  .tab {
+    float: left;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0.5em;
+    cursor: pointer;
+  }
+
+  .tab:hover {
+    opacity: 0.6;
+  }
+
+  .activeTab {
+    font-weight: normal;
+    opacity: 0.6;
+    cursor: default;
+  }
+
+  .line {
+    clear: both;
+  }
   
   img {
     width: 45vw;

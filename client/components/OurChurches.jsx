@@ -51,19 +51,27 @@ class OurChurches extends React.Component {
     }
   }
 
-  componentDidMount () {
-    const location = this.props.match.params.location
-    if (location) this.setState({ location })
+  // componentDidMount () {
+  //   const location = this.props.match.params.location
+  //   if (location) this.setState({ location })
+  // }
+
+  // componentWillReceiveProps (newProps) {
+  //   const location = newProps.match.params.location
+  //   if (location) this.setState({ location })
+  // }
+
+  changeLocation (location) {
+    this.setState({ location })
   }
 
-  componentWillReceiveProps (newProps) {
-    const location = newProps.match.params.location
-    if (location) this.setState({ location })
-  }
   render () {
     const location = this.state.location
     return (
       <div className='ourChurches'>
+        <div className={`tab ${location === 'stPauls' ? 'activeTab' : ''}`} onClick={() => this.changeLocation('stPauls')} >St Paul's</div>
+        <div className={`tab ${location === 'stMarks' ? 'activeTab' : ''}`} onClick={() => this.changeLocation('stMarks')} >St Marks's</div>
+        <div className={`tab ${location === 'stPeters' ? 'activeTab' : ''}`} onClick={() => this.changeLocation('stPeters')} >St Peter's</div>
         <div className='line' />
         <div className='content'>
           <h2>{locations[location].name}</h2>
@@ -77,7 +85,7 @@ class OurChurches extends React.Component {
           {locations[location].services}
           <p><strong>Every 5th Sunday of any month there is a Combined Parish Service at St Paul’s at 10am. There are no other services in the Parish on these Sundays.</strong></p>
         </div>
-          <ParishGroups />
+        <ParishGroups />
       </div>
     )
   }
