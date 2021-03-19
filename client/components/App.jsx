@@ -23,9 +23,6 @@ import SpecialEvents from './sectionComponents/SmallGroups'
 import Loved4Life from './sectionComponents/Loved4Life'
 import PastoralCare from './sectionComponents/PastoralCare'
 import MessyChurch from './sectionComponents/MessyChurch'
-import Newsletter from './Newsletter'
-import Sermons from './Sermons'
-import Calendar from './Calendar'
 import VenueHire from './sectionComponents/VenueHire'
 import Footer from './Footer';
 import AlphaCourses from './sectionComponents/AlphaCourses'
@@ -49,10 +46,7 @@ class App extends React.Component {
               <Route path='/Services' component={Services} />
               <Route path='/AboutUs' component={AboutUs} />
               <Route path='/ChildrenAndFamilies' component={ChildrenAndFamilies} />
-              <Route exact path='/WhatsHappening' component={WhatsHappening} />
-              <Route path='/WhatsHappening/Newsletter' component={Newsletter} />
-              <Route path='/WhatsHappening/sermons' component={Sermons} />
-              <Route path='/WhatsHappening/calendar' component={Calendar} />
+              <Route path='/WhatsHappening' component={WhatsHappening} />
               <Route path='/Gallery' component={Gallery} />
               <Route path='/FoodCo-op' component={FoodCoOp} />
               <Route path='/Contact' component={Contact} />
