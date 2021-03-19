@@ -10,7 +10,8 @@
     width: 60%;    
 }
 
-#menu {    
+#menu {   
+  
    background-color: $color1;
     position: absolute;
     bottom: 0;
@@ -57,7 +58,7 @@
 }
 
 #menu .active .menuLink {
-  color: $color3;
+  color: white;
 }
 
 /* The container <li> - needed to position the dropdown content */
@@ -96,14 +97,14 @@
 
 @media all and (min-width: 768px) {
     .logo {        
-        width: 15%;
+        width: 160px;
         height: auto;
-        margin-left: 5%;
+        margin-left: 40px;
     }
 
     #menu {
-        width: 75%; 
-        right: 5%;
+        width: calc(100vw - 200px);
+        font-size: 0.75em;
     }
   
     #menu ul {      
@@ -113,7 +114,7 @@
   
     #menu li {
       margin: 0;
-      width: 11.1%;      
+      width: 20%;      
       display: inline-flex;      
       a {
         width: 100%;
@@ -136,4 +137,17 @@
     }
 
     .dropdown:hover .dropdownContent {width: 150%;}
+  }
+
+  @media all and (min-width: 1080px) {
+    .logo {        
+        width: 15%;
+        margin-left: 5%;
+    }
+
+    #menu {
+        width: 75%; 
+        right: 5%;
+        font-size: 1em;
+    }
   }
