@@ -2,11 +2,15 @@
   min-height: calc(100vh - 196px);
 }
 
+.tileContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .tile {
   text-align: center;
-  width: 33%;
-  min-height: 250px;
   float: left;
+  width: 33%;
   margin-top: 3.3%;  
   h4 {
     margin: 0;
