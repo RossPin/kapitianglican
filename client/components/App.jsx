@@ -19,12 +19,11 @@ import SchoolsSupport from './sectionComponents/SchoolsSupport'
 import PlayGroup from './sectionComponents/PlayGroup'
 import RestHomeMinistry from './sectionComponents/RestHomeMinistry'
 import ParishPrayer from './sectionComponents/ParishPrayer'
-import SpecialEvents from './sectionComponents/SmallGroups'
 import Loved4Life from './sectionComponents/Loved4Life'
 import PastoralCare from './sectionComponents/PastoralCare'
 import MessyChurch from './sectionComponents/MessyChurch'
 import VenueHire from './sectionComponents/VenueHire'
-import Footer from './Footer';
+import Footer from './Footer'
 import AlphaCourses from './sectionComponents/AlphaCourses'
 import GamesAfternoon from './sectionComponents/GamesAfternoon'
 import SmallGroups from './sectionComponents/SmallGroups'
@@ -53,7 +52,7 @@ class App extends React.Component {
               <Route path='/ServingKapiti' component={ServingKapiti} />
               <Route path='/WhosWho' component={WhosWho} />
               <Route path='/WhatWeAreAbout' component={WhatWeAreAbout} />
-              <Route path='/SmallGroups' component={SmallGroups} />            
+              <Route path='/SmallGroups' component={SmallGroups} />
               <Route path='/Sundays' component={Sundays} />
               <Route path='/FourPlusMore' component={FourPlusMore} />
               <Route path='/SchoolsSupport' component={SchoolsSupport} />
@@ -61,7 +60,6 @@ class App extends React.Component {
               <Route path='/RestHomeMinistry' component={RestHomeMinistry} />
               <Route path='/ParishPrayer' component={ParishPrayer} />
               <Route path='/SpiritualDirection' component={SpiritualDirection} />
-              <Route path='/SpecialEvents' component={SpecialEvents} />
               <Route path='/Loved4Life' component={Loved4Life} />
               <Route path='/PastoralCare' component={PastoralCare} />
               <Route path='/MessyChurch' component={MessyChurch} />
