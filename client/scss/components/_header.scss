@@ -31,13 +31,20 @@
   margin: 0.5em 2%;
 }
 
+.menuLink {
+  font-weight: bold;
+  color: white;
+  cursor: default;
+}
+
 #menu a, #collapse {
   margin-right: 1px;
   padding: 0.2em;   
 	text-decoration: none;
 	text-align: center;		
   font-weight: bold;
-  color: white;	
+  color: white;
+  cursor: pointer;
 }
 
 #collapse {
@@ -56,6 +63,8 @@
   margin-left: 2em;
   background-color: $color1;   
 }
+
+
 
 #menu .active .menuLink {
   color: white;
@@ -88,11 +97,18 @@
 /* Change color of dropdown links on hover */
  .dropdownContent a:hover {background-color: $color4;}
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdownContent {display: block; width: 100%;}
-
 /* Change the background color of the li on hover*/
 #menu li:hover {background-color: $color4;}
+
+.expandButton {
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+@media all and (max-width: 767px) {
+  /* Show the dropdown menu on expand */
+  .dropdownExpand {display: block; width: 100%;}
+}
 
 
 @media all and (min-width: 768px) {
@@ -125,7 +141,11 @@
   
     #collapse {
       display: none;
-    } 
+    }
+
+    .expandButton {
+      display: none;
+    }
 
     .dropdown {
       display: inline-block;
@@ -136,7 +156,10 @@
       left: -25%;
     }
 
-    .dropdown:hover .dropdownContent {width: 150%;}
+    .dropdown:hover .dropdownContent {
+      display: block;
+      width: 150%;
+    }
   }
 
   @media all and (min-width: 1080px) {
