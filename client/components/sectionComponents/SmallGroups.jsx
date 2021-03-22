@@ -4,7 +4,6 @@ class SmallGroups extends React.Component {
   render () {
     return (
       <div className='SmallGroups'>
-        <img src='images/widePlaceholder.jpeg' className='fullWidth' />
         <div className='content'>
           <h2>Small Groups</h2>
           <p><strong>Home groups and house churches-</strong> Kapiti Parish boasts a good number of home groups and house churches where parishioners meet in smaller groups for encouragement, prayer, Bible Study and reflection. Most groups meet weekly and we often have extra groups running through Lent. Kathleen Fleck is the co-ordinator. Contact the office for details.</p>

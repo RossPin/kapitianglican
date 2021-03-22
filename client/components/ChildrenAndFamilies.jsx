@@ -1,14 +1,9 @@
 import React from 'react'
-import Sundays from './sectionComponents/Sundays'
-import FourPlusMore from './sectionComponents/FourPlusMore'
-import SchoolsSupport from './sectionComponents/SchoolsSupport'
-import PlayGroup from './sectionComponents/PlayGroup'
 
 class ChildrenAndFamilies extends React.Component {
   render () {
     return (
       <div className='childrenAndFamilies'>
-        <img src='images/widePlaceholder.jpeg' className='fullWidth' />        
         <div className='content'>
           <h2>Children and Families Ministry</h2>
           <h3>Sundays</h3>
