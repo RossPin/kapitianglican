@@ -87,17 +87,29 @@
   .container {
     min-height: calc(100vh - 304px);
   }
+
+  .footer {
+    min-height: 280px;
+  }
 }
 
 @media all and (min-width: 1234px) {
   .container {
     min-height: calc(100vh - 272px);
   }
+
+  .footer {
+    min-height: 248px;
+  }
 }
 
 @media all and (min-width: 1300px) {
   .container {
     min-height: calc(100vh - 240px);
+  }
+
+  .footer {
+    min-height: 216px;
   }
 }
   
