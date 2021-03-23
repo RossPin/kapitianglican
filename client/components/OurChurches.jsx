@@ -9,7 +9,8 @@ const locations = {
       'Paraparaumu'
     ],
     services: [
-      <p><strong>8am - </strong>Holy Communion: <ul><li>1st & 3rd Sundays—Book of Common Prayer</li><li>2nd & 4th Sundays—New Zealand Prayer Book</li></ul></p>,
+      <p><strong>8am - </strong>Holy Communion:</p>,
+      <ul><li>1st & 3rd Sundays—Book of Common Prayer</li><li>2nd & 4th Sundays—New Zealand Prayer Book</li></ul>,
       <p><strong>9.30am - </strong>Traditional Family service with Holy Communion (with an integrated Children’s programme)</p>,
       <p><strong>11am - </strong>Family service with Holy Communion</p>,
       <p><strong>7pm First Sunday of the month - </strong>Stillpoint (A Contemplative service)</p>,
@@ -82,7 +83,7 @@ class OurChurches extends React.Component {
           {locations[location].address.map((line, i) => <span key={i}>{line}<br /></span>)}
           <a id='mapLink' href={`https://maps.google.com/maps?${locations[location].search}`} target='_blank'>Google Maps</a>
           <h3>Sunday Services</h3>
-          {locations[location].services}
+          {locations[location].services.map((service, i) => <div key={i}>{service}</div>)}
           <p><strong>Every 5th Sunday of any month there is a Combined Parish Service at St Paul’s at 10am. There are no other services in the Parish on these Sundays.</strong></p>
         </div>
         <ParishGroups />
