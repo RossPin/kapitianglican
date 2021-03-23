@@ -320,10 +320,6 @@ var _ParishPrayer = __webpack_require__(/*! ./sectionComponents/ParishPrayer */ 
 
 var _ParishPrayer2 = _interopRequireDefault(_ParishPrayer);
 
-var _SmallGroups = __webpack_require__(/*! ./sectionComponents/SmallGroups */ "./client/components/sectionComponents/SmallGroups.jsx");
-
-var _SmallGroups2 = _interopRequireDefault(_SmallGroups);
-
 var _Loved4Life = __webpack_require__(/*! ./sectionComponents/Loved4Life */ "./client/components/sectionComponents/Loved4Life.jsx");
 
 var _Loved4Life2 = _interopRequireDefault(_Loved4Life);
@@ -351,6 +347,10 @@ var _AlphaCourses2 = _interopRequireDefault(_AlphaCourses);
 var _GamesAfternoon = __webpack_require__(/*! ./sectionComponents/GamesAfternoon */ "./client/components/sectionComponents/GamesAfternoon.jsx");
 
 var _GamesAfternoon2 = _interopRequireDefault(_GamesAfternoon);
+
+var _SmallGroups = __webpack_require__(/*! ./sectionComponents/SmallGroups */ "./client/components/sectionComponents/SmallGroups.jsx");
+
+var _SmallGroups2 = _interopRequireDefault(_SmallGroups);
 
 var _ServingKapiti = __webpack_require__(/*! ./ServingKapiti */ "./client/components/ServingKapiti.jsx");
 
@@ -418,7 +418,6 @@ var App = function (_React$Component) {
               _react2.default.createElement(_reactRouterDom.Route, { path: '/RestHomeMinistry', component: _RestHomeMinistry2.default }),
               _react2.default.createElement(_reactRouterDom.Route, { path: '/ParishPrayer', component: _ParishPrayer2.default }),
               _react2.default.createElement(_reactRouterDom.Route, { path: '/SpiritualDirection', component: _SpititualDirection2.default }),
-              _react2.default.createElement(_reactRouterDom.Route, { path: '/SpecialEvents', component: _SmallGroups2.default }),
               _react2.default.createElement(_reactRouterDom.Route, { path: '/Loved4Life', component: _Loved4Life2.default }),
               _react2.default.createElement(_reactRouterDom.Route, { path: '/PastoralCare', component: _PastoralCare2.default }),
               _react2.default.createElement(_reactRouterDom.Route, { path: '/MessyChurch', component: _MessyChurch2.default }),
@@ -467,22 +466,6 @@ var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Sundays = __webpack_require__(/*! ./sectionComponents/Sundays */ "./client/components/sectionComponents/Sundays.jsx");
-
-var _Sundays2 = _interopRequireDefault(_Sundays);
-
-var _FourPlusMore = __webpack_require__(/*! ./sectionComponents/FourPlusMore */ "./client/components/sectionComponents/FourPlusMore.jsx");
-
-var _FourPlusMore2 = _interopRequireDefault(_FourPlusMore);
-
-var _SchoolsSupport = __webpack_require__(/*! ./sectionComponents/SchoolsSupport */ "./client/components/sectionComponents/SchoolsSupport.jsx");
-
-var _SchoolsSupport2 = _interopRequireDefault(_SchoolsSupport);
-
-var _PlayGroup = __webpack_require__(/*! ./sectionComponents/PlayGroup */ "./client/components/sectionComponents/PlayGroup.jsx");
-
-var _PlayGroup2 = _interopRequireDefault(_PlayGroup);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -506,7 +489,6 @@ var ChildrenAndFamilies = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'childrenAndFamilies' },
-        _react2.default.createElement('img', { src: 'images/widePlaceholder.jpeg', className: 'fullWidth' }),
         _react2.default.createElement(
           'div',
           { className: 'content' },
@@ -626,77 +608,81 @@ var Contact = function (_React$Component) {
               'table',
               null,
               _react2.default.createElement(
-                'tr',
+                'tbody',
                 null,
                 _react2.default.createElement(
-                  'th',
-                  { colspan: '2' },
-                  'Parish Office situated at St Paul\u2019s'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'td',
+                  'tr',
                   null,
-                  '1 Langdale Avenue'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'td',
-                  null,
-                  'Paraparaumu 5032'
-                )
-              ),
-              _react2.default.createElement('tr', null),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'td',
-                  null,
-                  'Phone'
+                  _react2.default.createElement(
+                    'th',
+                    { colSpan: '2' },
+                    'Parish Office situated at St Paul\u2019s'
+                  )
                 ),
                 _react2.default.createElement(
-                  'td',
+                  'tr',
                   null,
-                  '04 904 7300'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'td',
-                  null,
-                  'Email'
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    '1 Langdale Avenue'
+                  )
                 ),
                 _react2.default.createElement(
-                  'td',
+                  'tr',
                   null,
-                  'office@kapitianglican.org.nz'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    'Paraparaumu 5032'
+                  )
+                ),
+                _react2.default.createElement('tr', null),
                 _react2.default.createElement(
-                  'th',
-                  { colspan: '2' },
-                  'Office hours'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
+                  'tr',
+                  null,
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    'Phone'
+                  ),
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    '04 904 7300'
+                  )
+                ),
                 _react2.default.createElement(
-                  'td',
-                  { colspan: '2' },
-                  'Tuesday-Friday 9am\u201412 noon'
+                  'tr',
+                  null,
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    'Email'
+                  ),
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    'office@kapitianglican.org.nz'
+                  )
+                ),
+                _react2.default.createElement(
+                  'tr',
+                  null,
+                  _react2.default.createElement(
+                    'th',
+                    { colSpan: '2' },
+                    'Office hours'
+                  )
+                ),
+                _react2.default.createElement(
+                  'tr',
+                  null,
+                  _react2.default.createElement(
+                    'td',
+                    { colSpan: '2' },
+                    'Tuesday-Friday 9am\u201412 noon'
+                  )
                 )
               )
             ),
@@ -722,288 +708,292 @@ var Contact = function (_React$Component) {
               'table',
               null,
               _react2.default.createElement(
-                'tr',
+                'tbody',
                 null,
                 _react2.default.createElement(
-                  'th',
-                  { colspan: '2' },
-                  'Vicar & St Paul\u2019s 8am & 9.30am services'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'td',
+                  'tr',
                   null,
-                  'Revd Julie Rokotakala'
+                  _react2.default.createElement(
+                    'th',
+                    { colSpan: '2' },
+                    'Vicar & St Paul\u2019s 8am & 9.30am services'
+                  )
                 ),
                 _react2.default.createElement(
-                  'td',
+                  'tr',
                   null,
-                  '021 118 3657'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'th',
-                  { colspan: '2' },
-                  'Warden\u2019s'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'td',
-                  null,
-                  'Sheridan David'
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    'Revd Julie Rokotakala'
+                  ),
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    '021 118 3657'
+                  )
                 ),
                 _react2.default.createElement(
-                  'td',
+                  'tr',
                   null,
-                  '04 298 1358'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'td',
-                  null,
-                  'Mary Cropp'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'th',
-                  { colspan: '2' },
-                  'Priests responsible for St Mark\u2019s'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'td',
-                  null,
-                  'Revds John & Barbara Bonifant'
+                  _react2.default.createElement(
+                    'th',
+                    { colSpan: '2' },
+                    'Warden\u2019s'
+                  )
                 ),
                 _react2.default.createElement(
-                  'td',
+                  'tr',
                   null,
-                  '04 905 3301'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'th',
-                  { colspan: '2' },
-                  'Congregational Chaplain for St Paul\u2019s 11am Service'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'td',
-                  null,
-                  'Grant Ashton'
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    'Sheridan David'
+                  ),
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    '04 298 1358'
+                  )
                 ),
                 _react2.default.createElement(
-                  'td',
+                  'tr',
                   null,
-                  '0272 761 104'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'th',
-                  { colspan: '2' },
-                  'Priest responsible for St Peter\u2019s and Parish Wide Prayer & Pastoral Ministries'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'td',
-                  null,
-                  'Revd Lynda Wards'
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    'Mary Cropp'
+                  )
                 ),
                 _react2.default.createElement(
-                  'td',
+                  'tr',
                   null,
-                  '04 234 1170'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'th',
-                  { colspan: '2' },
-                  'Priest & Missioner to the Corporate and not for profit world'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'td',
-                  null,
-                  'Revd Jon Hartley'
+                  _react2.default.createElement(
+                    'th',
+                    { colSpan: '2' },
+                    'Priests responsible for St Mark\u2019s'
+                  )
                 ),
                 _react2.default.createElement(
-                  'td',
+                  'tr',
                   null,
-                  '021 466 566'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'th',
-                  { colspan: '2' },
-                  'Deacon for Community Engagement'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'td',
-                  null,
-                  'Revd Carrole Lewis'
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    'Revds John & Barbara Bonifant'
+                  ),
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    '04 905 3301'
+                  )
                 ),
                 _react2.default.createElement(
-                  'td',
+                  'tr',
                   null,
-                  '04 902 2532'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'th',
-                  { colspan: '2' },
-                  'Parish Chaplain for Resthomes & Retirement Villages'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'td',
-                  null,
-                  'Kathleen Fleck'
+                  _react2.default.createElement(
+                    'th',
+                    { colSpan: '2' },
+                    'Congregational Chaplain for St Paul\u2019s 11am Service'
+                  )
                 ),
                 _react2.default.createElement(
-                  'td',
+                  'tr',
                   null,
-                  '04 298 5630'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'th',
-                  { colspan: '2' },
-                  'Messy Church'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'td',
-                  null,
-                  'Revd Carrole Lewis'
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    'Grant Ashton'
+                  ),
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    '0272 761 104'
+                  )
                 ),
                 _react2.default.createElement(
-                  'td',
+                  'tr',
                   null,
-                  '04 902 2532'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'th',
-                  { colspan: '2' },
-                  'Study/House Groups'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'td',
-                  null,
-                  'Kathleen Fleck'
+                  _react2.default.createElement(
+                    'th',
+                    { colSpan: '2' },
+                    'Priest responsible for St Peter\u2019s and Parish Wide Prayer & Pastoral Ministries'
+                  )
                 ),
                 _react2.default.createElement(
-                  'td',
+                  'tr',
                   null,
-                  '04 298 5630'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'th',
-                  { colspan: '2' },
-                  'Finance'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'td',
-                  null,
-                  'Paul Bull'
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    'Revd Lynda Wards'
+                  ),
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    '04 234 1170'
+                  )
                 ),
                 _react2.default.createElement(
-                  'td',
+                  'tr',
                   null,
-                  '04 902 3320'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'th',
-                  { colspan: '2' },
-                  'Parish Administration/Vicar\u2019s PA'
-                )
-              ),
-              _react2.default.createElement(
-                'tr',
-                null,
-                _react2.default.createElement(
-                  'td',
-                  null,
-                  'Becky Devane'
+                  _react2.default.createElement(
+                    'th',
+                    { colSpan: '2' },
+                    'Priest & Missioner to the Corporate and not for profit world'
+                  )
                 ),
                 _react2.default.createElement(
-                  'td',
+                  'tr',
                   null,
-                  '04 904 7300'
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    'Revd Jon Hartley'
+                  ),
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    '021 466 566'
+                  )
+                ),
+                _react2.default.createElement(
+                  'tr',
+                  null,
+                  _react2.default.createElement(
+                    'th',
+                    { colSpan: '2' },
+                    'Deacon for Community Engagement'
+                  )
+                ),
+                _react2.default.createElement(
+                  'tr',
+                  null,
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    'Revd Carrole Lewis'
+                  ),
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    '04 902 2532'
+                  )
+                ),
+                _react2.default.createElement(
+                  'tr',
+                  null,
+                  _react2.default.createElement(
+                    'th',
+                    { colSpan: '2' },
+                    'Parish Chaplain for Resthomes & Retirement Villages'
+                  )
+                ),
+                _react2.default.createElement(
+                  'tr',
+                  null,
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    'Kathleen Fleck'
+                  ),
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    '04 298 5630'
+                  )
+                ),
+                _react2.default.createElement(
+                  'tr',
+                  null,
+                  _react2.default.createElement(
+                    'th',
+                    { colSpan: '2' },
+                    'Messy Church'
+                  )
+                ),
+                _react2.default.createElement(
+                  'tr',
+                  null,
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    'Revd Carrole Lewis'
+                  ),
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    '04 902 2532'
+                  )
+                ),
+                _react2.default.createElement(
+                  'tr',
+                  null,
+                  _react2.default.createElement(
+                    'th',
+                    { colSpan: '2' },
+                    'Study/House Groups'
+                  )
+                ),
+                _react2.default.createElement(
+                  'tr',
+                  null,
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    'Kathleen Fleck'
+                  ),
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    '04 298 5630'
+                  )
+                ),
+                _react2.default.createElement(
+                  'tr',
+                  null,
+                  _react2.default.createElement(
+                    'th',
+                    { colSpan: '2' },
+                    'Finance'
+                  )
+                ),
+                _react2.default.createElement(
+                  'tr',
+                  null,
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    'Paul Bull'
+                  ),
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    '04 902 3320'
+                  )
+                ),
+                _react2.default.createElement(
+                  'tr',
+                  null,
+                  _react2.default.createElement(
+                    'th',
+                    { colSpan: '2' },
+                    'Parish Administration/Vicar\u2019s PA'
+                  )
+                ),
+                _react2.default.createElement(
+                  'tr',
+                  null,
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    'Becky Devane'
+                  ),
+                  _react2.default.createElement(
+                    'td',
+                    null,
+                    '04 904 7300'
+                  )
                 )
               )
             )
@@ -1501,7 +1491,12 @@ var Nav = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).call(this, props));
 
     _this.state = {
-      collapsed: true
+      collapsed: true,
+      expanded: {
+        drop1: false,
+        drop2: false,
+        drop3: false
+      }
     };
     _this.toggle = _this.toggle.bind(_this);
     _this.collapse = _this.collapse.bind(_this);
@@ -1517,12 +1512,32 @@ var Nav = function (_React$Component) {
   }, {
     key: 'collapse',
     value: function collapse() {
-      this.setState({ collapsed: true });
+      this.setState({
+        collapsed: true,
+        expanded: {
+          drop1: false,
+          drop2: false,
+          drop3: false
+        }
+      });
+    }
+  }, {
+    key: 'toggleExpand',
+    value: function toggleExpand(dropdown) {
+      var expanded = this.state.expanded;
+      this.setState({ expanded: {
+          drop1: dropdown === 1 ? !expanded.drop1 : false,
+          drop2: dropdown === 2 ? !expanded.drop2 : false,
+          drop3: dropdown === 3 ? !expanded.drop3 : false
+        } });
     }
   }, {
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
       var path = this.props.location.pathname;
+      var expanded = this.state.expanded;
       return _react2.default.createElement(
         'div',
         { id: 'menu' },
@@ -1555,10 +1570,17 @@ var Nav = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'li',
-                { className: (path === '/AboutUs' ? 'active' : '') + ' dropdown', onClick: this.collapse },
+                { className: (path === '/AboutUs' ? 'active' : '') + ' dropdown' },
                 _react2.default.createElement(
-                  _reactRouterDom.Link,
-                  { to: '/AboutUs', className: 'menuLink' },
+                  'div',
+                  { className: 'menuLink' },
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'expandButton', onClick: function onClick() {
+                        return _this2.toggleExpand(1);
+                      } },
+                    expanded.drop1 ? '-' : '+'
+                  ),
                   _react2.default.createElement(
                     'span',
                     null,
@@ -1567,7 +1589,7 @@ var Nav = function (_React$Component) {
                 ),
                 _react2.default.createElement(
                   'div',
-                  { className: 'dropdownContent' },
+                  { className: 'dropdownContent ' + (expanded.drop1 ? 'dropdownExpand' : ''), onClick: this.collapse },
                   _react2.default.createElement(
                     _reactRouterDom.Link,
                     { to: '/WhatWeAreAbout' },
@@ -1585,22 +1607,29 @@ var Nav = function (_React$Component) {
                   ),
                   _react2.default.createElement(
                     _reactRouterDom.Link,
-                    { to: '/VenueHire' },
-                    'Venue Hire'
+                    { to: '/Gallery' },
+                    'Picture Gallery'
                   ),
                   _react2.default.createElement(
                     _reactRouterDom.Link,
-                    { to: '/Gallery' },
-                    'Picture Gallery'
+                    { to: '/Contact' },
+                    'Contact Us'
                   )
                 )
               ),
               _react2.default.createElement(
                 'li',
-                { className: (path === '/WhatsHappening' ? 'active' : '') + ' dropdown', onClick: this.collapse },
+                { className: (path === '/WhatsHappening' ? 'active' : '') + ' dropdown' },
                 _react2.default.createElement(
-                  _reactRouterDom.Link,
-                  { to: '/WhatsHappening', className: 'menuLink' },
+                  'div',
+                  { className: 'menuLink' },
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'expandButton', onClick: function onClick() {
+                        return _this2.toggleExpand(2);
+                      } },
+                    expanded.drop2 ? '-' : '+'
+                  ),
                   _react2.default.createElement(
                     'span',
                     null,
@@ -1609,7 +1638,7 @@ var Nav = function (_React$Component) {
                 ),
                 _react2.default.createElement(
                   'div',
-                  { className: 'dropdownContent' },
+                  { className: 'dropdownContent ' + (expanded.drop2 ? 'dropdownExpand' : ''), onClick: this.collapse },
                   _react2.default.createElement(
                     _reactRouterDom.Link,
                     { to: '/Services' },
@@ -1652,10 +1681,17 @@ var Nav = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'li',
-                { className: (path === '/ServingKapiti' ? 'active' : '') + ' dropdown', onClick: this.collapse },
+                { className: (path === '/ServingKapiti' ? 'active' : '') + ' dropdown' },
                 _react2.default.createElement(
-                  _reactRouterDom.Link,
-                  { to: '/ServingKapiti', className: 'menuLink' },
+                  'div',
+                  { className: 'menuLink' },
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'expandButton', onClick: function onClick() {
+                        return _this2.toggleExpand(3);
+                      } },
+                    expanded.drop3 ? '-' : '+'
+                  ),
                   _react2.default.createElement(
                     'span',
                     null,
@@ -1664,7 +1700,7 @@ var Nav = function (_React$Component) {
                 ),
                 _react2.default.createElement(
                   'div',
-                  { className: 'dropdownContent' },
+                  { className: 'dropdownContent ' + (expanded.drop3 ? 'dropdownExpand' : ''), onClick: this.collapse },
                   _react2.default.createElement(
                     _reactRouterDom.Link,
                     { to: '/PlayGroup' },
@@ -1850,20 +1886,19 @@ var locations = {
         null,
         '8am - '
       ),
-      'Holy Communion: ',
+      'Holy Communion:'
+    ), _react2.default.createElement(
+      'ul',
+      null,
       _react2.default.createElement(
-        'ul',
+        'li',
         null,
-        _react2.default.createElement(
-          'li',
-          null,
-          '1st & 3rd Sundays\u2014Book of Common Prayer'
-        ),
-        _react2.default.createElement(
-          'li',
-          null,
-          '2nd & 4th Sundays\u2014New Zealand Prayer Book'
-        )
+        '1st & 3rd Sundays\u2014Book of Common Prayer'
+      ),
+      _react2.default.createElement(
+        'li',
+        null,
+        '2nd & 4th Sundays\u2014New Zealand Prayer Book'
       )
     ), _react2.default.createElement(
       'p',
@@ -2045,7 +2080,13 @@ var OurChurches = function (_React$Component) {
             null,
             'Sunday Services'
           ),
-          locations[location].services,
+          locations[location].services.map(function (service, i) {
+            return _react2.default.createElement(
+              'div',
+              { key: i },
+              service
+            );
+          }),
           _react2.default.createElement(
             'p',
             null,
@@ -2719,7 +2760,6 @@ var AlphaCourses = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'alphaCourses' },
-        _react2.default.createElement('img', { src: 'images/widePlaceholder.jpeg', className: 'fullWidth' }),
         _react2.default.createElement(
           'div',
           { className: 'content' },
@@ -2802,7 +2842,6 @@ var FoodCoOp = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'foodCoOp' },
-        _react2.default.createElement('img', { src: 'images/widePlaceholder.jpeg', className: 'fullWidth' }),
         _react2.default.createElement(
           'div',
           { className: 'content' },
@@ -2871,7 +2910,6 @@ var FourPlusMore = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'fourPlusMore' },
-        _react2.default.createElement('img', { src: 'images/widePlaceholder.jpeg', className: 'fullWidth' }),
         _react2.default.createElement(
           'div',
           { className: 'content' },
@@ -2940,7 +2978,6 @@ var GamesAfternoon = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'gamesAfternoon' },
-        _react2.default.createElement('img', { src: 'images/widePlaceholder.jpeg', className: 'fullWidth' }),
         _react2.default.createElement(
           'div',
           { className: 'content' },
@@ -3009,7 +3046,6 @@ var Loved4Life = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'loved4Life' },
-        _react2.default.createElement('img', { src: 'images/widePlaceholder.jpeg', className: 'fullWidth' }),
         _react2.default.createElement(
           'div',
           { className: 'content' },
@@ -3360,7 +3396,6 @@ var ParishPrayer = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'parishPrayer' },
-        _react2.default.createElement('img', { src: 'images/widePlaceholder.jpeg', className: 'fullWidth' }),
         _react2.default.createElement(
           'div',
           { className: 'content' },
@@ -3473,7 +3508,6 @@ var PastoralCare = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'pastoralCare' },
-        _react2.default.createElement('img', { src: 'images/widePlaceholder.jpeg', className: 'fullWidth' }),
         _react2.default.createElement(
           'div',
           { className: 'content' },
@@ -3648,7 +3682,6 @@ var PlayGroup = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'playGroup' },
-        _react2.default.createElement('img', { src: 'images/widePlaceholder.jpeg', className: 'fullWidth' }),
         _react2.default.createElement(
           'div',
           { className: 'content' },
@@ -3717,7 +3750,6 @@ var RestHomeMinistry = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'restHomeMinistry' },
-        _react2.default.createElement('img', { src: 'images/widePlaceholder.jpeg', className: 'fullWidth' }),
         _react2.default.createElement(
           'div',
           { className: 'content' },
@@ -3786,7 +3818,6 @@ var SchoolsSupport = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'schoolsSupport' },
-        _react2.default.createElement('img', { src: 'images/widePlaceholder.jpeg', className: 'fullWidth' }),
         _react2.default.createElement(
           'div',
           { className: 'content' },
@@ -3855,7 +3886,6 @@ var SmallGroups = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'SmallGroups' },
-        _react2.default.createElement('img', { src: 'images/widePlaceholder.jpeg', className: 'fullWidth' }),
         _react2.default.createElement(
           'div',
           { className: 'content' },
@@ -3949,7 +3979,6 @@ var SpiritualDirection = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'spiritualDirection' },
-        _react2.default.createElement('img', { src: 'images/widePlaceholder.jpeg', className: 'fullWidth' }),
         _react2.default.createElement(
           'div',
           { className: 'content' },
@@ -4029,7 +4058,6 @@ var Sundays = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'sundays' },
-        _react2.default.createElement('img', { src: 'images/widePlaceholder.jpeg', className: 'fullWidth' }),
         _react2.default.createElement(
           'div',
           { className: 'content' },
@@ -4098,7 +4126,6 @@ var VenueHire = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'venueHire' },
-        _react2.default.createElement('img', { src: 'images/widePlaceholder.jpeg', className: 'fullWidth' }),
         _react2.default.createElement(
           'div',
           { className: 'content' },
@@ -4108,9 +4135,36 @@ var VenueHire = function (_React$Component) {
             'VenueHire'
           ),
           _react2.default.createElement(
+            'h4',
+            null,
+            'St Mark\'s - Rita King Cottage'
+          ),
+          _react2.default.createElement(
             'p',
             null,
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quaerimus enim finem bonorum. Pauca mutat vel plura sane; Dempta enim aeternitate nihilo beatior Iuppiter quam Epicurus; Restatis igitur vos; Quodsi ipsam honestatem undique pertectam atque absolutam. Illa tamen simplicia, vestra versuta.'
+            'This venue has a large meeting room.  It also has a fully equipped kitchen, fridge, 2 stoves and toilet/bathroom.'
+          ),
+          _react2.default.createElement(
+            'h4',
+            null,
+            'St Paul\'s Church'
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'This venue has the options of Church, lounge or hall.',
+            _react2.default.createElement('br', null),
+            'Equipment - The Parish hall and kitchen has enough plates and cutlery for 100 people.  There are 14 tables that can each seat up to 10 people.  The chairs for the hall are plastic and are not padded.  Users of the kitchen are required to dispose of all perishable food.  The kitchen has 2 electric ranges, fridge and microwave.'
+          ),
+          _react2.default.createElement(
+            'h4',
+            null,
+            'Policy on alcohol'
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'Permission must be gained from the Vicar for the serving of alcohol on the premises.  Where permission is given, it will only be for wine and beer (which must be in a bottle or can), no keg beer or spirits are allowed.  It is not permissible to sell alcohol in or on any of our church properties.'
           )
         )
       );
@@ -5041,7 +5095,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap);", ""]);
 
 // module
-exports.push([module.i, ".header {\n  background-color: #50a743;\n  margin: 0;\n  position: relative; }\n\n.logo {\n  width: 60%; }\n\n#menu {\n  background-color: #50a743;\n  position: absolute;\n  bottom: 0;\n  right: 0; }\n\n#menu ul {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  line-height: normal;\n  padding-left: 3%;\n  display: none; }\n\n#menu li {\n  margin: 0.5em 2%; }\n\n#menu a, #collapse {\n  margin-right: 1px;\n  padding: 0.2em;\n  text-decoration: none;\n  text-align: center;\n  font-weight: bold;\n  color: white; }\n\n#collapse {\n  display: block;\n  float: right;\n  font-size: 2em;\n  padding: 0 .2em; }\n\n#menu .show {\n  min-width: max-content;\n  position: absolute;\n  right: 2em;\n  z-index: 1;\n  display: block;\n  margin-left: 2em;\n  background-color: #50a743; }\n\n#menu .active .menuLink {\n  color: white; }\n\n/* The container <li> - needed to position the dropdown content */\n.dropdown {\n  position: relative; }\n\n/* Dropdown Content (Hidden by Default) */\n.dropdownContent {\n  display: none;\n  position: absolute;\n  top: 0;\n  right: 100%;\n  background-color: #50a743;\n  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);\n  z-index: 1; }\n\n/* Links inside the dropdown */\n.dropdownContent a {\n  color: black;\n  padding: 12px 16px;\n  text-decoration: none;\n  display: block; }\n\n/* Change color of dropdown links on hover */\n.dropdownContent a:hover {\n  background-color: #3e82a7; }\n\n/* Show the dropdown menu on hover */\n.dropdown:hover .dropdownContent {\n  display: block;\n  width: 100%; }\n\n/* Change the background color of the li on hover*/\n#menu li:hover {\n  background-color: #3e82a7; }\n\n@media all and (min-width: 768px) {\n  .logo {\n    width: 160px;\n    height: auto;\n    margin-left: 40px; }\n  #menu {\n    width: calc(100vw - 200px);\n    font-size: 0.75em; }\n  #menu ul {\n    display: block;\n    padding-left: 0; }\n  #menu li {\n    margin: 0;\n    width: 20%;\n    display: inline-flex; }\n    #menu li a {\n      width: 100%; }\n  #menu li:hover {\n    background-color: #50a743; }\n  #collapse {\n    display: none; }\n  .dropdown {\n    display: inline-block; }\n  .dropdownContent {\n    top: 100%;\n    left: -25%; }\n  .dropdown:hover .dropdownContent {\n    width: 150%; } }\n\n@media all and (min-width: 1080px) {\n  .logo {\n    width: 15%;\n    margin-left: 5%; }\n  #menu {\n    width: 75%;\n    right: 5%;\n    font-size: 1em; } }\n\n.about, .notices {\n  max-width: 100%;\n  margin: 0;\n  padding: 5%;\n  font-size: 1.5em;\n  overflow: hidden; }\n  .about a, .about a:active, .notices a, .notices a:active {\n    text-decoration: none;\n    color: #3e82a7; }\n\n.tileBoard a {\n  color: black; }\n\n.parishTile {\n  text-align: center;\n  width: 30%;\n  float: left; }\n  .parishTile h4 {\n    margin: 0; }\n\n.mid {\n  margin-left: 5%;\n  margin-right: 5%; }\n\n.parishTile img {\n  width: 100%; }\n\n.parallaxContent {\n  padding: 5%;\n  color: white; }\n  .parallaxContent h2 {\n    font-size: 4em; }\n\n.ourChurches a, .ourChurches a:active {\n  color: black; }\n\n.ourChurches .tab {\n  float: left;\n  font-weight: bold;\n  text-decoration: underline;\n  margin: 0.5em;\n  cursor: pointer; }\n\n.ourChurches .tab:hover {\n  opacity: 0.6; }\n\n.ourChurches .activeTab {\n  font-weight: normal;\n  opacity: 0.6;\n  cursor: default; }\n\n.ourChurches .line {\n  clear: both; }\n\n.ourChurches img {\n  width: 45vw; }\n\n.ourChurches .mapouter {\n  display: none; }\n\n.ourChurches #mapLink {\n  display: block; }\n\n@media all and (min-width: 768px) {\n  .ourChurches .mapouter {\n    display: block;\n    float: right;\n    height: 35vw;\n    width: 40vw; }\n  .ourChurches .gmap_canvas {\n    overflow: hidden;\n    background: none !important;\n    height: 35vw;\n    width: 40vw; }\n  .ourChurches .mapouter iframe {\n    height: 35vw;\n    width: 40vw; }\n  .ourChurches #mapLink {\n    display: none; } }\n\n.contact th {\n  text-align: left; }\n\n.contact .section {\n  width: 90vw;\n  float: left; }\n  .contact .section .mapouter {\n    margin-top: 1em;\n    text-align: right; }\n  .contact .section .gmap_canvas {\n    overflow: hidden;\n    background: none !important; }\n  .contact .section .mapouter, .contact .section .gmap_canvas, .contact .section .mapouter iframe {\n    height: 70vw;\n    width: 84vw; }\n  @media all and (min-width: 768px) {\n    .contact .section {\n      width: 44vw; }\n      .contact .section .mapouter, .contact .section .gmap_canvas, .contact .section .mapouter iframe {\n        height: 35vw;\n        width: 42vw; } }\n\n.services .section {\n  width: 100%; }\n\n.container {\n  min-height: calc(100vh - 196px); }\n\n.tileContainer {\n  display: flex;\n  flex-wrap: wrap; }\n\n.tile {\n  text-align: center;\n  float: left;\n  width: 33%;\n  margin-top: 3.3%; }\n  .tile h4 {\n    margin: 0; }\n\n.tile img {\n  width: 90%;\n  height: calc(33vw * 0.7);\n  object-fit: cover;\n  overflow: hidden; }\n\n.tile img:hover {\n  cursor: pointer; }\n\n.line {\n  width: 100%;\n  height: 0.2em;\n  background-color: black; }\n\n.fullWidth {\n  width: 100%; }\n\n.border {\n  border: 1px solid #444; }\n\n.borderHz {\n  border-top: 1px solid #444;\n  border-bottom: 1px solid #444; }\n\n.borderVt {\n  border-left: 1px solid #444;\n  border-right: 1px solid #444; }\n\n.content {\n  padding: 5vw; }\n\n.clearLeft {\n  clear: left; }\n\n@media all and (min-width: 768px) {\n  .tile {\n    width: 25%;\n    margin-top: 2.5%; }\n  .tile img {\n    height: calc(25vw * 0.7); } }\n\n@media all and (min-width: 1024px) {\n  .tile {\n    width: 20%;\n    margin-top: 2%; }\n  .tile img {\n    height: calc(20vw * 0.7); } }\n\n.footer {\n  background-color: #3e82a7;\n  color: white;\n  padding: 0.5em 5vw;\n  min-height: 172px;\n  overflow: auto; }\n  .footer ul {\n    list-style: none;\n    padding: 0;\n    margin: 0; }\n  .footer li {\n    margin: 0.5em 0; }\n  .footer a {\n    text-decoration: none;\n    color: white; }\n  .footer .section {\n    width: 33%;\n    float: left;\n    margin: 0; }\n    .footer .section p {\n      margin: 0.5em 0; }\n  .footer .right {\n    text-align: right; }\n  .footer .center p {\n    width: fit-content;\n    margin: 0.5em auto; }\n\n.password {\n  background-color: #50a743;\n  text-align: center;\n  height: 100vh; }\n  .password .button {\n    background-color: #3e82a7;\n    width: 100px;\n    height: 30px;\n    border-radius: 10px;\n    border: #3e45a7 1px solid; }\n  .password .logo {\n    width: 40%; }\n\n.react-slideshow-container {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center; }\n\n.react-slideshow-container .nav {\n  z-index: 10; }\n\n.react-slideshow-container .default-nav {\n  height: 30px;\n  background: rgba(255, 255, 255, 0.6);\n  width: 30px;\n  border: 0;\n  text-align: center;\n  cursor: pointer;\n  color: #fff;\n  border-radius: 50%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center; }\n\n.react-slideshow-container .default-nav:hover, .react-slideshow-container .default-nav:focus {\n  background: #fff;\n  color: #666;\n  outline: 0; }\n\n.react-slideshow-container .default-nav.disabled:hover {\n  cursor: not-allowed; }\n\n.react-slideshow-container .default-nav:first-of-type {\n  margin-right: -30px;\n  border-right: 0;\n  border-top: 0; }\n\n.react-slideshow-container .default-nav:last-of-type {\n  margin-left: -30px; }\n\n.react-slideshow-container + div.indicators {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  margin-top: 20px; }\n\n.react-slideshow-container + div.indicators li {\n  display: inline-block;\n  position: relative;\n  width: 7px;\n  height: 7px;\n  padding: 5px;\n  margin: 0; }\n\n.react-slideshow-container + div.indicators .each-slideshow-indicator {\n  border: 0;\n  opacity: .25;\n  cursor: pointer;\n  background: transparent;\n  color: transparent; }\n\n.react-slideshow-container + div.indicators .each-slideshow-indicator:before {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 7px;\n  height: 7px;\n  border-radius: 50%;\n  content: '';\n  background: #000;\n  text-align: center; }\n\n.react-slideshow-container + div.indicators .each-slideshow-indicator:hover, .react-slideshow-container + div.indicators .each-slideshow-indicator.active, .react-slideshow-container + div.indicators .each-slideshow-indicator:focus {\n  opacity: .75;\n  outline: 0; }\n\n.react-slideshow-fade-wrapper {\n  width: 100%;\n  overflow: hidden; }\n\n.react-slideshow-fade-wrapper .react-slideshow-fade-images-wrap {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap; }\n\n.react-slideshow-fade-wrapper .react-slideshow-fade-images-wrap > div {\n  position: relative;\n  opacity: 0; }\n\n.react-slideshow-wrapper.slide {\n  width: 100%;\n  overflow: hidden; }\n\n.react-slideshow-wrapper .images-wrap {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap; }\n\n.react-slideshow-zoom-wrapper {\n  width: 100%;\n  overflow: hidden; }\n\n.react-slideshow-zoom-wrapper .zoom-wrapper {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  overflow: hidden; }\n\n.react-slideshow-zoom-wrapper .zoom-wrapper > div {\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n\n.each-slide div {\n  height: 50vw;\n  background-size: 100%; }\n\nhtml, body {\n  padding: 0;\n  margin: 0; }\n\nbody {\n  background-color: white;\n  font-family: 'Nunito Sans', sans-serif;\n  font-size: 1.5em; }\n\nbody, a {\n  color: black; }\n", ""]);
+exports.push([module.i, ".header {\n  background-color: #50a743;\n  margin: 0;\n  position: relative; }\n\n.logo {\n  width: 60%; }\n\n#menu {\n  background-color: #50a743;\n  position: absolute;\n  bottom: 0;\n  right: 0; }\n\n#menu ul {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  line-height: normal;\n  padding-left: 3%;\n  display: none; }\n\n#menu li {\n  margin: 0.5em 2%; }\n\n.menuLink {\n  font-weight: bold;\n  color: white;\n  cursor: default; }\n\n#menu a, #collapse {\n  margin-right: 1px;\n  padding: 0.2em;\n  text-decoration: none;\n  text-align: center;\n  font-weight: bold;\n  color: white;\n  cursor: pointer; }\n\n#collapse {\n  display: block;\n  float: right;\n  font-size: 2em;\n  padding: 0 .2em; }\n\n#menu .show {\n  min-width: max-content;\n  position: absolute;\n  right: 2em;\n  z-index: 1;\n  display: block;\n  margin-left: 2em;\n  background-color: #50a743; }\n\n#menu .active .menuLink {\n  color: white; }\n\n/* The container <li> - needed to position the dropdown content */\n.dropdown {\n  position: relative; }\n\n/* Dropdown Content (Hidden by Default) */\n.dropdownContent {\n  display: none;\n  position: absolute;\n  top: 0;\n  right: 100%;\n  background-color: #50a743;\n  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);\n  z-index: 2; }\n\n/* Links inside the dropdown */\n.dropdownContent a {\n  color: black;\n  padding: 12px 16px;\n  text-decoration: none;\n  display: block; }\n\n/* Change color of dropdown links on hover */\n.dropdownContent a:hover {\n  background-color: #3e82a7; }\n\n/* Change the background color of the li on hover*/\n#menu li:hover {\n  background-color: #3e82a7; }\n\n.expandButton {\n  margin-right: 1em;\n  cursor: pointer; }\n\n@media all and (max-width: 767px) {\n  /* Show the dropdown menu on expand */\n  .dropdownExpand {\n    display: block;\n    width: 100%; } }\n\n@media all and (min-width: 768px) {\n  .logo {\n    width: 160px;\n    height: auto;\n    margin-left: 40px; }\n  #menu {\n    width: calc(100vw - 200px);\n    font-size: 0.75em; }\n  #menu ul {\n    display: block;\n    padding-left: 0; }\n  #menu li {\n    margin: 0;\n    width: 20%;\n    display: inline-flex; }\n    #menu li a {\n      width: 100%; }\n  #menu li:hover {\n    background-color: #50a743; }\n  #collapse {\n    display: none; }\n  .expandButton {\n    display: none; }\n  .dropdown {\n    display: inline-block; }\n  .dropdownContent {\n    top: 100%;\n    left: -25%; }\n  .dropdown:hover .dropdownContent {\n    display: block;\n    width: 150%; } }\n\n@media all and (min-width: 1080px) {\n  .logo {\n    width: 15%;\n    margin-left: 5%; }\n  #menu {\n    width: 75%;\n    right: 5%;\n    font-size: 1em; } }\n\n.about, .notices {\n  max-width: 100%;\n  margin: 0;\n  padding: 5%;\n  font-size: 1.5em;\n  overflow: hidden; }\n  .about a, .about a:active, .notices a, .notices a:active {\n    text-decoration: none;\n    color: #3e82a7; }\n\n.tileBoard a {\n  color: black; }\n\n.parishTile {\n  text-align: center;\n  width: 30%;\n  float: left; }\n  .parishTile h4 {\n    margin: 0; }\n\n.mid {\n  margin-left: 5%;\n  margin-right: 5%; }\n\n.parishTile img {\n  width: 100%; }\n\n.parallaxContent {\n  padding: 5%;\n  color: white; }\n  .parallaxContent h2 {\n    font-size: 4em; }\n\n.ourChurches a, .ourChurches a:active {\n  color: black; }\n\n.ourChurches .tab {\n  float: left;\n  font-weight: bold;\n  text-decoration: underline;\n  margin: 0.5em;\n  cursor: pointer; }\n\n.ourChurches .tab:hover {\n  opacity: 0.6; }\n\n.ourChurches .activeTab {\n  font-weight: normal;\n  opacity: 0.6;\n  cursor: default; }\n\n.ourChurches .line {\n  clear: both; }\n\n.ourChurches img {\n  width: 45vw; }\n\n.ourChurches .mapouter {\n  display: none; }\n\n.ourChurches #mapLink {\n  display: block; }\n\n@media all and (min-width: 768px) {\n  .ourChurches .mapouter {\n    display: block;\n    float: right;\n    height: 35vw;\n    width: 40vw; }\n  .ourChurches .gmap_canvas {\n    overflow: hidden;\n    background: none !important;\n    height: 35vw;\n    width: 40vw; }\n  .ourChurches .mapouter iframe {\n    height: 35vw;\n    width: 40vw; }\n  .ourChurches #mapLink {\n    display: none; } }\n\n.contact th {\n  text-align: left; }\n\n.contact .section {\n  width: 90vw;\n  float: left; }\n  .contact .section .mapouter {\n    margin-top: 1em;\n    text-align: right; }\n  .contact .section .gmap_canvas {\n    overflow: hidden;\n    background: none !important; }\n  .contact .section .mapouter, .contact .section .gmap_canvas, .contact .section .mapouter iframe {\n    height: 70vw;\n    width: 84vw; }\n  @media all and (min-width: 768px) {\n    .contact .section {\n      width: 44vw; }\n      .contact .section .mapouter, .contact .section .gmap_canvas, .contact .section .mapouter iframe {\n        height: 35vw;\n        width: 42vw; } }\n\n.services .section {\n  width: 100%; }\n\n.container {\n  min-height: calc(100vh - 320px);\n  z-index: 1; }\n\n.tileContainer {\n  display: flex;\n  flex-wrap: wrap; }\n\n.tile {\n  text-align: center;\n  float: left;\n  width: 33%;\n  margin-top: 3.3%; }\n  .tile h4 {\n    margin: 0; }\n\n.tile img {\n  width: 90%;\n  height: calc(33vw * 0.7);\n  object-fit: cover;\n  overflow: hidden; }\n\n.tile img:hover {\n  cursor: pointer; }\n\n.line {\n  width: 100%;\n  height: 0.2em;\n  background-color: black; }\n\n.fullWidth {\n  width: 100%; }\n\n.border {\n  border: 1px solid #444; }\n\n.borderHz {\n  border-top: 1px solid #444;\n  border-bottom: 1px solid #444; }\n\n.borderVt {\n  border-left: 1px solid #444;\n  border-right: 1px solid #444; }\n\n.content {\n  padding: 5vw; }\n\n.clearLeft {\n  clear: left; }\n\n@media all and (min-width: 768px) {\n  .tile {\n    width: 25%;\n    margin-top: 2.5%; }\n  .tile img {\n    height: calc(25vw * 0.7); } }\n\n@media all and (min-width: 1024px) {\n  .tile {\n    width: 20%;\n    margin-top: 2%; }\n  .tile img {\n    height: calc(20vw * 0.7); } }\n\n@media all and (min-width: 1080px) {\n  .container {\n    min-height: calc(100vh - 304px); } }\n\n@media all and (min-width: 1234px) {\n  .container {\n    min-height: calc(100vh - 272px); } }\n\n@media all and (min-width: 1300px) {\n  .container {\n    min-height: calc(100vh - 240px); } }\n\n.footer {\n  background-color: #3e82a7;\n  color: white;\n  padding: 0.5em 5vw;\n  min-height: 196px;\n  overflow: auto; }\n  .footer ul {\n    list-style: none;\n    padding: 0;\n    margin: 0; }\n  .footer li {\n    margin: 0.5em 0; }\n  .footer a {\n    text-decoration: none;\n    color: white; }\n  .footer a:hover {\n    opacity: 0.7; }\n  .footer .section {\n    width: 100%;\n    float: left;\n    margin: 0; }\n    .footer .section p {\n      margin: 0.5em 0; }\n  @media all and (min-width: 768px) {\n    .footer .section {\n      width: 50%; } }\n  @media all and (min-width: 1080px) {\n    .footer .section {\n      width: 33%; }\n    .footer .right {\n      text-align: right; }\n    .footer .center p {\n      width: fit-content;\n      margin: 0.5em auto; } }\n\n.password {\n  background-color: #50a743;\n  text-align: center;\n  height: 100vh; }\n  .password .button {\n    background-color: #3e82a7;\n    width: 100px;\n    height: 30px;\n    border-radius: 10px;\n    border: #3e45a7 1px solid; }\n  .password .logo {\n    width: 40%; }\n\n.react-slideshow-container {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center; }\n\n.react-slideshow-container .nav {\n  z-index: 10; }\n\n.react-slideshow-container .default-nav {\n  height: 30px;\n  background: rgba(255, 255, 255, 0.6);\n  width: 30px;\n  border: 0;\n  text-align: center;\n  cursor: pointer;\n  color: #fff;\n  border-radius: 50%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center; }\n\n.react-slideshow-container .default-nav:hover, .react-slideshow-container .default-nav:focus {\n  background: #fff;\n  color: #666;\n  outline: 0; }\n\n.react-slideshow-container .default-nav.disabled:hover {\n  cursor: not-allowed; }\n\n.react-slideshow-container .default-nav:first-of-type {\n  margin-right: -30px;\n  border-right: 0;\n  border-top: 0; }\n\n.react-slideshow-container .default-nav:last-of-type {\n  margin-left: -30px; }\n\n.react-slideshow-container + div.indicators {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  margin-top: 20px; }\n\n.react-slideshow-container + div.indicators li {\n  display: inline-block;\n  position: relative;\n  width: 7px;\n  height: 7px;\n  padding: 5px;\n  margin: 0; }\n\n.react-slideshow-container + div.indicators .each-slideshow-indicator {\n  border: 0;\n  opacity: .25;\n  cursor: pointer;\n  background: transparent;\n  color: transparent; }\n\n.react-slideshow-container + div.indicators .each-slideshow-indicator:before {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 7px;\n  height: 7px;\n  border-radius: 50%;\n  content: '';\n  background: #000;\n  text-align: center; }\n\n.react-slideshow-container + div.indicators .each-slideshow-indicator:hover, .react-slideshow-container + div.indicators .each-slideshow-indicator.active, .react-slideshow-container + div.indicators .each-slideshow-indicator:focus {\n  opacity: .75;\n  outline: 0; }\n\n.react-slideshow-fade-wrapper {\n  width: 100%;\n  overflow: hidden; }\n\n.react-slideshow-fade-wrapper .react-slideshow-fade-images-wrap {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap; }\n\n.react-slideshow-fade-wrapper .react-slideshow-fade-images-wrap > div {\n  position: relative;\n  opacity: 0; }\n\n.react-slideshow-wrapper.slide {\n  width: 100%;\n  overflow: hidden; }\n\n.react-slideshow-wrapper .images-wrap {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap; }\n\n.react-slideshow-zoom-wrapper {\n  width: 100%;\n  overflow: hidden; }\n\n.react-slideshow-zoom-wrapper .zoom-wrapper {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  overflow: hidden; }\n\n.react-slideshow-zoom-wrapper .zoom-wrapper > div {\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n\n.each-slide div {\n  height: 50vw;\n  background-size: 100%; }\n\nhtml, body {\n  padding: 0;\n  margin: 0; }\n\nbody {\n  background-color: white;\n  font-family: 'Nunito Sans', sans-serif;\n  font-size: 1.5em; }\n\nbody, a {\n  color: black; }\n\n.container {\n  background-color: white; }\n", ""]);
 
 // exports
 

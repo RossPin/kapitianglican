@@ -1,5 +1,6 @@
 .container {
-  min-height: calc(100vh - 240px);
+  min-height: calc(100vh - 320px);
+  z-index: 1;
 }
 
 .tileContainer {
@@ -69,6 +70,7 @@
   .tile img {
     height: calc(25vw * 0.7);
   }
+
 }
 
 @media all and (min-width: 1024px) {
@@ -80,3 +82,22 @@
     height: calc(20vw * 0.7);
   }
 }
+
+@media all and (min-width: 1080px) {
+  .container {
+    min-height: calc(100vh - 304px);
+  }
+}
+
+@media all and (min-width: 1234px) {
+  .container {
+    min-height: calc(100vh - 272px);
+  }
+}
+
+@media all and (min-width: 1300px) {
+  .container {
+    min-height: calc(100vh - 240px);
+  }
+}
+  
