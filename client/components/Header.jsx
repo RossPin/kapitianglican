@@ -8,13 +8,13 @@ class Header extends React.Component {
   }
 
   componentDidMount () {
-    if (this.props.auth.isAuthenticated == false && this.props.location.pathname != '/password') {
+    if (this.props.auth.isAuthenticated === false && this.props.location && this.props.location.pathname !== '/password') {
       this.props.history.push('/password')
     }
   }
   
   componentDidUpdate (prevProps) {
-    if (this.props.auth.isAuthenticated == false && this.props.location.pathname != '/password') {
+    if (this.props.auth.isAuthenticated === false && this.props.location.pathname !== '/password') {
       this.props.history.push('/password')
     }
   }
@@ -24,8 +24,8 @@ class Header extends React.Component {
       <div>
         {this.props.auth.isAuthenticated &&
         <div className='header'>
-            <img className='logo' src='images/Kapiti_Anglicans_WordMark_Colour.svg' />
-            <Nav location={this.props.location} />
+          <img className='logo' src='images/Kapiti_Anglicans_WordMark_Colour.svg' />
+          <Nav location={this.props.location} />
         </div>
         }
       </div>
