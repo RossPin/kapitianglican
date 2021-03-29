@@ -10,7 +10,7 @@
       text-align:right;      
     }
     .gmap_canvas {
-      overflow:hidden;
+      // overflow:hidden;
       background:none!important;
     }
     .mapouter, .gmap_canvas, .mapouter iframe {
@@ -23,6 +23,8 @@
       .mapouter, .gmap_canvas, .mapouter iframe {
         height: 35vw;
         width: 42vw;
+        max-width: 630px;
+        max-height: 525px;
       }
     }
   }  

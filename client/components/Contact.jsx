@@ -132,6 +132,7 @@ class Contact extends React.Component {
               </tbody>
             </table>
           </div>
+          <div className='clearLeft' />
         </div>
       </div>
     )
